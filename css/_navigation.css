@@ -69,9 +69,8 @@
 
 
 .navigation {
-	/*align-items: stretch;*/
 	background-color: var(--main-black-color);
-	/*padding: 16px 0px;*/
+	box-shadow: 0px 9px 10px -4px rgba(0,0,0,0.2);
 }
 
 .navigation__content {
