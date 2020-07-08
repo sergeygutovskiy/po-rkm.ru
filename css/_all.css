@@ -1,16 +1,20 @@
 html {
 	font-size: 112.5%;
 	font-family: "Montserrat", sans-serif;
+	height: 100%;
 }
 
 body {
 	margin: 0;
+	height: 100%;
 }
 
 :root {
   --main-black-color: #323231;
   --main-gray-color: #C5C6C6;
   --main-lightgray-color: #EBECEC;
+
+  --main-black-hover-color: #292927;
 }
 
 * {

@@ -22,6 +22,23 @@
 					Каталог
 					<i class="far fa-angle-down navigation__arrow-down"></i>
 				</a>
+				<ul class="navigation-dropdown">
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Ворота</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Ограждения</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Козырьки</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Лестницы</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Декор</a>
+					</li>
+				</ul>
 			</li>
 
 			<li class="navigation__item">
@@ -29,6 +46,23 @@
 					Услуги
 					<i class="far fa-angle-down navigation__arrow-down"></i>
 				</a>
+				<ul class="navigation-dropdown">
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Реставрация</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Ковка</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Литье</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Лестницы</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Металлоконструкции</a>
+					</li>
+				</ul>
 			</li>
 
 			<li class="navigation__item">
@@ -40,6 +74,14 @@
 					О компании
 					<i class="far fa-angle-down navigation__arrow-down"></i>
 				</a>
+				<ul class="navigation-dropdown">
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">О нас</a>
+					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Новости</a>
+					</li>
+				</ul>
 			</li>
 
 			<li class="navigation__item">
