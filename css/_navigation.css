@@ -62,6 +62,8 @@
     background-color: inherit;
     color: white;
 	border: solid 1px white;
+	outline: none;
+	cursor: pointer;
 	border-radius: 20px;
 }
 
