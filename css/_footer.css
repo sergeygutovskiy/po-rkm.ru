@@ -1,0 +1,36 @@
+.footer {
+	background-color: var(--main-black-color);
+	color: white;
+	padding: 80px 0;
+}
+
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__info {
+	flex: 0 0 auto;
+}
+
+.footer__list {
+	flex-direction: column;
+}
+
+.footer__col:nth-child(1) { margin-right: 100px; }
+.footer__col:nth-child(3) { margin-right: 100px; }
+
+.footer__link {
+	display: block;
+	text-transform: lowercase;
+}
+
+.footer__item:not(:last-child) .footer__link {
+	margin-bottom: 16px;
+}
+
+.footer__title {
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}

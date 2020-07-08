@@ -205,11 +205,15 @@
 	/*top: 0;*/
 	left: 0;
 	top: 4px;
-	z-index: -1;
 	width: 100%;
 	height: calc(100% - 4px);
 	background-color: var(--main-black-color);
 	border-radius: 5px;
+}
+
+	
+.navigation-dropdown__item {
+	z-index: 1;
 }
 
 .navigation-dropdown__item:first-child {

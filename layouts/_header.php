@@ -5,6 +5,7 @@ rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/_all.css">
 <link rel="stylesheet" type="text/css" href="css/_main.css">
 <link rel="stylesheet" type="text/css" href="css/_navigation.css">
+<link rel="stylesheet" type="text/css" href="css/_footer.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
