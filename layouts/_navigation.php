@@ -12,7 +12,7 @@
 	</div>
 </div>
 <nav class="navigation">
-	<div class="navigation__content main-container">		
+	<div class="navigation__content">		
 		<div class="navigation__title">
 			<img src="img/navigation-logo.png" alt="логотип" class="navigation__image">
 		</div>
