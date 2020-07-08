@@ -2,12 +2,13 @@
 	<div class="navigation-contacts__content main-container">		
 		<span class="navigation-contacts__location">
 			<i class="fas fa-map-marker-alt"></i>
-			Санкт-Петербург, ул. Калинина 13
+			<span>Санкт-Петербург, ул. Калинина 13</span>
 		</span>
 		<span class="navigation-contacts__phone">
 			<i class="fas fa-phone-alt"></i>
-			8 (921) 993-98-92
+			<span>8 (921) 993-98-92</span>
 		</span>
+		<button class="navigation-contacts__button">Оставить заявку</button>
 	</div>
 </div>
 <nav class="navigation">
@@ -108,6 +109,36 @@
 		e.preventDefault();
 		$('.navigation__hamburger').toggleClass("navigation__hamburger--active");
 	    $(".navigation__list").toggleClass("navigation__list--active")
+	});
+
+	$(".navigation__item").click(function() {
+		if ($(window).width() <= 980)
+		{
+			let arrow = $(this).children(".navigation__link").children(".far");
+
+			if (arrow.hasClass("fa-angle-down"))
+			{
+				arrow.removeClass("fa-angle-down");
+				arrow.addClass("fa-angle-up");
+				$(this).children(".navigation-dropdown").addClass("navigation-dropdown--active");
+			}
+			else
+			{
+				arrow.addClass("fa-angle-down");
+				arrow.removeClass("fa-angle-up");
+				$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
+			}
+		}
+	});
+
+	$(".navigation__item").mouseleave(function() {
+		if ($(window).width() <= 980)
+		{
+			let arrow = $(this).children(".navigation__link").children(".far");
+			arrow.addClass("fa-angle-down");
+			arrow.removeClass("fa-angle-up");
+			$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
+		}
 	});
 
 </script>
