@@ -40,6 +40,11 @@
 	justify-content: space-between;
 }
 
+.navigation__title {
+	display: flex;
+	align-items: center;
+} 
+
 .navigation__item {
 	position: relative;
 }
@@ -125,6 +130,15 @@
 	outline: none;
 	cursor: pointer;
 	border-radius: 20px;
+}
+
+@media screen and (max-width: 1150px) 
+{
+
+	.navigation__button {
+		display: none;
+	}
+
 }
 
 /*.navigation__button::before {
