@@ -55,3 +55,9 @@ ul {
 button {
 	font-family: "Montserrat", sans-serif;
 }
+button:active, button:focus {
+	outline: none;
+}
+button::-moz-focus-inner {
+	border: 0;
+}
