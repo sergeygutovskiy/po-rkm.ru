@@ -1,9 +1,12 @@
 .navigation-contacts {
-	display: flex;
-	justify-content: space-between;
-	padding: 12px 80px;
+	padding: 12px 0;
 	background-color: var(--main-lightgray-color);
 	font-size: 20px;
+}
+
+.navigation-contacts__content {
+	display: flex;
+	justify-content: space-between;
 }
 
 .navigation-contacts__location,
@@ -26,12 +29,15 @@
 }
 
 .navigation {
-	display: flex;
 	/*align-items: stretch;*/
+	background-color: var(--main-black-color);
+	padding: 16px 0px;
+}
+
+.navigation__content {
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 16px 80px;
-	background-color: var(--main-black-color);
 }
 
 .navigation__item {
