@@ -189,6 +189,7 @@
 
 	.navigation__arrow-down {
 		float: right;
+		padding-right: 9px;
 	}
 }
 
@@ -216,7 +217,7 @@
 {
 	.navigation__arrow-down {
 		float: right;
-		padding-right: 2px;
+		padding-right: 3px;
 	}
 }
 
@@ -336,7 +337,7 @@
 
 .navigation__hamburger svg {
 	position: relative;
-	right: -18px;
+	right: -7px;
 	cursor: pointer;  
 	width: 50px;  
 	transform: translate3d(0px, 0px, 0px);  
