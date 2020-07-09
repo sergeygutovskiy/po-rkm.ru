@@ -118,15 +118,15 @@
 
 			if (arrow.hasClass("fa-angle-down"))
 			{
+				$(this).children(".navigation-dropdown").addClass("navigation-dropdown--active");
 				arrow.removeClass("fa-angle-down");
 				arrow.addClass("fa-angle-up");
-				$(this).children(".navigation-dropdown").addClass("navigation-dropdown--active");
 			}
 			else
 			{
+				$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 				arrow.addClass("fa-angle-down");
 				arrow.removeClass("fa-angle-up");
-				$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 			}
 		}
 	});
@@ -134,10 +134,10 @@
 	$(".navigation__item").mouseleave(function() {
 		if ($(window).width() <= 980)
 		{
+			$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 			let arrow = $(this).children(".navigation__link").children(".far");
 			arrow.addClass("fa-angle-down");
 			arrow.removeClass("fa-angle-up");
-			$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 		}
 	});
 

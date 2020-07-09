@@ -41,17 +41,19 @@
 .navigation {
 	background-color: var(--main-black-color);
 	box-shadow: 0px 9px 10px -4px rgba(0,0,0,0.2);
+	overflow: hidden;
 }
 .navigation__content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 1200px;
+	max-width: var(--main-container-pc-width);
+	padding: 0 var(--main-container-pc-padding);
 	margin: auto;
 }
 .navigation__title { display: flex; align-items: center; } 
 .navigation__item { position: relative; }
-.navigation__item:hover > .navigation-dropdown { max-height: 300px; }
+/*.navigation__item:hover > .navigation-dropdown { max-height: 300px; }*/
 .navigation__link {
 	display: block;
 	padding: 24px 16px;
@@ -117,14 +119,12 @@
 }
 
 .navigation__hamburger {
-	margin: 0 40px 0 0; 
-	text-align: center;
+	position: relative;
+	right: -14px;
 	display: none;
 }
 .navigation__hamburger svg {
 	position: relative;
-	right: -7px;
-	cursor: pointer;  
 	width: 50px;  
 	transform: translate3d(0px, 0px, 0px);  
 }
@@ -162,13 +162,11 @@ svg:not(:root) { overflow: hidden; }
 @media screen and (max-width: 1200px) 
 { 
 
-	.navigation__title { margin-left: 40px; } 
 	.navigation__content { width: 100%; }
-	.navigation__list { margin-right: 40px; }
 
 }
 
-@media screen and (max-width: 1150px) 
+@media screen and (max-width: 1180px) 
 {
 
 	.navigation__button { display: none; }
@@ -181,8 +179,14 @@ svg:not(:root) { overflow: hidden; }
 	.navigation-contacts__location { display: none; } 
 	.navigation-contacts__button { display: block; }
 
-	.navigation__content { flex-wrap: wrap; align-items: center; }
-	.navigation__title { padding: 24px 0; }
+	.navigation__content { 
+		flex-wrap: wrap; 
+		align-items: center; 
+		padding: 24px 0;
+	}
+	.navigation__title {
+		padding-left: var(--main-container-pc-padding);
+	}
 	.navigation__list {
 		flex-direction: column;
 		width: 100%;
@@ -192,13 +196,33 @@ svg:not(:root) { overflow: hidden; }
 		margin-right: 0;
 	}
 	.navigation__list--active { max-height: 1000px; }
-	.navigation__item:not(:last-child) { margin-right: 8px; }
-	.navigation__link { padding-left: 40px; padding-right: 40px; }
-	.navigation__arrow-down { float: right; padding-right: 9px; }
+	.navigation__link { 
+		padding-left: var(--main-container-pc-padding);
+		padding-right: var(--main-container-pc-padding); 
+		padding-top: 12px;
+		padding-bottom: 6px;
+	}
+	.navigation__item:first-child .navigation__link { padding-top: 24px; } 
+	.navigation__item:last-child .navigation__link { padding-bottom: 0; } 
+	.navigation__link:hover { background-color: inherit; }
+	.navigation__arrow-down { float: right; padding-right: 4px; }
 
 	.navigation-dropdown { position: relative; transition: max-height 300ms linear; }
-
-	.navigation__hamburger { display: block; overflow: hidden;}
+	.navigation-dropdown::before { content: none; }
+	.navigation-dropdown--active { background-color: var(--main-black-hover-color); }
+	.navigation-dropdown__link {
+		padding-left: var(--main-container-pc-padding);
+		padding-right: var(--main-container-pc-padding); 
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	.navigation-dropdown__item:first-child { margin-top: 0; }
+	.navigation-dropdown__item:last-child { margin-bottom: 0; }
+	.navigation__hamburger { 
+		display: flex; 
+		overflow: hidden;
+		padding-right: var(--main-container-pc-padding);
+	}
 
 }
 
@@ -207,14 +231,38 @@ svg:not(:root) { overflow: hidden; }
 
 	.navigation-contacts__phone span { display: none; }
 
-	.navigation__title {  margin-left: 12px; padding: 12px 0; }
-	.navigation__image { max-width: 80%; } 
-	.navigation__link { padding: 16px 12px;	font-size: 16px; }
-	.navigation__arrow-down { float: right; padding-right: 3px; }
+	.navigation__content { 
+		padding: 18px 0;
+	}
 
-	.navigation-dropdown__link { font-size: 14px; }
+	.navigation__image {
+		width: 100px;
+	}
 
-	.navigation__hamburger { margin: 0 0px 0 0; }
-	.navigation__hamburger svg { right: -3px; top: 3px; }
+	.navigation__title {
+		padding-left: 12px;
+	}
+
+	.navigation__hamburger { 
+		padding-right: 12px;
+	}
+
+	.navigation__item:first-child .navigation__link {
+	    padding-top: 40px;
+	}
+
+	.navigation__link { 
+		padding-left: 36px;
+		padding-right: 12px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	} 
+
+	.navigation-dropdown__link {
+		padding-left: 54px;
+		padding-right: 12px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	} 
 
 }

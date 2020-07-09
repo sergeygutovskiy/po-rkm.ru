@@ -18,10 +18,9 @@ body {
 
 	--main-black-hover-color: #292927;
 
-	--main-container-pc-width: 1280px;
-	--main-container-pc-padding: 40px;
+	--main-container-pc-width: 1328px;
+	--main-container-pc-padding: 64px;
 
-	--main-container-mobile-width: 425px;
 	--main-container-mobile-padding: 12px;
 }
 
