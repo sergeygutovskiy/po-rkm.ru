@@ -11,35 +11,18 @@
 }
 
 .navigation-contacts__location,
-.navigation-contacts__phone {
-	font-weight: 400;
-}
+.navigation-contacts__phone { font-weight: 400; }
 
-@media screen and (max-width: 980px)
-{
-	.navigation-contacts__location {
-		display: none;
-	}
-}
+@media screen and (max-width: 980px) { .navigation-contacts__location { display: none; } }
 
-@media screen and (max-width: 425px)
-{
-	.navigation-contacts__phone span { display: none; }
-}
+@media screen and (max-width: 425px) { .navigation-contacts__phone span { display: none; } }
 
 .navigation-contacts__location i,
-.navigation-contacts__phone i {
-	margin-right: 4px; 
-	color: var(--main-gray-color);
-}
+.navigation-contacts__phone i { margin-right: 4px; color: var(--main-gray-color); }
 
-.navigation-contacts__location i {
-	font-size: 24px;
-}
+.navigation-contacts__location i { font-size: 24px; }
 
-.navigation-contacts__phone i {
-	font-size: 22px;
-}
+.navigation-contacts__phone i { font-size: 22px; }
 
 .navigation-contacts__button {
     position: relative;
@@ -56,12 +39,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 980px)
-{
-	.navigation-contacts__button {
-		display: block;
-	}
-}
+@media screen and (max-width: 980px) { .navigation-contacts__button { display: block; } }
 
 
 
@@ -81,10 +59,7 @@
 	margin: auto;
 }
 
-@media screen and (max-width: 1200px)
-{
-	.navigation__content { width: 100%;}
-}
+@media screen and (max-width: 1200px) { .navigation__content { width: 100%;} }
 
 @media screen and (max-width: 980px)
 {
@@ -96,37 +71,20 @@
 
 } 
 
-.navigation__title {
-	display: flex;
-	align-items: center;
-} 
+.navigation__title { display: flex; align-items: center; } 
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1200px) { .navigation__title { margin-left: 40px; } }
+
+@media screen and (max-width: 980px) { .navigation__title { padding: 24px 0; } }
+
+@media screen and (max-width: 425px)
 {
-	.navigation__title { margin-left: 40px; }
-}
-
-@media screen and (max-width: 980px)
-{
-	.navigation__title {
-		padding: 24px 0;
-	}
-
+	.navigation__title {  margin-left: 12px; padding: 12px 0; }
 }
 
 @media screen and (max-width: 425px)
 {
-	.navigation__title { 
-		margin-left: 12px;
-		padding: 12px 0;
-	}
-}
-
-@media screen and (max-width: 425px)
-{
-	.navigation__image {
-		max-width: 80%;
-	} 
+	.navigation__image { max-width: 80%; } 
 }
 
 @media screen and (max-width: 1200px)
@@ -145,28 +103,19 @@
 		margin-right: 0;
 	}
 
-	.navigation__list--active {
-		max-height: 1000px;
-	}
+	.navigation__list--active { max-height: 1000px; }
 }
 
-.navigation__item {
-	position: relative;
+.navigation__item { position: relative; }
+
+@media screen and (min-width: 980px) 
+{
+	.navigation__item:not(:last-child) { margin-right: 8px; }
 }
 
 @media screen and (min-width: 980px) 
 {
-	.navigation__item:not(:last-child) {
-		margin-right: 8px;
-	}
-}
-
-@media screen and (min-width: 980px) 
-{
-	
-	.navigation__item:hover > .navigation-dropdown {
-		max-height: 300px;
-	}
+	.navigation__item:hover > .navigation-dropdown { max-height: 300px; }
 }
 
 .navigation__link {
@@ -176,21 +125,13 @@
 	font-size: 20px;
 }
 
-.navigation__link:hover {
-	background-color: var(--main-black-hover-color);
-}
+.navigation__link:hover { background-color: var(--main-black-hover-color); }
 
 @media screen and (max-width: 980px)
 {
-	.navigation__link {
-		padding-left: 40px;
-		padding-right: 40px;	
-	}
+	.navigation__link { padding-left: 40px; padding-right: 40px; }
 
-	.navigation__arrow-down {
-		float: right;
-		padding-right: 9px;
-	}
+	.navigation__arrow-down { float: right; padding-right: 9px; }
 }
 
 .navigation__arrow-down {
@@ -201,10 +142,7 @@
 
 @media screen and (max-width: 425px)
 {
-	.navigation__link {
-		padding: 16px 12px;	
-		font-size: 16px;
-	}
+	.navigation__link { padding: 16px 12px;	font-size: 16px; }
 }
 
 .navigation__arrow-down {
@@ -215,10 +153,7 @@
 
 @media screen and (max-width: 425px)
 {
-	.navigation__arrow-down {
-		float: right;
-		padding-right: 3px;
-	}
+	.navigation__arrow-down { float: right; padding-right: 3px; }
 }
 
 .navigation-dropdown {
@@ -234,18 +169,11 @@
     overflow: hidden;
 }
 
-.navigation-dropdown--active {
-	max-height: 300px;
-}
+.navigation-dropdown--active { max-height: 300px; }
 
 @media screen and (max-width: 980px)
 {
-
-	.navigation-dropdown {
-		position: relative;
-		transition: max-height 300ms linear; 
-	}
-
+	.navigation-dropdown { position: relative; transition: max-height 300ms linear; }
 }
 
 .navigation-dropdown::before {
@@ -261,17 +189,11 @@
 }
 
 	
-.navigation-dropdown__item {
-	z-index: 1;
-}
+.navigation-dropdown__item { z-index: 1; }
 
-.navigation-dropdown__item:first-child {
-	margin-top: calc(4px + 10px);
-}
+.navigation-dropdown__item:first-child { margin-top: calc(4px + 10px); }
 
-.navigation-dropdown__item:last-child {
-	margin-bottom: 10px;
-}
+.navigation-dropdown__item:last-child { margin-bottom: 10px; }
 
 .navigation-dropdown__link {
 	display: block;
@@ -280,14 +202,9 @@
 	color: white;
 }
 
-.navigation-dropdown__link:hover {
-	background-color: var(--main-black-hover-color);
-}
+.navigation-dropdown__link:hover { background-color: var(--main-black-hover-color); }
 
-@media screen and (max-width: 425px)
-{
-	.navigation-dropdown__link { font-size: 14px; }
-}
+@media screen and (max-width: 425px) { .navigation-dropdown__link { font-size: 14px; } }
 
 .navigation__button {
     position: relative;
@@ -304,11 +221,7 @@
 
 @media screen and (max-width: 1150px) 
 {
-
-	.navigation__button {
-		display: none;
-	}
-
+	.navigation__button { display: none; }
 }
 
 
@@ -331,11 +244,6 @@
 } 
 
 .navigation__hamburger svg {
-	/*height: 20px;*/
-	/*width: 60px;*/
-}
-
-.navigation__hamburger svg {
 	position: relative;
 	right: -7px;
 	cursor: pointer;  
@@ -344,10 +252,7 @@
 }
 
 @media screen and (max-width: 425px) {
-	.navigation__hamburger svg {
-		right: -3px;
-		top:3px;
-	}
+	.navigation__hamburger svg { right: -3px; top: 3px; }
 }
 
 
@@ -373,7 +278,7 @@ svg:not(:root) {overflow: hidden;}
 
 .navigation__hamburger--active path.top, 
 .navigation__hamburger--active path.bottom {
-    stroke-dashoffset: -650px;
+	stroke-dashoffset: -650px;
 }
 
 .navigation__hamburger path.top, .navigation__hamburger path.bottom {
