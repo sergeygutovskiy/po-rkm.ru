@@ -12,11 +12,17 @@ body {
 }
 
 :root {
-  --main-black-color: #323231;
-  --main-gray-color: #C5C6C6;
-  --main-lightgray-color: #EBECEC;
+	--main-black-color: #323231;
+	--main-gray-color: #C5C6C6;
+	--main-lightgray-color: #EBECEC;
 
-  --main-black-hover-color: #292927;
+	--main-black-hover-color: #292927;
+
+	--main-container-pc-width: 1280px;
+	--main-container-pc-padding: 40px;
+
+	--main-container-mobile-width: 425px;
+	--main-container-mobile-padding: 12px;
 }
 
 * {
@@ -26,15 +32,15 @@ body {
 
 
 h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1.05rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  line-height: 1.15;
+	margin: 2.75rem 0 1.05rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	line-height: 1.15;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052em;
+	margin-top: 0;
+	font-size: 3.052em;
 }
 
 h2 {font-size: 2.441em;}
