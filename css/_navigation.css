@@ -41,7 +41,6 @@
 .navigation {
 	background-color: var(--main-black-color);
 	box-shadow: 0px 9px 10px -4px rgba(0,0,0,0.2);
-	overflow: hidden;
 }
 .navigation__content {
 	display: flex;
@@ -53,7 +52,12 @@
 }
 .navigation__title { display: flex; align-items: center; } 
 .navigation__item { position: relative; }
-/*.navigation__item:hover > .navigation-dropdown { max-height: 300px; }*/
+@media screen and (min-width: 980px) 
+{
+
+	.navigation__item:hover > .navigation-dropdown { max-height: 300px; }
+
+}
 .navigation__link {
 	display: block;
 	padding: 24px 16px;
@@ -179,6 +183,11 @@ svg:not(:root) { overflow: hidden; }
 	.navigation-contacts__location { display: none; } 
 	.navigation-contacts__button { display: block; }
 
+
+	.navigation {
+		overflow: hidden;
+		position: absolute;
+	}
 	.navigation__content { 
 		flex-wrap: wrap; 
 		align-items: center; 

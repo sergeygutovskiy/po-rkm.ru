@@ -124,9 +124,9 @@
 			}
 			else
 			{
-				$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 				arrow.addClass("fa-angle-down");
 				arrow.removeClass("fa-angle-up");
+				$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 			}
 		}
 	});
