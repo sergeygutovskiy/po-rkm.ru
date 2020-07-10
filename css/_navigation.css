@@ -142,8 +142,8 @@ svg:not(:root) { overflow: hidden; }
     stroke-dashoffset: 0; 
     stroke-linecap: round; 
     stroke-width: 40px;
-    transition: stroke-dashoffset 250ms cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, 
-    	stroke-dasharray 300ms cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+    transition: stroke-dashoffset 400ms cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, 
+    	stroke-dasharray 400ms cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
 }
 .navigation__hamburger path.middle {stroke-dasharray: 240px, 240px;}
 .navigation__hamburger--active path.top, 
@@ -201,7 +201,7 @@ svg:not(:root) { overflow: hidden; }
 		flex-direction: column;
 		width: 100%;
 		max-height: 0;
-		transition: max-height 350ms linear;
+		transition: max-height 450ms linear;
 		overflow: hidden;
 		margin-right: 0;
 	}

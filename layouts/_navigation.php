@@ -107,7 +107,7 @@
 	
 	$('.navigation__hamburger').on('click', function(e) {
 		e.preventDefault();
-	    $(".navigation__list").toggleClass("navigation__list--active")
+	    $(".navigation__list").toggleClass("navigation__list--active");
 		$('.navigation__hamburger').toggleClass("navigation__hamburger--active");
 	});
 
