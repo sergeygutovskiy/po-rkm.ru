@@ -1,0 +1,194 @@
+.s-contacts-page{
+    padding-top:25px;
+}
+.s-contacts-page .scp-flex{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+}
+.s-contacts-page .scp-flex .scp-map{
+    min-height:536px;
+    -webkit-flex-basis:53.5%;
+    -ms-flex-preferred-size:53.5%;
+    flex-basis:53.5%;
+    padding: 0px;
+}
+.s-contacts-page .scp-flex .scp-content{
+    -webkit-flex-basis:46.5%;
+    -ms-flex-preferred-size:46.5%;
+    flex-basis:46.5%;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-left:95px;
+   
+    padding-right:15px;
+   
+}
+.main-title h2{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+
+line-height: 44px;
+/* identical to box height */
+font-size: 36px;
+letter-spacing: 0.06em;
+margin: 20px 0 0px;
+color: #323231;
+}
+@media screen and (max-width: 425px) {
+    .main-title h2{
+        font-size: 28px;
+    }
+}
+.s-contacts-page .scp-flex .scp-content .scp-hdr{
+    display:block;
+    color:#323231;
+    font-size:25px;
+    line-height:25px;
+    font-weight: 500;
+    margin-bottom:30px;
+}
+.s-contacts-page .scp-flex .scp-content .scp-descr{
+    color:#323231;  
+    font-size:17.55px;
+    line-height:26.33px;
+   
+    display:block;
+     letter-spacing:0.2px;
+     margin-bottom:25px;
+    }
+.s-contacts-page .scp-flex .scp-content .scp-ul{
+    padding-left: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    flex-direction:  column;
+}
+.s-contacts-page .scp-flex .scp-content .scp-ul li{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    margin-bottom:25px;
+}
+.s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-gray{
+    color:#323231;
+    font-size:20px;
+    line-height:25px;
+    font-weight: 500;
+
+    max-width:130px;
+    min-width:130px;
+    -webkit-flex-basis:130px;
+    -ms-flex-preferred-size:130px;
+    flex-basis:130px;
+    margin-right:27px;
+}
+.s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-black{
+    color:#323231;
+    font-size:17px;
+    line-height:25px;
+    font-weight: 300;
+    max-width:310px;
+}
+.s-contacts-page a{
+    text-decoration: none;
+    
+    
+    color: #323231;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1400px){
+.s-contacts-page .scp-flex .scp-content{
+    padding-left:45px;
+    -webkit-flex-basis:50%;
+    -ms-flex-preferred-size:50%;
+    flex-basis:50%;
+}
+.s-contacts-page .scp-flex .scp-map{
+    -webkit-flex-basis:50%;
+    -ms-flex-preferred-size:50%;
+    flex-basis:50%;
+}
+}
+@media only screen and (max-width: 1200px){
+.s-contacts-page .scp-flex .scp-content{
+    padding-left: 0;
+    padding-right: 0;
+   
+    
+}
+}
+@media only screen and (max-width: 992px){
+
+.s-contacts-page .scp-flex .scp-map { padding: 0; }
+
+.s-contacts-page .scp-flex{
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+.s-contacts-page .scp-flex .scp-content{
+    -webkit-flex-basis:100%;
+    -ms-flex-preferred-size:100%;
+    flex-basis:100%;
+}
+.s-contacts-page .scp-flex .scp-map{
+    -webkit-flex-basis:100%;
+    -ms-flex-preferred-size:100%;
+    flex-basis:100%;
+    min-height:350px;
+}
+.s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-black{
+    max-width:100%;
+}
+.s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-gray{
+    min-width:250px;
+    max-width:250px;
+    -webkit-flex-basis:250px;
+    -ms-flex-preferred-size:250px;
+    flex-basis:250px;
+}
+}
+@media only screen and (max-width: 600px){
+.s-contacts-page .scp-flex .scp-content .scp-ul li{
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-bottom:15px;
+}
+.s-contacts-page .scp-flex .scp-content .scp-hdr{
+    font-size:21px;
+    line-height:21px;
+    margin-bottom:15px;
+}
+.s-contacts-page .scp-flex .scp-content .scp-descr{
+    font-size:16px;
+    line-height:21px;
+    margin-bottom:15px;
+}
+.s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-gray{
+    -webkit-flex-basis:100%;
+    -ms-flex-preferred-size:100%;
+    flex-basis:100%;
+    min-width:auto;
+    max-width:100%;
+}
+}
+.s-contacts-page button{
+    width: 248px;
+height: 50px;
+background: #F3F4F6;
+border-radius: 2px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+border: none;
+cursor: pointer;
+}

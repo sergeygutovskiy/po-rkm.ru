@@ -3,6 +3,7 @@
 	color: white;
 	padding: 52px 0;
 	overflow: hidden;
+	margin-top: 52px;
 }
 .footer__content {
 	display: flex;

@@ -94,7 +94,7 @@
 			</li>
 
 			<li class="navigation__item">
-				<a href="" class="navigation__link">Контакты</a>
+				<a href="contacts.php" class="navigation__link">Контакты</a>
 			</li>
 
 		</ul>
