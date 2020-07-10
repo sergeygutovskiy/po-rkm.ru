@@ -1,14 +1,12 @@
 .main-container {
 	margin: 0 auto;
-	max-width: var(--main-container-pc-width);
-	padding: 0 var(--main-container-pc-padding);
+	max-width: 1328px;
+	padding: 0 64px;
 }
 
 @media screen and (max-width: 425px) 
 {
 
-	.main-container {
-		padding: 0 var(--main-container-mobile-padding);
-	}
+	.main-container { padding: 0 12px; }
 
 }
