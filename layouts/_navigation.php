@@ -88,7 +88,7 @@
 						<a class="navigation-dropdown__link" href="">О нас</a>
 					</li>
 					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Новости</a>
+						<a class="navigation-dropdown__link" href="">Проекты</a>
 					</li>
 				</ul>
 			</li>

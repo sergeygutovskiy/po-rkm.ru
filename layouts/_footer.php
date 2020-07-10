@@ -69,7 +69,7 @@
 						<a href="" class="footer__link">О нас</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Новости</a>
+						<a href="" class="footer__link">Проекты</a>
 					</li>
 				</ul>
 			</li>
