@@ -57,6 +57,61 @@
 		</ul>
 	</div>
 
+	<div class="main-container">
+		<div class="catalog">
+			<div class="catalog__block catalog__block-1">
+				<div class="catalog__title">Ворота</div>
+				<img src="img/index-catalog/block-1.png" class="catalog__image">
+				<ul class="catalog__list">
+					<li>Распашные</li>
+					<li>Откатные</li>
+				</ul>
+			</div>
+			<div class="catalog__block catalog__block-2">
+				<div class="catalog__title">Ограждения</div>
+				<img src="img/index-catalog/block-2.png" class="catalog__image">
+				<ul class="catalog__list">
+					<li>Декоративные</li>
+					<li>Уличные</li>
+					<li>Балконные</li>
+				</ul>
+			</div>
+			<div class="catalog__block catalog__block-3">
+				<div class="catalog__title">Козырьки</div>
+				<img src="img/index-catalog/block-3.png" class="catalog__image">
+				<ul class="catalog__list">
+					<li>Подвесные</li>
+					<li>Двускатные</li>
+				</ul>
+			</div>
+			<div class="catalog__block catalog__block-4">
+				<div class="catalog__title">Лестницы</div>
+				<img src="img/index-catalog/block-4.png" class="catalog__image">
+				<ul class="catalog__list">
+					<li>Перила</li>
+					<li>Ограждения</li>
+					<li>Каркасы</li>
+				</ul>
+			</div>
+			<div class="catalog__block catalog__block-5">
+				<div class="catalog__title">Декор</div>
+				<img src="img/index-catalog/block-5.png" class="catalog__image">
+				<ul class="catalog__list">
+					<li>Кольца</li>
+					<li>Валюты</li>
+					<li>Вензеля</li>
+				</ul>
+			</div>
+			<div class="catalog__block catalog__block-6">
+				<div class="catalog__title">Интерьерный <br> декор</div>
+				<img src="img/index-catalog/block-6.png" class="catalog__image">
+			</div>
+			<div class="catalog__block catalog__block-7">
+				Пойти на хуй
+			</div>		
+		</div>
+	</div>
+
 	<?php require_once "layouts/_footer.php"; ?>
 
 </body>
