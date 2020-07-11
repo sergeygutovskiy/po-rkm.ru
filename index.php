@@ -34,6 +34,29 @@
 		</div>
 	</div>
 
+	<div class="main-container">
+		<ul class="stats">
+			<li class="stats__item">
+				<div class="stats__icon-background">
+					<img class="stats__icon" src="img/index-stats-icon-1.png">
+				</div>
+				Более 15 лет опыта
+			</li>
+			<li class="stats__item">
+				<div class="stats__icon-background">
+					<img class="stats__icon" src="img/index-stats-icon-2.png">
+				</div>
+				Индивидуальный подход
+			</li>
+			<li class="stats__item">
+				<div class="stats__icon-background">
+					<img class="stats__icon" src="img/index-stats-icon-3.png">
+				</div>
+				Гарантия качества
+			</li>
+		</ul>
+	</div>
+
 	<?php require_once "layouts/_footer.php"; ?>
 
 </body>
