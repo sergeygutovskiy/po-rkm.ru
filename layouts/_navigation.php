@@ -33,7 +33,7 @@
 				</a>
 				<ul class="navigation-dropdown">
 					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Ворота</a>
+						<a class="navigation-dropdown__link" href="gate.php">Ворота</a>
 					</li>
 					<li class="navigation-dropdown__item">
 						<a class="navigation-dropdown__link" href="">Ограждения</a>
