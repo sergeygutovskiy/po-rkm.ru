@@ -15,7 +15,7 @@
 		<div class="ndx-header__content">
 			<div class="ndx-header__leftnav">
 				<ul>
-  					<a href="gate.php"><li>Ворота</li></a>
+  					<a href="gate.php" style="font-weight:800; color:red"><li>Ворота</li></a>
 					<a href="#"><li>Ограждения</li></a>
 					<a href="#"><li>Козырьки</li></a>
 					<a href="#"><li>Лестницы</li></a>

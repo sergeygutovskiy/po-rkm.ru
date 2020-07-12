@@ -26,7 +26,7 @@ background: rgba(235, 236, 236, 0.8);
 .ndx-header__mainbaner{
 position: relative;  
 height: 322px;
-margin-left: 42px;
+margin-left: 30px;
 margin-top: 35px;
 background: rgba(225, 225, 225, 0.8);
 backdrop-filter: blur(14px);
@@ -66,8 +66,8 @@ font-size: 16px;
 .ndx-header__goodsblock{
     grid-gap: 55px 16px;
     display: grid; 
-    margin-left: 42px;
-    margin-top: 35px;
+    margin-left: 30px;
+    margin-top: 30px;
     grid-template-columns: repeat(4, 1fr);
     
     
