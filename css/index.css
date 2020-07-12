@@ -211,7 +211,7 @@
 .catalog__block-6 { grid-area: b-6; }
 .catalog__block-7 { grid-area: b-7; font-size: 14px; }
 .catalog__title {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 8px;
 	z-index: 10;
@@ -326,7 +326,8 @@
 }
 .services__item {
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 18px;
+	color: var(--main-black-color);
 }
 .services__icon {
 	position: relative;
