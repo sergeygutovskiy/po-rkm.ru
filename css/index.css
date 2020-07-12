@@ -398,6 +398,7 @@
 	width: 16px;
 	height: 16px;
 	margin-right: 8px;
+	outline: none;
 }
 .swiper-pagination-bullet-active {
 	background-color: #A6A6A6;

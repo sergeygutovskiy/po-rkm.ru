@@ -187,6 +187,7 @@
 		var mySwiper = new Swiper('.swiper-container', {			
 			pagination: {
 				el: '.swiper-pagination',
+				clickable: true
 			},
 
 			slidesPerView: 1,
@@ -197,7 +198,6 @@
 				prevEl: '.swiper-button-prev',
 			},
 
-			clickable: true,
 
 			breakpoints: {
 				0: { slidesPerView: 1 },
