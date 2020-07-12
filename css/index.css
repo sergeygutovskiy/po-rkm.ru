@@ -226,7 +226,7 @@
 .catalog__block-4 .catalog__image  { margin-right: 0; }
 .catalog__block-6 .catalog__image  { margin-right: 0; }
 .catalog__list {
-	font-size: 14px;
+	font-size: 16px;
 	color: var(--main-black-color);
 	flex-direction: column;
 	z-index: 10;
