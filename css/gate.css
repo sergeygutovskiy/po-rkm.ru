@@ -41,7 +41,7 @@ border-radius: 3px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+    border-radius: 2px;
 }
 .ndx-header__text{
     position: absolute;
@@ -56,7 +56,7 @@ border-radius: 3px;
 .ndx-header__text h2{
     font-weight: 800;
 font-size: 30px;
-letter-spacing: 0.08em;
+letter-spacing: 0.06em;
 color: #323231;
 }
 .ndx-header__text p{
