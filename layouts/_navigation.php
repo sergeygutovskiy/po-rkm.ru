@@ -12,11 +12,12 @@
 	</div>
 </div>
 <nav class="navigation">
-	<div class="navigation__content">		
-		<div class="navigation__title">
-			<img src="img/navigation-logo.png" alt="логотип" class="navigation__image">
-		</div>
-
+	<div class="navigation__content">
+		<a href="index.php">
+			<div class="navigation__title">
+				<img src="img/navigation-logo.png" alt="логотип" class="navigation__image">
+			</div>
+		</a>
 		<div class="navigation__hamburger">
 			<svg viewBox="0 0 800 600">
 				<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" class="top"></path>
