@@ -45,14 +45,14 @@ color: #323231;
 .s-contacts-page .scp-flex .scp-content .scp-hdr{
     display:block;
     color:#323231;
-    font-size:22px;
+    font-size:20px;
     line-height:25px;
     font-weight: 500;
     margin-bottom:30px;
 }
 .s-contacts-page .scp-flex .scp-content .scp-descr{
     color:#323231;  
-    font-size:18px;
+    font-size:16px;
     line-height:26.33px;
    
     display:block;

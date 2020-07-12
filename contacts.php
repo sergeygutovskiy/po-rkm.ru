@@ -48,7 +48,7 @@
 								<span class="scp-ul-black">9939892@mail.ru</span>
 							</li>
 							<li>
-								<span class="scp-ul-gray">График работы:</span>
+								<span class="scp-ul-gray">График работы</span>
 								<span class="scp-ul-black">
                                 9:00 - 18:00
 								</span>
