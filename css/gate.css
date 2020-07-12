@@ -90,31 +90,10 @@ color: #000000;
 		background-size: cover;
 		background-position-x: -223px;
 	}
-	.header__logo {
-		width: 140px;
-		margin-top: 20px;
-		margin-left: 20px;
-	}
-	.header__list {
-		padding-left: 20px;
-		padding-bottom: 20px;
-		font-size: 12px;
-		width: 240px;
-	}
-	.header__item {
-		margin-bottom: 6px;
-		margin-left: 12px;
-	}
-	.header__item::before { 
-		content: '';
-		position: absolute;
-		top: 6px;
-	    left: -12px;
-		display: inline-block;
-		width: 6px;
-		height: 6px;
-		background-color: var(--main-black-color);
-	}
+	.ndx-header__textcatalog{
+        padding: 10px;
+        max-width: 80%;
+    }
 
 }
 
@@ -239,8 +218,5 @@ color: #323231;
             position: absolute;
             width: 100%;
         }
-        .ndx-header__textcatalog{
-            padding: 10px;
-            max-width: 80%;
-        }
+        
 }
