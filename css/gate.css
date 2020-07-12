@@ -68,7 +68,7 @@ font-size: 16px;
     display: grid; 
     margin-left: 42px;
     margin-top: 35px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     
     
 }
@@ -103,7 +103,7 @@ font-size: 16px;
 .ndx-header__mainphoto{
     width: 100%;
    
-    height: 270px;
+    height: 200px;
     position: relative;
 }
 .ndx-header__mainphoto img{
