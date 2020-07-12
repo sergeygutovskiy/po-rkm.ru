@@ -231,7 +231,9 @@
 	flex-direction: column;
 	z-index: 10;
 }
-
+.catalog__list li{
+	padding-bottom: 2px;
+}
 
 
 @media screen and (max-width: 1328px)
