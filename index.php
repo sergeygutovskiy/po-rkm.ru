@@ -107,9 +107,31 @@
 				<img src="img/index-catalog/block-6.png" class="catalog__image">
 			</div>
 			<div class="catalog__block catalog__block-7">
-				Пойти на хуй
+				Пеейти в каталог
 			</div>		
 		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="main-title">Услуги</div>
+		<ul class="services">
+			<li class="services__item">
+				Реставрационные работы <br> по металлу и ковке
+				<i class="fal fa-chevron-right services__icon"></i>
+			</li>
+			<li class="services__item">
+				Ручная художественная <br> ковка
+				<i class="fal fa-chevron-right services__icon"></i>
+			</li>
+			<li class="services__item">
+				Литье чугуна <br> и алюминия
+				<i class="fal fa-chevron-right services__icon"></i>
+			</li>
+			<li class="services__item">
+				Производство <br> металлоконструкций
+				<i class="fal fa-chevron-right services__icon"></i>
+			</li>
+		</ul>
 	</div>
 
 	<?php require_once "layouts/_footer.php"; ?>

@@ -10,3 +10,34 @@
 	.main-container { padding: 0 12px; }
 
 }
+
+
+
+.main-title {
+	font-size: 32px;
+	font-weight: 800;
+	color: var(--main-black-color);
+	margin-top: 20px;
+	margin-bottom: 24px;
+	position: relative;
+}
+.main-title::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 22px;
+	left: 0;
+	background-color: #F3F4F6;
+	z-index: -1;
+}
+
+@media screen and (max-width: 425px) 
+{
+
+	.main-title {
+		font-weight: 28px;
+		margin-top: 16px;
+		margin-bottom: 18px;
+	}
+
+}

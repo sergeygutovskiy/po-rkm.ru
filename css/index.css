@@ -201,6 +201,7 @@
 	background-color: white;
 	height: 160px;
 	position: relative;
+	border-radius: 2px;
 }
 .catalog__block-1 { grid-area: b-1; }
 .catalog__block-2 { grid-area: b-2; }
@@ -208,12 +209,13 @@
 .catalog__block-4 { grid-area: b-4; }
 .catalog__block-5 { grid-area: b-5; }
 .catalog__block-6 { grid-area: b-6; }
-.catalog__block-7 { grid-area: b-7; }
+.catalog__block-7 { grid-area: b-7; font-size: 14px; }
 .catalog__title {
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 8px;
 	z-index: 10;
+	color: var(--main-black-color);
 }
 .catalog__image {
 	position: absolute;
@@ -236,11 +238,18 @@
 {
 	.catalog {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 50px;
 		grid-template-areas: "b-1 b-2" "b-3 b-4" "b-5 b-6" "b-7 .";margin-top: 20px;
 		
 		margin-top: 20px;
 	}
+
+	.catalog__block-7 {
+		padding-top: 16px;
+		padding-bottom: 16px;
+		height: auto;
+	}
+
 } 
 
 @media screen and (max-width: 980px)
@@ -264,7 +273,7 @@
 	.catalog {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 50px;
 		grid-template-areas: "b-1" "b-2" "b-3" "b-4" "b-5" "b-6" "b-7";
 	}
 
@@ -285,6 +294,11 @@
 		padding-left: 16px;
 	}
 
+	.catalog__block-7 {
+		height: auto;
+	}
+
+
 	.catalog__image { object-position: top; margin-right: 4px; height: 95%; }
 
 	.catalog__block-1 .catalog__image  { width: 55%; }
@@ -300,6 +314,53 @@
 
 	.catalog__list {
 		font-size: 12px;
+	}
+
+}
+
+
+
+.services {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.services__item {
+	font-weight: 600;
+	font-size: 20px;
+}
+.services__icon {
+	position: relative;
+	top: 3px;
+	margin-left: 16px;
+}
+
+@media screen and (max-width: 1328px)
+{
+
+	.services { margin-bottom: -20px; }
+	.services__item { width: 50%; margin-bottom: 20px; }
+	.services__item:nth-child(2),
+	.services__item:nth-child(4) { 
+		padding-left: 20px;	
+	}
+
+}
+
+@media screen and (max-width: 425px)
+{
+
+	.services { margin-bottom: 0; }
+	.services__item { width: 100%; font-size: 18px; }
+	.services__item:nth-child(2),
+	.services__item:nth-child(4) { 
+		padding-left: 0;
+	}
+	.services__item:last-child {
+		margin-bottom: 0;
+	}
+	.services__icon {
+		top: 2px;
+		margin-left: 8px;		
 	}
 
 }
