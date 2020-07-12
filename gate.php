@@ -30,18 +30,17 @@
 		</div>
 		<div class="ndx-header__right-block">
 		<div class="ndx-header__mainbaner">
-			<div class="ndx-header__bannerfon">
-				<img src="img/image26.png">
+		
+		<div class="header">
+			<div class="header__background"></div>
+			<div class="header__border">
+				<div class="ndx-header__textcatalog">
+					<h2>Ворота</h2>	
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum assumenda deleniti quasi, iusto corrupti consequuntur quisquam fugiat necessitatibus magnam explicabo.</p>
+				</div>
 			</div>
-			<div class="ndx-header__text">
-				<h2>Ворота</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint nostrum numquam praesentium quas illo placeat dolore hic odio sed?
-					<br>
-					<br>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, itaque.
-				</p>
-			</div>
+		</div>
+	
 		</div>
 		<div class="ndx-header__goodsblock">
 		
