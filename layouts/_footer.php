@@ -22,7 +22,7 @@
 						<a href="" class="footer__link">Каталог</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Ворота</a>
+						<a href="/gates.php" class="footer__link">Ворота</a>
 					</li>
 					<li class="footer__item">
 						<a href="" class="footer__link">Ограждения</a>
@@ -79,7 +79,7 @@
 						<a href="" class="footer__link">Галерея</a>
 					</li>
 					<li class="footer__item footer__title">
-						<a href="" class="footer__link">Контакты</a>
+						<a href="/contacts.php" class="footer__link">Контакты</a>
 					</li>
 				</ul>
 			</li>
