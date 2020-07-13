@@ -182,6 +182,47 @@
 		</button>
 	</div>
 
+	<div class="main-container">
+		<div class="main-title">Проекты</div>
+		<ul class="projects">
+			<li class="projects__item">
+				<img src="img/index-gallery/3.webp" class="projects__image">
+				<div class="projects__info">
+					<span class="projects__text">
+						Изготовление ворот, решеток, ограждений
+					</span>
+					<span class="projects__date">
+						6 июня, 2020 г.
+					</span>					
+				</div>
+			</li>
+			
+			<li class="projects__item">
+				<img src="img/index-gallery/3.webp" class="projects__image">
+				<div class="projects__info">
+					<span class="projects__text">
+						Изготовление ворот, решеток, ограждений
+					</span>
+					<span class="projects__date">
+						6 июня, 2020 г.
+					</span>					
+				</div>
+			</li>
+			
+			<li class="projects__item">
+				<img src="img/index-gallery/3.webp" class="projects__image">
+				<div class="projects__info">
+					<span class="projects__text">
+						Изготовление ворот, решеток, ограждений
+					</span>
+					<span class="projects__date">
+						6 июня, 2020 г.
+					</span>					
+				</div>
+			</li>
+		</ul>
+	</div>
+
 	<script type="text/javascript">
 	
 		var mySwiper = new Swiper('.swiper-container', {			
