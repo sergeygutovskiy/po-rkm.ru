@@ -10,6 +10,7 @@
 <body>
 
 	<?php require_once "layouts/_navigation.php"; ?>
+	<?php require_once "layouts/_callform.php"; ?>
 
 	<div class="ndx-header main-container">
 		<div class="ndx-header__content">
