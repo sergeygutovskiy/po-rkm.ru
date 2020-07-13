@@ -19,11 +19,12 @@
 
 <style>
     .popup-window{
-    
+    display: none;
     overflow:auto;
     position: fixed;
     z-index: 99997;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     text-align:center;
     background: rgba(0,0,0,0.7);
     top:0;
@@ -32,20 +33,24 @@
     right:0;
 }
 .info-box{
-    position:relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 99998; 
-    max-width: 440px;
-    min-height: 500px;
-    margin: 50% auto;
+    width: 95%;
+    max-width: 500px;
+    min-width: 320px;
+   
     text-align:left;
-    display:block;
+    
     padding: 20px;
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     -webkit-animation: info-top 0.35s ease-in-out;
     animation: info-top 0.35s ease-in-out;
-   
+    overflow: visible;
 }
 .inside-box{
     max-width: 320px;
@@ -77,17 +82,17 @@ function box_info(id,value){
     var $target = $("#info-"+id);    	
 	if(value == 'close'){
 	    $target.hide();
-	    $("html,body").css("overflow","auto");
+	    
 	} else {
             $target.show();
-	    $("html,body").css("overflow","hidden");
+	    
         }
 
 };
 $('.popup-window').on('click', function(e){
     if(!$(e.target).hasClass('info-box') && !$(e.target).parents('.info-box').length){
         $(this).hide();
-        $("html,body").css("overflow","auto");
+       
     }
 });
 </script>

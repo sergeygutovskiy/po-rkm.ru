@@ -4,7 +4,7 @@
 	<title>Ворота</title>
 	<?php require_once "layouts/_header.php"; ?>
 
-	<link rel="stylesheet" type="text/css" href="css/gate.css">
+	<link rel="stylesheet" type="text/css" href="css/gates.css">
 
 </head>
 <body>
