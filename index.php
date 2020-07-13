@@ -263,10 +263,12 @@
 			},
 
 			// Disable preloading of all images
-			preloadImages: false,
+			// preloadImages: false,
 			// Enable lazy loading
-			lazy: true,
-			watchSlidesVisibility: true 
+			// lazy: {
+			// 	loadOnTransitionStart: true
+			// },
+			// SlidesVisibility: true,
 		})
 
 	</script>
