@@ -17,8 +17,6 @@
 	font-size: 32px;
 	font-weight: 800;
 	color: var(--main-black-color);
-	margin-top: 20px;
-	margin-bottom: 24px;
 	position: relative;
 	letter-spacing: 0.06em;
 }
@@ -37,8 +35,6 @@
 
 	.main-title {
 		font-weight: 28px;
-		margin-top: 16px;
-		margin-bottom: 18px;
 	}
 
 }
