@@ -8,7 +8,7 @@
 			<i class="fas fa-phone-alt"></i>
 			<span>8 (921) 993-98-92</span>
 		</span>
-		<button class="navigation-contacts__button">Оставить заявку</button>
+		<button class="navigation-contacts__button" onclick='box_info(1);'>Оставить заявку</button>
 	</div>
 </div>
 <nav class="navigation">
@@ -100,7 +100,7 @@
 
 		</ul>
 
-		<button class="navigation__button">Оставить заявку</button>
+		<button class="navigation__button" onclick='box_info(1);'>Оставить заявку</button>
 	</div>
 </nav>
 
