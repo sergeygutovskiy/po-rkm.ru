@@ -148,28 +148,36 @@
 			<div class="gallery__container swiper-container">
 			    <div class="swiper-wrapper">
 					<div class="swiper-slide swiper-slide gallery__slide">
-						<img src="img/index-gallery/1.webp" class="gallery__image">
+						<img data-src="img/index-gallery/1.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
-						<img src="img/index-gallery/2.webp" class="gallery__image">
+						<img data-src="img/index-gallery/2.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
-						<img src="img/index-gallery/3.webp" class="gallery__image">
+						<img data-src="img/index-gallery/3.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
-						<img src="img/index-gallery/4.webp" class="gallery__image">
+						<img data-src="img/index-gallery/4.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
-						<img src="img/index-gallery/5.webp" class="gallery__image">
+						<img data-src="img/index-gallery/5.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
-						<img src="img/index-gallery/6.webp" class="gallery__image">
+						<img data-src="img/index-gallery/6.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
-						<img src="img/index-gallery/9.webp" class="gallery__image">
+						<img data-src="img/index-gallery/9.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<div class="swiper-slide gallery__slide">
-						<img src="img/index-gallery/8.webp" class="gallery__image">
+						<img data-src="img/index-gallery/8.webp" class="gallery__image swiper-lazy">
+						<div class="swiper-lazy-preloader"></div>
 					</div>
 			    </div>
 			</div>	
@@ -247,13 +255,18 @@
 				prevEl: '.swiper-button-prev',
 			},
 
-
 			breakpoints: {
 				0: { slidesPerView: 1 },
 				740: { slidesPerView: 2 },
 				1025: {slidesPerView: 3 },
 				1329: { slidesPerView: 4 }
-			}
+			},
+
+			// Disable preloading of all images
+			preloadImages: false,
+			// Enable lazy loading
+			lazy: true,
+			watchSlidesVisibility: true 
 		})
 
 	</script>
