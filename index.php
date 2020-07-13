@@ -113,7 +113,8 @@
 				<img src="img/index-catalog/block-6.png" class="catalog__image">
 			</div>
 			<div class="catalog__block catalog__block-7">
-				Пеейти в каталог
+				<span class="catalog__link">Пеейти в каталог</span>
+				<i class="fal fa-chevron-right catalog__icon"></i>
 			</div>		
 		</div>
 	</div>
@@ -176,9 +177,9 @@
 			<div class="swiper-button-next gallery__button gallery__button__next"></div>	
 		</div>
 	    <div class="swiper-pagination gallery__pagination"></div>
-	    <button class="gallery__link">
+		<button class="gallery__link">
 		    Перейти в галерею
-			<i class="fal fa-chevron-right services__icon"></i>
+			<i class="fal fa-chevron-right gallery__icon"></i>
 		</button>
 	</div>
 
@@ -186,6 +187,7 @@
 		<div class="main-title">Проекты</div>
 		<ul class="projects">
 			<li class="projects__item">
+				<div class="projects__fade"></div>
 				<img src="img/index-gallery/3.webp" class="projects__image">
 				<div class="projects__info">
 					<span class="projects__text">
@@ -198,6 +200,7 @@
 			</li>
 			
 			<li class="projects__item">
+				<div class="projects__fade"></div>
 				<img src="img/index-gallery/3.webp" class="projects__image">
 				<div class="projects__info">
 					<span class="projects__text">
@@ -210,6 +213,7 @@
 			</li>
 			
 			<li class="projects__item">
+				<div class="projects__fade"></div>
 				<img src="img/index-gallery/3.webp" class="projects__image">
 				<div class="projects__info">
 					<span class="projects__text">
@@ -221,6 +225,10 @@
 				</div>
 			</li>
 		</ul>
+	    <button class="projects__link">
+		    Перейти в проекты
+			<i class="fal fa-chevron-right services__icon"></i>
+		</button>
 	</div>
 
 	<script type="text/javascript">

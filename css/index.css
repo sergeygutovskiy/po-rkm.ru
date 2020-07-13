@@ -194,6 +194,7 @@
 	background-color: #F3F4F6;
 	margin-top: 40px;
 	padding: 16px;
+	margin-bottom: 40px;
 }
 .catalog__block {
 	padding-top: 44px;
@@ -209,7 +210,7 @@
 .catalog__block-4 { grid-area: b-4; }
 .catalog__block-5 { grid-area: b-5; }
 .catalog__block-6 { grid-area: b-6; }
-.catalog__block-7 { grid-area: b-7; font-size: 14px; }
+.catalog__block-7 { grid-area: b-7; font-size: 14px; display: flex; align-items: center; padding-top: 0; }
 .catalog__title {
 	font-size: 18px;
 	font-weight: 600;
@@ -234,6 +235,16 @@
 .catalog__list li{
 	padding-bottom: 2px;
 }
+.catalog__link {
+	width: 60%;
+	display: inline-block;
+}
+.catalog__icon {
+	position: relative;
+	top: -2px;
+	font-size: 26px;
+	color: #323231;
+}
 
 
 @media screen and (max-width: 1328px)
@@ -249,7 +260,17 @@
 	.catalog__block-7 {
 		padding-top: 16px;
 		padding-bottom: 16px;
+		padding-right: 18px;
 		height: auto;
+	}
+
+	.catalog__link {
+		width: 100%;
+	}
+	.catalog__icon {
+		position: relative;
+		top: -2px;
+		font-size: 26px;
 	}
 
 } 
@@ -289,6 +310,9 @@
 
 @media screen and (max-width: 425px)
 {
+	.catalog {
+		margin-bottom: 16px;
+	}
 
 	.catalog__block {
 		height: 100px;
@@ -318,6 +342,10 @@
 		font-size: 12px;
 	}
 
+	.catalog__icon {
+		top: 0;
+	}
+
 }
 
 
@@ -330,6 +358,7 @@
 	font-weight: 600;
 	font-size: 18px;
 	color: var(--main-black-color);
+	padding: 32px 0 40px 0;
 }
 .services__icon {
 	position: relative;
@@ -340,8 +369,7 @@
 @media screen and (max-width: 1328px)
 {
 
-	.services { margin-bottom: -20px; }
-	.services__item { width: 50%; margin-bottom: 20px; }
+	.services__item { width: 50%; }
 	.services__item:nth-child(2),
 	.services__item:nth-child(4) { 
 		padding-left: 20px;	
@@ -352,8 +380,13 @@
 @media screen and (max-width: 425px)
 {
 
-	.services { margin-bottom: 0; }
-	.services__item { width: 100%; font-size: 18px; }
+	.services { margin-bottom: 0; margin-bottom: 32px; }
+	.services__item { 
+		width: 100%; 
+		font-size: 18px; 
+		padding: 20px 0 0 0;
+		margin-bottom: 0;
+	}
 	.services__item:nth-child(2),
 	.services__item:nth-child(4) { 
 		padding-left: 0;
@@ -370,6 +403,7 @@
 
 
 .gallery {
+	margin-top: 32px;
 	position: relative;
 }
 .gallery__container {
@@ -384,7 +418,9 @@
 	text-align: center;	
 }
 .gallery__pagination {
-	margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	margin-top: 32px;
 	position: inherit;
 }
@@ -406,16 +442,24 @@
 .gallery__link {
 	margin: auto;
     display: block;
-    margin-top: 32px;
+    margin-top: 18px;
+    margin-bottom: 32px;
     width: 280px;
     padding: 16px 0;
     border: 1px solid #F3F4F6;
     font-size: 18px;	
+    border-radius: 2px;
+}
+.gallery__icon {
+	margin-left: 12px;
+	position: relative;
+	top: 2px;
 }
 
 @media screen and (max-width: 425px)
 {
 
+	.gallery {margin-top: 16px; }
 	.gallery__container { width: calc(100% - 40px * 2); }
 	.gallery__button::after { font-size: 32px; }	
 	.gallery__button__prev { left: 0; }
@@ -426,6 +470,9 @@
 		margin-top: 16px; 
 		width: calc(100% - 40px * 2); 
 		font-size: 16px; 
+	}
+	.gallery__icon {
+		top: 1px;
 	}
 
 }
@@ -440,6 +487,7 @@
 
 
 .projects {
+	margin-top: 32px;
 	margin-right: -16px;
 }
 .projects__item {
@@ -447,6 +495,15 @@
 	width: 33%;
 	height: 200px;
 	margin-right: 16px;
+}
+.projects__fade {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #323231;
+	opacity: 0.5;
 }
 .projects__info {
 	position: absolute;
@@ -459,6 +516,7 @@
 	display: block;
 	color: white;
 	margin-bottom: 4px;
+	font-weight: 400;
 }
 .projects__date {
 	display: block;
@@ -470,12 +528,41 @@
 	height: 100%;
 	object-fit: cover;
 }
+.projects__link {
+	margin: auto;
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 32px;
+    width: 280px;
+    padding: 16px 0;
+    border: 1px solid #F3F4F6;
+    font-size: 18px;	
+    border-radius: 2px;
+}
 
 @media screen and (max-width: 820px)
 {
 
-	.projects { flex-wrap: wrap; }
-	.projects__item { width: 100%; margin-bottom: 16px; }
-	.projects__text {font-size: 16px; }
+	.projects { 
+		flex-wrap: wrap; 
+		margin-right: 0; 
+		margin-bottom: -16px; 
+	}
+	.projects__item { 
+		width: 100%; 
+		margin-bottom: 16px; 
+		margin-right: 0;
+	}
+	.projects__text { font-size: 16px; }
+
+}
+
+@media screen and (max-width: 425px)
+{
+	.projects__link { 
+		margin-top: 16px; 
+		width: calc(100% - 40px * 2); 
+		font-size: 16px; 
+	}
 
 }
