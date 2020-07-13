@@ -36,6 +36,9 @@
 					<li class="footer__item">
 						<a href="" class="footer__link">Декор</a>
 					</li>
+					<li class="footer__item">
+						<a href="" class="footer__link">Интерьер</a>
+					</li>
 				</ul>
 			</li>
 			<li class="footer__col">
@@ -51,9 +54,6 @@
 					</li>
 					<li class="footer__item">
 						<a href="" class="footer__link">Литье</a>
-					</li>
-					<li class="footer__item">
-						<a href="" class="footer__link">Лестницы</a>
 					</li>
 					<li class="footer__item">
 						<a href="" class="footer__link">Металлоконструкции</a>

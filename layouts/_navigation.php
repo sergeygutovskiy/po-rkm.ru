@@ -48,6 +48,9 @@
 					<li class="navigation-dropdown__item">
 						<a class="navigation-dropdown__link" href="">Декор</a>
 					</li>
+					<li class="navigation-dropdown__item">
+						<a class="navigation-dropdown__link" href="">Интерьер</a>
+					</li>
 				</ul>
 			</li>
 
@@ -65,9 +68,6 @@
 					</li>
 					<li class="navigation-dropdown__item">
 						<a class="navigation-dropdown__link" href="">Литье</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Лестницы</a>
 					</li>
 					<li class="navigation-dropdown__item">
 						<a class="navigation-dropdown__link" href="">Металлоконструкции</a>
