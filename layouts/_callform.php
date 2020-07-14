@@ -2,6 +2,7 @@
   <div id='info-1' class='popup-window'>
     <div class='info-box'>
         <div class="inside-box">
+        <i class="fal fa-times"></i>
         <h2>Оставить заявку</h2>
         <span>Мы вам перезвоним</span>
         <form>
@@ -41,9 +42,8 @@
     width: 95%;
     max-width: 440px;
     min-width: 320px;
-    min-height: 450px;
+    min-height: 500px;
     text-align:left;
-    
     padding: 64px;
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
@@ -56,8 +56,14 @@
     max-width: 320px;
     margin: auto;
 }
+.fa-times{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 25px;
+}
 .info-box h2{
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 6px;
 }
 .info-box form{
@@ -67,7 +73,14 @@
     margin-top:-8px;
 }
 .info-box span{
-    margin-top:15px;
+    font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+font-weight: 300;
+color: #A6A6A6;
+
 }
 .info-box form input{
    
@@ -76,33 +89,28 @@
     height: 40px;
     background-color: #F9FAFC;
     padding-left: 12px;
-    
-    
-
-
     outline: none;
     color: #797979;
     font-weight: 300;
-font-size: 16px;
-line-height: 20px;
-
-
-
-color: #797979;
+    font-size: 16px;
+    line-height: 20px;
+    color: #797979;
 } 
 .info-box form textarea{
-display:block;
-width:100%;
-min-height: 70px;
-margin:0 auto;
-resize:vertical;
-outline:none;
-border:none;
-border-radius:2px;
-font-size:16px;
-padding-left: 12px;
-background-color: #F9FAFC;
-color: #797979;
+    display:block;
+    width:100%;
+    min-height: 70px;
+    margin:0 auto;
+    resize:vertical;
+    outline:none;
+    border:none;
+    border-radius:2px;
+    font-size:16px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-left: 12px;
+    background-color: #F9FAFC;
+    color: #797979;
 }
 .info-box button{
     width: 248px;
@@ -120,6 +128,10 @@ cursor: pointer;
 @media only screen and (max-width: 600px){
     .info-box{
         padding: 20px;
+        
+    }
+    .inside-box{
+        margin-top: 25px;
     }
 }
 </style>
@@ -143,4 +155,7 @@ $('.popup-window').on('click', function(e){
        
     }
 });
+
+
+
 </script>
