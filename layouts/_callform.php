@@ -93,13 +93,13 @@ color: #797979;
 .info-box form textarea{
 display:block;
 width:100%;
-
+min-height: 70px;
 margin:0 auto;
 resize:vertical;
 outline:none;
 border:none;
 border-radius:2px;
-font-size:18px;
+font-size:16px;
 padding-left: 12px;
 background-color: #F9FAFC;
 color: #797979;
