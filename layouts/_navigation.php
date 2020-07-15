@@ -2,22 +2,21 @@
 	<div class="navigation-contacts__content main-container">		
 		<span class="navigation-contacts__location">
 			<i class="fas fa-map-marker-alt"></i>
-			<span>Санкт-Петербург, ул. Калинина 13</span>
+			Санкт-Петербург, ул. Калинина 13
 		</span>
+
 		<span class="navigation-contacts__phone">
 			<i class="fas fa-phone-alt"></i>
-			<span>8 (921) 993-98-92</span>
+			<a href="">8 (921) 993-98-92</a>
 		</span>
-		<button class="navigation-contacts__button" onclick='box_info(1);'>Оставить заявку</button>
+		<button class="navigation-contacts__button">Оставить заявку</button>	
 	</div>
 </div>
+
 <nav class="navigation">
 	<div class="navigation__content">
-		<a href="index.php">
-			<div class="navigation__title">
-				<img src="img/navigation-logo.png" alt="логотип" class="navigation__image">
-			</div>
-		</a>
+		<img src="img/navigation-logo.png" alt="логотип" class="navigation__logo">
+	
 		<div class="navigation__hamburger">
 			<svg viewBox="0 0 800 600">
 				<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" class="top"></path>
@@ -30,49 +29,53 @@
 			<li class="navigation__item">
 				<a href="javascript:void(0);" class="navigation__link">
 					Каталог
-					<i class="far fa-angle-down navigation__arrow-down"></i>
+					<i class="far fa-angle-down navigation__arrow"></i>
 				</a>
-				<ul class="navigation-dropdown">
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="/gates.php">Ворота</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Ограждения</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Козырьки</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Лестницы</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Декор</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Интерьер</a>
-					</li>
-				</ul>
+				<div class="navigation-dropdown">
+					<ul class="navigation-dropdown__content">						
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="/gates.php">Ворота</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Ограждения</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Козырьки</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Лестницы</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Декор</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Интерьер</a>
+						</li>
+					</ul>
+				</div>
 			</li>
 
 			<li class="navigation__item">
 				<a href="javascript:void(0);" class="navigation__link">
 					Услуги
-					<i class="far fa-angle-down navigation__arrow-down"></i>
+					<i class="far fa-angle-down navigation__arrow"></i>
 				</a>
-				<ul class="navigation-dropdown">
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Реставрация</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Ковка</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Литье</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Металлоконструкции</a>
-					</li>
-				</ul>
+				<div class="navigation-dropdown">
+					<ul class="navigation-dropdown__content">
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Реставрация</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Ковка</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Литье</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Металлоконструкции</a>
+						</li>
+					</ul>
+				</div>
 			</li>
 
 			<li class="navigation__item">
@@ -82,16 +85,18 @@
 			<li class="navigation__item">
 				<a href="javascript:void(0);" class="navigation__link">
 					О компании
-					<i class="far fa-angle-down navigation__arrow-down"></i>
+					<i class="far fa-angle-down navigation__arrow"></i>
 				</a>
-				<ul class="navigation-dropdown">
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">О нас</a>
-					</li>
-					<li class="navigation-dropdown__item">
-						<a class="navigation-dropdown__link" href="">Проекты</a>
-					</li>
-				</ul>
+				<div class="navigation-dropdown">
+					<ul class="navigation-dropdown__content">
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">О нас</a>
+						</li>
+						<li class="navigation-dropdown__item">
+							<a class="navigation-dropdown__link" href="">Проекты</a>
+						</li>
+					</ul>
+				</div>
 			</li>
 
 			<li class="navigation__item">
@@ -100,7 +105,7 @@
 
 		</ul>
 
-		<button class="navigation__button" onclick='box_info(1);'>Оставить заявку</button>
+		<button class="navigation__button">Оставить заявку</button>
 	</div>
 </nav>
 
@@ -117,16 +122,14 @@
 		{
 			let arrow = $(this).children(".navigation__link").children(".far");
 
-			if (arrow.hasClass("fa-angle-down"))
+			if (!arrow.hasClass("navigation__arrow--active"))
 			{
 				$(this).children(".navigation-dropdown").addClass("navigation-dropdown--active");
-				arrow.removeClass("fa-angle-down");
-				arrow.addClass("fa-angle-up");
+				arrow.addClass("navigation__arrow--active");
 			}
 			else
 			{
-				arrow.addClass("fa-angle-down");
-				arrow.removeClass("fa-angle-up");
+				arrow.removeClass("navigation__arrow--active");
 				$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 			}
 		}
@@ -137,8 +140,7 @@
 		{
 			$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
 			let arrow = $(this).children(".navigation__link").children(".far");
-			arrow.addClass("fa-angle-down");
-			arrow.removeClass("fa-angle-up");
+			arrow.removeClass("navigation__arrow--active");
 		}
 	});
 
