@@ -20,13 +20,16 @@
 .footer__links { display: flex; }
 .footer__col:nth-child(1) { margin-right: 100px; }
 .footer__col:nth-child(3) { margin-right: 100px; }
-.footer__item { margin-bottom: 16px; text-transform: lowercase; }
+.footer__item { 
+	margin-bottom: 16px; 
+	text-transform: lowercase; 
+	font-size: 14px;
+}
 .footer__item:last-child { margin-bottom: 0; }
 .footer__title {
-	font-size: 14px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	letter-spacing: 8%;
+	letter-spacing: 0.08em;
 }
 
 
