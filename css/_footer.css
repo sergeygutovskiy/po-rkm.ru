@@ -3,7 +3,7 @@
 	color: white;
 	padding: 52px 0;
 	overflow: hidden;
-	margin-top: 52px;
+	margin-top: 32px;
 }
 .footer__content {
 	display: flex;
@@ -16,7 +16,8 @@
 	width: 18px; 
 	color: var(--main-gray-color);
 }
-.footer__list { flex-direction: column; }
+.footer__list { display: flex; flex-direction: column; }
+.footer__links {display: flex; }
 .footer__col:nth-child(1) { margin-right: 100px; }
 .footer__col:nth-child(3) { margin-right: 100px; }
 .footer__item { margin-bottom: 16px; text-transform: lowercase; }
@@ -39,6 +40,7 @@
 	.footer__mobile-info { display: block; margin-top: 40px; }
 	.footer__mobile-info p:last-child { margin-bottom: 0; }
 	.footer__links { 
+		display: flex;
 		justify-content: space-between; 
 		flex-wrap: wrap; 
 		margin-bottom: -32px;
