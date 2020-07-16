@@ -41,6 +41,9 @@ ul {
 	/*display: flex;*/
 }
 
-button { font-family: "Montserrat", sans-serif; }
+button   			  { font-family: "Montserrat", sans-serif; }
+input    			  { font-family: "Montserrat", sans-serif; }
+input::placeholder    { font-family: "Montserrat", sans-serif; }
+textarea 			  { font-family: "Montserrat", sans-serif; }
 /*button:active, button:focus { outline: none; }*/
 /*button::-moz-focus-inner { border: 0; }*/
