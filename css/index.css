@@ -215,6 +215,7 @@
 	display: flex; 
 	align-items: center; 
 	padding-top: 0; 
+	font-weight: 400;
 }
 
 .catalog__title {
@@ -247,8 +248,8 @@
 .catalog__link { width: 60%; display: inline-block; }
 
 .catalog__icon {
-	position: relative;
-	top: -2px;
+	position: absolute;
+	right: 18px;
 	font-size: 26px;
 	color: #323231;
 }
@@ -444,7 +445,7 @@
 .gallery__icon {
 	margin-left: 12px;
 	position: relative;
-	top: 2px;
+	top: 1px;
 }
 
 @media screen and (max-width: 425px)
@@ -506,8 +507,9 @@
 
 .projects__title {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 600;
 	margin-top: 8px;
+	color: #323231;
 }
 
 .projects__date {

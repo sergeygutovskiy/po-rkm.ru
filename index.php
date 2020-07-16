@@ -116,8 +116,8 @@
 				<img src="img/index-catalog/block-6.png" class="catalog__image">
 			</div>
 			<div class="catalog__block catalog__block-7">
-				<span class="catalog__link">Пеейти <br> в каталог</span>
-				<i class="fal fa-chevron-right catalog__icon"></i>
+				<span class="catalog__link">Перейти <br> в каталог</span>
+				<i class="far fa-chevron-right catalog__icon"></i>
 			</div>		
 		</div>
 	</div>
@@ -129,19 +129,19 @@
 		<ul class="services__list">
 			<li class="services__item">
 				Реставрационные работы <br> по металлу и ковке
-				<i class="fal fa-chevron-right services__icon"></i>
+				<i class="far fa-chevron-right services__icon"></i>
 			</li>
 			<li class="services__item">
 				Ручная художественная <br> ковка
-				<i class="fal fa-chevron-right services__icon"></i>
+				<i class="far fa-chevron-right services__icon"></i>
 			</li>
 			<li class="services__item">
 				Литье чугуна <br> и алюминия
-				<i class="fal fa-chevron-right services__icon"></i>
+				<i class="far fa-chevron-right services__icon"></i>
 			</li>
 			<li class="services__item">
 				Производство <br> металлоконструкций
-				<i class="fal fa-chevron-right services__icon"></i>
+				<i class="far fa-chevron-right services__icon"></i>
 			</li>
 		</ul>
 	</div>
@@ -251,7 +251,7 @@
 		</ul>
 	    <button class="projects__link">
 		    Перейти в проекты
-			<i class="fal fa-chevron-right services__icon"></i>
+			<i class="fal fa-chevron-right gallery__icon"></i>
 		</button>
 	</div>
 
