@@ -34,7 +34,7 @@
 				<div class="navigation-dropdown">
 					<ul class="navigation-dropdown__content">						
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="/gates.php">Ворота</a>
+							<a class="navigation-dropdown__link" href="gates.php">Ворота</a>
 						</li>
 						<li class="navigation-dropdown__item">
 							<a class="navigation-dropdown__link" href="">Ограждения</a>
@@ -100,7 +100,7 @@
 			</li>
 
 			<li class="navigation__item">
-				<a href="/contacts.php" class="navigation__link">Контакты</a>
+				<a href="contacts.php" class="navigation__link">Контакты</a>
 			</li>
 
 		</ul>

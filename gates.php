@@ -80,7 +80,7 @@
 						</div>
 						<div class="ndx-header__textaboutgoods">
 							<div class="ndx-header__namegoods">
-								<span>Название название</span>
+								<span>Название название Название название</span>
 							</div>
 							<div class="ndx-header__textabout">
 								Название
