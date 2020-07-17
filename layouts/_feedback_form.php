@@ -10,6 +10,11 @@
 
 		background-color: #323231;
 		opacity: 0.8;
+
+		display: none;
+	}
+	.feedback-form__background--active {
+		display: block;
 	}
 
 	.feedback-form {
@@ -21,6 +26,11 @@
 		padding: 52px;
 		padding-bottom: 32px;
 		background-color: white;
+	
+		display: none;
+	}
+	.feedback-form--active {
+		display: block;
 	}
 
 	.feedback-form__title {
@@ -174,8 +184,11 @@
 </style>
 
 <div class="feedback-form__background"></div>
+
 <form class="feedback-form">
-	<button class="feedback-form__close"><i class="fal fa-times"></i></button>
+	<button class="feedback-form__close" onclick="close_feedback_form()">
+		<i class="fal fa-times"></i>
+	</button>
 	<div class="feedback-form__title">Оформить заказ</div>
 	<div class="feedback-form__content">
 		<div class="feedback-form__left">
@@ -187,6 +200,22 @@
 			<textarea class="feedback-form__textarea" placeholder="Комментарий"></textarea>
 		</div>
 	</div>
-	<button class="feedback-form__button">Отправить</button>
+	<button type="button" class="feedback-form__button">Отправить</button>
 	<div class="feedback-form__bottom">РКМ | 2020</div>
 </form>
+
+<script type="text/javascript">
+	
+	function open_feedback_form() {
+		$(".feedback-form").addClass("feedback-form--active");
+		$(".feedback-form__background").addClass("feedback-form__background--active");
+	}
+
+	function close_feedback_form() {
+		event.preventDefault()
+
+		$(".feedback-form").removeClass("feedback-form--active");
+		$(".feedback-form__background").removeClass("feedback-form__background--active");
+	}
+
+</script>

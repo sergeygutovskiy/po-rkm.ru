@@ -20,29 +20,31 @@
 	<div class="gallery main-container">
 		<div class="main-title">Галерея</div>
 	</div>
-	<ul class="gallery__categories">
-		<li class="gallery__item">
-			<button class="gallery__category gallery__category--active">Все</button>
-		</li>
-		<li class="gallery__item">
-			<button class="gallery__category">Ворота</button>
-		</li>
-		<li class="gallery__item">
-			<button class="gallery__category">Ограждения</button>
-		</li>
-		<li class="gallery__item">
-			<button class="gallery__category">Козырьки</button>
-		</li>
-		<li class="gallery__item">
-			<button class="gallery__category">Лестницы</button>
-		</li>
-		<li class="gallery__item">
-			<button class="gallery__category">Декор</button>
-		</li>
-		<li class="gallery__item">
-			<button class="gallery__category">Интерьер</button>
-		</li>
-	</ul>
+	<div class="gallery__categories-container">
+		<ul class="gallery__categories">
+			<li class="gallery__item">
+				<button class="gallery__category gallery__category--active">Все</button>
+			</li>
+			<li class="gallery__item">
+				<button class="gallery__category">Ворота</button>
+			</li>
+			<li class="gallery__item">
+				<button class="gallery__category">Ограждения</button>
+			</li>
+			<li class="gallery__item">
+				<button class="gallery__category">Козырьки</button>
+			</li>
+			<li class="gallery__item">
+				<button class="gallery__category">Лестницы</button>
+			</li>
+			<li class="gallery__item">
+				<button class="gallery__category">Декор</button>
+			</li>
+			<li class="gallery__item">
+				<button class="gallery__category">Интерьер</button>
+			</li>
+		</ul>
+	</div>
 	
 	<div class="gallery__outside-container">
 		<div class="gallery__container">
