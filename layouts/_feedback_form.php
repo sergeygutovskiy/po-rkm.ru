@@ -26,6 +26,7 @@
 		padding: 52px;
 		padding-bottom: 32px;
 		background-color: white;
+		border-radius: 5px;
 	
 		display: none;
 	}
