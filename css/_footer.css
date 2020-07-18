@@ -25,7 +25,12 @@
 	text-transform: lowercase; 
 	font-size: 14px;
 }
+
 .footer__item:last-child { margin-bottom: 0; }
+.footer__item:not([class~="footer__no-link"]) .footer__link:hover {
+	text-decoration: underline;
+}
+
 .footer__title {
 	text-transform: uppercase;
 	margin-bottom: 20px;

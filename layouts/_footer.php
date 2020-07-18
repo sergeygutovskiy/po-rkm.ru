@@ -18,8 +18,8 @@
 		<ul class="footer__links">
 			<li class="footer__col">
 				<ul class="footer__list">
-					<li class="footer__item footer__title">
-						<a href="" class="footer__link">Каталог</a>
+					<li class="footer__item footer__title footer__no-link">
+						<span class="footer__link">Каталог</span>
 					</li>
 					<li class="footer__item">
 						<a href="/gates.php" class="footer__link">Ворота</a>
@@ -43,8 +43,8 @@
 			</li>
 			<li class="footer__col">
 				<ul class="footer__list">
-					<li class="footer__item footer__title">
-						<a href="" class="footer__link">Услуги</a>
+					<li class="footer__item footer__title footer__no-link">
+						<span class="footer__link">Услуги</span>
 					</li>
 					<li class="footer__item">
 						<a href="" class="footer__link">Реставрация</a>
@@ -62,8 +62,8 @@
 			</li>
 			<li class="footer__col">
 				<ul class="footer__list">
-					<li class="footer__item footer__title">
-						<a href="" class="footer__link">О компании</a>
+					<li class="footer__item footer__title footer__no-link">
+						<span class="footer__link">О компании</span>
 					</li>
 					<li class="footer__item">
 						<a href="" class="footer__link">О нас</a>

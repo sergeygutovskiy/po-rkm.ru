@@ -131,6 +131,12 @@
 	cursor: pointer;
     background-color: inherit;
 	border-radius: 20px;
+
+	transition: all 150ms linear;
+}
+.navigation__button:hover {
+	color: #323231;
+	background-color: white;
 }
 
 .navigation__hamburger {
