@@ -241,31 +241,89 @@
 	<div class="gallery-image-viewer">
 		<div class="gallery-image-viewer__background"></div>
 		<img class="gallery-image-viewer__image" src="">
+
+		<button class="gallery-image-viewer__button gallery-image-viewer__button--left" 
+		onclick="showPrevImage()">
+			<i class="fal fa-chevron-left"></i>
+		</button>
+		<button class="gallery-image-viewer__button gallery-image-viewer__button--right"
+		onclick="showNextImage()">
+			<i class="fal fa-chevron-right"></i>
+		</button>
+		<div class="gallery-image-viewer__counter">1 / 8</div>
 	</div>
 
 	<script type="text/javascript">
 		
-		// $(".gallery__image").on("click", function() {
-		// 	$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
-		// 	$(".gallery-image-viewer__image").attr("src", this.src);
-
-		// 	$("body").addClass("main-page-noscroll");
-		// });
+		var prevImage = null;
+		var nextImage = null;
+		var currentImage = null;
+		var imagesCount = $(".swiper-slide").length;
 
 		$(".swiper-slide").on("click", function() {
+
+			currentImage = $(this);
+			prevImage = $(this).prev();
+			nextImage = $(this).next();
+
+			// console.log($(".swiper-slide").index(nextImage));
+
+			$(".gallery-image-viewer__counter").text(
+				($(".swiper-slide").index(currentImage) + 1) + " / " + imagesCount
+			);
+
+			$(".gallery-image-viewer__button--left").show();
+			$(".gallery-image-viewer__button--right").show();
+
+			if (prevImage.length == 0) $(".gallery-image-viewer__button--left").hide();
+			else if (nextImage.length == 0) $(".gallery-image-viewer__button--right").hide();
+
 			$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
 			$(".gallery-image-viewer__image").attr("src", $(this).children("img").attr("src"));
 
 			$("body").addClass("main-page-noscroll");
 		});
-	
-	
+		
 		$(".gallery-image-viewer__background").on("click", function() {
 			$(".gallery-image-viewer").removeClass("gallery-image-viewer--active");
-
-			// $("html").removeClass("main-page-noscroll");
 			$("body").removeClass("main-page-noscroll");
 		});
+
+		function showPrevImage() {
+
+			$(".gallery-image-viewer__button--right").show();
+
+			nextImage = currentImage;
+			currentImage = prevImage;
+			prevImage = currentImage.prev();
+
+			$(".gallery-image-viewer__counter").text(
+				($(".swiper-slide").index(currentImage) + 1) + " / " + imagesCount
+			);
+
+			if (prevImage.length == 0) $(".gallery-image-viewer__button--left").hide();
+			else $(".gallery-image-viewer__button--left").show();
+
+			$(".gallery-image-viewer__image").attr("src", currentImage.children("img").attr("src"));
+		}
+
+		function showNextImage() {
+			
+			$(".gallery-image-viewer__button--left").show();
+
+			prevImage = currentImage;
+			currentImage = nextImage;
+			nextImage = currentImage.next();
+
+			$(".gallery-image-viewer__counter").text(
+				($(".swiper-slide").index(currentImage) + 1) + " / " + imagesCount
+			);
+
+			if (nextImage.length == 0) $(".gallery-image-viewer__button--right").hide();
+			else $(".gallery-image-viewer__button--right").show();
+
+			$(".gallery-image-viewer__image").attr("src", currentImage.children("img").attr("src"));
+		}
 
 	</script>
 
