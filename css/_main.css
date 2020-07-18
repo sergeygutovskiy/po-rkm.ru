@@ -22,6 +22,10 @@
 
 
 
+/**/
+
+
+
 .main-title {
 	position: relative;
 	font-size: 18px;
@@ -33,6 +37,7 @@
 	padding-left: 16px;
 	margin-top: 6px;
 }
+
 .main-title::before {
 	content: '';
 	position: absolute;
@@ -46,9 +51,48 @@
 
 @media screen and (max-width: 425px) 
 {
+}
 
-	.main-title {
-		font-weight: 28px;
-	}
 
+
+/**/
+
+
+
+.main-btn {
+	display: block;
+	margin: auto;
+	width: 220px;
+	padding: 16px 0;
+	border: 1px solid #F3F4F6;
+	border-radius: 2px;
+
+	font-size: 14px;
+	font-weight: 400;
+
+	transition: transform 100ms linear;
+}
+.main-btn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.main-btn i {
+	position: relative;
+	top: 1px;
+	margin-left: 12px;
+}
+
+@media screen and (max-width: 425px) 
+{
+	.main-btn { font-size: 16px; }
+}
+
+
+
+/**/
+
+
+.main-page-noscroll {
+	overflow: hidden;
 }

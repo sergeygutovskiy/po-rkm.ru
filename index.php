@@ -128,20 +128,28 @@
 	
 		<ul class="services__list">
 			<li class="services__item">
-				Реставрационные работы <br> по металлу и ковке
-				<i class="far fa-chevron-right services__icon"></i>
+				<a href="">
+					Реставрационные работы <br> по металлу и ковке
+					<i class="far fa-chevron-right services__icon"></i>
+				</a>
 			</li>
 			<li class="services__item">
-				Ручная художественная <br> ковка
-				<i class="far fa-chevron-right services__icon"></i>
+				<a href="">
+					Ручная художественная <br> ковка
+					<i class="far fa-chevron-right services__icon"></i>
+				</a>
 			</li>
 			<li class="services__item">
-				Литье чугуна <br> и алюминия
-				<i class="far fa-chevron-right services__icon"></i>
+				<a href="">
+					Литье чугуна <br> и алюминия
+					<i class="far fa-chevron-right services__icon"></i>
+				</a>
 			</li>
 			<li class="services__item">
-				Производство <br> металлоконструкций
-				<i class="far fa-chevron-right services__icon"></i>
+				<a href="">
+					Производство <br> металлоконструкций
+					<i class="far fa-chevron-right services__icon"></i>
+				</a>
 			</li>
 		</ul>
 	</div>
@@ -155,34 +163,42 @@
 			    <div class="swiper-wrapper">
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/1.webp" class="gallery__image">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/2.webp" class="gallery__image">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/3.webp" class="gallery__image">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/4.webp" class="gallery__image">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/5.webp" class="gallery__image">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/6.webp" class="gallery__image ">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/9.webp" class="gallery__image ">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide gallery__slide">
 						<img src="img/index-gallery/8.webp" class="gallery__image">
+						<div class="gallery__image-overlay"></div>
 						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 			    </div>
@@ -191,9 +207,9 @@
 			<div class="swiper-button-next gallery__button gallery__button__next"></div>	
 		</div>
 	    <div class="swiper-pagination gallery__pagination"></div>
-		<button class="gallery__link">
+		<button class="main-btn gallery__link">
 		    Перейти в галерею
-			<i class="fal fa-chevron-right gallery__icon"></i>
+			<i class="fal fa-chevron-right"></i>
 		</button>
 	</div>
 
@@ -221,11 +237,44 @@
 		})
 	</script>
 
+	<!-- gallery: image full screen viewer -->
+	<div class="gallery-image-viewer">
+		<div class="gallery-image-viewer__background"></div>
+		<img class="gallery-image-viewer__image" src="">
+	</div>
+
+	<script type="text/javascript">
+		
+		// $(".gallery__image").on("click", function() {
+		// 	$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
+		// 	$(".gallery-image-viewer__image").attr("src", this.src);
+
+		// 	$("body").addClass("main-page-noscroll");
+		// });
+
+		$(".swiper-slide").on("click", function() {
+			$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
+			$(".gallery-image-viewer__image").attr("src", $(this).children("img").attr("src"));
+
+			$("body").addClass("main-page-noscroll");
+		});
+	
+	
+		$(".gallery-image-viewer__background").on("click", function() {
+			$(".gallery-image-viewer").removeClass("gallery-image-viewer--active");
+
+			// $("html").removeClass("main-page-noscroll");
+			$("body").removeClass("main-page-noscroll");
+		});
+
+	</script>
+
 	<!-- projects -->
 	<div class="main-container projects">
 		<div class="main-title">Проекты</div>
 		<ul class="projects__container">
 			<li class="projects__item">
+				<div class="projects__image-background"></div>
 				<img src="img/index-gallery/3.webp" class="projects__image">
 				<span class="projects__title">
 					Изготовление ворот, решеток, ограждений
@@ -234,7 +283,8 @@
 			</li>
 
 			<li class="projects__item">
-				<img src="img/index-gallery/3.webp" class="projects__image">
+				<div class="projects__image-background"></div>
+				<img src="img/index-gallery/6.webp" class="projects__image">
 				<span class="projects__title">
 					Изготовление ворот, решеток
 				</span>
@@ -242,16 +292,17 @@
 			</li>
 			
 			<li class="projects__item">
-				<img src="img/index-gallery/3.webp" class="projects__image">
+				<div class="projects__image-background"></div>
+				<img src="img/index-gallery/10.webp" class="projects__image">
 				<span class="projects__title">
 					Изготовление ворот
 				</span>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</li>
 		</ul>
-	    <button class="projects__link">
-		    Перейти в проекты
-			<i class="fal fa-chevron-right gallery__icon"></i>
+		<button class="main-btn projects__link">
+			Перейти в проекты
+			<i class="fal fa-chevron-right"></i>
 		</button>
 	</div>
 
