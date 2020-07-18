@@ -37,7 +37,6 @@
 				<div class="header__border">
 					<div class="ndx-header__textcatalog">
 						<span>Ворота</span>	
-						<br>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum assumenda deleniti quasi, iusto corrupti consequuntur quisquam fugiat necessitatibus magnam explicabo.
 					</div>
 				</div>
