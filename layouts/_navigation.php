@@ -81,7 +81,7 @@
 			</li>
 
 			<li class="navigation__item">
-				<a href="" class="navigation__link">Галерея</a>
+				<a href="gallery.php" class="navigation__link">Галерея</a>
 			</li>
 
 			<li class="navigation__item">
@@ -95,7 +95,7 @@
 							<a class="navigation-dropdown__link" href="">О нас</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Проекты</a>
+							<a class="navigation-dropdown__link" href="projects.php">Проекты</a>
 						</li>
 					</ul>
 				</div>
@@ -149,3 +149,5 @@
 	});
 
 </script>
+
+<?php require_once "layouts/_feedback_form.php"; ?>
