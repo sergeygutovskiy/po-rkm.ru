@@ -1,6 +1,4 @@
-.gallery {
-	margin-top: 38px;
-}
+.gallery { margin-top: 38px; }
 
 .gallery__categories-container {
 	width: 1200px;
@@ -8,21 +6,14 @@
 	margin-top: 20px;
 }
 
-.gallery__categories {
-	display: flex;
+.gallery__categories { display: flex; }
 
-}
-
-.gallery__item {
-	margin-right: 8px;
-}
-.gallery__item:last-child {
-	margin-right: 0;
-}
+.gallery__item { margin-right: 8px; }
+.gallery__item:last-child { margin-right: 0; }
 
 .gallery__category {
 	color: #9A9A99;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 
 	padding: 8px 26px;
@@ -38,32 +29,19 @@
 
 @media screen and (max-width: 1200px)
 {
-
-	.gallery__categories-container {
-		width: 100%;
-		overflow: scroll;
-	}
+	.gallery__categories-container { width: 100%; overflow: scroll; }
 
 
-	.gallery__categories {
-		padding-right: 64px;
-		width: max-content;
-	}
+	.gallery__categories { padding-right: 64px; width: max-content; }
 
 	.gallery__item:first-child { margin-left: 64px; }
 }
 
 @media screen and (max-width: 425px)
 {
+	.gallery__categories-container::-webkit-scrollbar { display: none; }
 
-	.gallery__categories-container::-webkit-scrollbar {
-		display: none;
-	}
-
-	.gallery__categories {
-		padding-right: 12px;
-		width: max-content;
-	}
+	.gallery__categories { padding-right: 12px; width: max-content; }
 
 	.gallery__item:first-child { margin-left: 12px; }
 }
@@ -75,15 +53,11 @@
 
 
 
-.gallery__outside-container {
-	width: 1200px;
-	margin: auto;
-}
+.gallery__outside-container { width: 1200px; margin: auto; }
 
 .gallery__container {
 	display: flex;
 	flex-flow: row wrap;
-	/*width: 100%;*/
 
 	margin-top: 32px;
 	margin-right: -16px;
@@ -122,18 +96,12 @@
 
 @media screen and (max-width: 1000px)
 {
-	.gallery__image-block {
-		width: 25%;
-		flex: 0 1 calc(25% - 16px);
-	}
+	.gallery__image-block { width: 25%; flex: 0 1 calc(25% - 16px); }
 }
 
 @media screen and (max-width: 700px)
 {
-	.gallery__container {
-		justify-content: space-between;
-		width: 100%;
-	}
+	.gallery__container { justify-content: space-between; width: 100%; }
 
 	.gallery__image-block {
 		width: 33.3%;
@@ -144,22 +112,14 @@
 
 @media screen and (max-width: 500px)
 {
-	.gallery__image-block {
-		width: 50%;
-		flex: 0 1 calc(50% - 16px);
-	}
+	.gallery__image-block { width: 50%; flex: 0 1 calc(50% - 16px); }
 }
 
 @media screen and (max-width: 425px)
 {
-	.gallery__outside-container {
-		padding-left: 12px;
-		padding-right: 12px;
-	}
+	.gallery__outside-container { padding-left: 12px; padding-right: 12px; }
 
-	.gallery__container {
-		margin-right: 0;
-	}
+	.gallery__container { margin-right: 0; }
 
 	.gallery__image-block {
 		width: 10%;

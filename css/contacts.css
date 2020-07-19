@@ -1,3 +1,7 @@
+.contacts {
+    margin-top: 38px;
+}
+
 .s-contacts-page{
     padding-top:25px;
 }
@@ -8,7 +12,7 @@
     display:flex;
 }
 .s-contacts-page .scp-flex .scp-map{
-    min-height:536px;
+    /*min-height:536px;*/
     -webkit-flex-basis:53.5%;
     -ms-flex-preferred-size:53.5%;
     flex-basis:53.5%;
@@ -30,7 +34,7 @@
 font-style: normal;
 font-weight: 800;
 
-line-height: 44px;
+/*line-height: 44px;*/
 /* identical to box height */
 font-size: 32px;
 letter-spacing: 0.06em;
@@ -45,20 +49,21 @@ color: #323231;
 .s-contacts-page .scp-flex .scp-content .scp-hdr{
     display:block;
     color:#323231;
-    font-size:20px;
-    line-height:25px;
+    font-size:16px;
+    /*line-height:25px;*/
     font-weight: 500;
-    margin-bottom:30px;
+    margin-bottom: 20px;
 }
 .s-contacts-page .scp-flex .scp-content .scp-descr{
     color:#323231;  
-    font-size:16px;
-    line-height:26.33px;
-   
+    font-size:14px;
+    font-weight: 400;
+    /*line-height:26.33px;*/
+
     display:block;
-     letter-spacing:0.2px;
-     margin-bottom:25px;
-    }
+    letter-spacing:0.2px;
+    margin-bottom: 36px;
+}
 .s-contacts-page .scp-flex .scp-content .scp-ul{
     padding-left: 0px;
     padding-bottom: 0;
@@ -70,12 +75,12 @@ color: #323231;
     display:-webkit-flex;
     display:-ms-flexbox;
     display:flex;
-    margin-bottom:25px;
+    margin-bottom: 20px;
 }
 .s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-gray{
     color:#323231;
-    font-size:16px;
-    line-height:25px;
+    font-size:14px;
+    /*line-height:25px;*/
     font-weight: 500;
 
     
@@ -86,8 +91,8 @@ color: #323231;
 }
 .s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-black{
     color:#323231;
-    font-size:16px;
-    line-height:25px;
+    font-size:14px;
+    /*line-height:25px;*/
     font-weight: 280;
     max-width:280px;
 }
@@ -96,8 +101,8 @@ color: #323231;
     
     
     color: #323231;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    /*line-height: 25px;*/
     font-weight: 300;
 }
 
@@ -140,7 +145,7 @@ color: #323231;
     -webkit-flex-basis:100%;
     -ms-flex-preferred-size:100%;
     flex-basis:100%;
-    min-height:350px;
+    /*min-height:350px;*/
 }
 .s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-black{
     max-width:100%;
@@ -162,12 +167,12 @@ color: #323231;
 }
 .s-contacts-page .scp-flex .scp-content .scp-hdr{
     font-size:21px;
-    line-height:21px;
+    /*line-height:21px;*/
     margin-bottom:15px;
 }
 .s-contacts-page .scp-flex .scp-content .scp-descr{
     font-size:16px;
-    line-height:21px;
+    /*line-height:21px;*/
     margin-bottom:15px;
 }
 .s-contacts-page .scp-flex .scp-content .scp-ul li .scp-ul-gray{
@@ -180,14 +185,16 @@ color: #323231;
 }
 .s-contacts-page button{
     width: 248px;
-height: 50px;
-background: #F3F4F6;
-border-radius: 2px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 22px;
-border: none;
-cursor: pointer;
+    height: 50px;
+    margin-top: 48px;
+
+    background: #F3F4F6;
+    border-radius: 2px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    /*line-height: 22px;*/
+    border: none;
+    cursor: pointer;
 }
