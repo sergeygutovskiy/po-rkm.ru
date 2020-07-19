@@ -647,5 +647,6 @@
 
 	.gallery-image-viewer__image {
 		max-width: calc(100% -  12px * 2);
+		max-height: calc(100% - 80px * 2);
 	}
 }
