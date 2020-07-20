@@ -106,17 +106,27 @@
 		font-size: 14px;
 		font-weight: 400;
 		color: white;
-		border: none;
-
+		border: solid 1.5px #323231;
+		border-radius: 2px;
+		outline: none;
 
 		display: block;
-		border-radius: 2px;
 		background-color: #323231;
 		
 		padding: 10px 20px;
 		margin-top: 8px;
 		margin-left: auto;
+		
+		transition: all 150ms linear;
 	}
+	.feedback-form__button:hover {
+		background-color: white;
+		border: solid 1.5px black;
+		color: #323231;
+
+		cursor: pointer;
+	}
+
 
 	.feedback-form__bottom {
 		color: #323231;
@@ -134,6 +144,9 @@
 	    border: none;
 	    outline: none;
 	    background-color: inherit;
+	}
+	.feedback-form__close:hover {
+		cursor: pointer;
 	}
 
 	@media screen and (max-width: 728px)

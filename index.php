@@ -68,15 +68,15 @@
 	<!-- catalog -->
 	<div class="main-container">
 		<div class="catalog">
-			<div class="catalog__block catalog__block-1">
+			<a class="catalog__block catalog__block-1" href="">
 				<div class="catalog__title">Ворота</div>
 				<img src="img/index-catalog/block-1.png" class="catalog__image">
 				<ul class="catalog__list">
 					<li>Распашные</li>
 					<li>Откатные</li>
 				</ul>
-			</div>
-			<div class="catalog__block catalog__block-2">
+			</a>
+			<a class="catalog__block catalog__block-2" href="">
 				<div class="catalog__title">Ограждения</div>
 				<img src="img/index-catalog/block-2.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -84,16 +84,16 @@
 					<li>Уличные</li>
 					<li>Балконные</li>
 				</ul>
-			</div>
-			<div class="catalog__block catalog__block-3">
+			</a>
+			<a class="catalog__block catalog__block-3" href="">
 				<div class="catalog__title">Козырьки</div>
 				<img src="img/index-catalog/block-3.png" class="catalog__image">
 				<ul class="catalog__list">
 					<li>Подвесные</li>
 					<li>Двускатные</li>
 				</ul>
-			</div>
-			<div class="catalog__block catalog__block-4">
+			</a>
+			<a class="catalog__block catalog__block-4" href="">
 				<div class="catalog__title">Лестницы</div>
 				<img src="img/index-catalog/block-4.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -101,8 +101,8 @@
 					<li>Ограждения</li>
 					<li>Каркасы</li>
 				</ul>
-			</div>
-			<div class="catalog__block catalog__block-5">
+			</a> 
+			<a class="catalog__block catalog__block-5" href="">
 				<div class="catalog__title">Декор</div>
 				<img src="img/index-catalog/block-5.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -110,15 +110,15 @@
 					<li>Валюты</li>
 					<li>Вензеля</li>
 				</ul>
-			</div>
-			<div class="catalog__block catalog__block-6">
-				<div class="catalog__title">Интерьерный <br> декор</div>
+			</a>
+			<a class="catalog__block catalog__block-6" href="">
+				<div class="catalog__title">Интерьерный <br>декор</div>
 				<img src="img/index-catalog/block-6.png" class="catalog__image">
-			</div>
-			<div class="catalog__block catalog__block-7">
+			</a>
+			<a class="catalog__block catalog__block-7" href="">
 				<span class="catalog__link">Перейти <br> в каталог</span>
 				<i class="far fa-chevron-right catalog__icon"></i>
-			</div>		
+			</a>		
 		</div>
 	</div>
 
@@ -128,25 +128,25 @@
 	
 		<ul class="services__list">
 			<li class="services__item">
-				<a href="">
+				<a class="services__link" href="">
 					Реставрационные работы <br> по металлу и ковке
 					<i class="far fa-chevron-right services__icon"></i>
 				</a>
 			</li>
 			<li class="services__item">
-				<a href="">
+				<a class="services__link" href="">
 					Ручная художественная <br> ковка
 					<i class="far fa-chevron-right services__icon"></i>
 				</a>
 			</li>
 			<li class="services__item">
-				<a href="">
+				<a class="services__link" href="">
 					Литье чугуна <br> и алюминия
 					<i class="far fa-chevron-right services__icon"></i>
 				</a>
 			</li>
 			<li class="services__item">
-				<a href="">
+				<a class="services__link" href="">
 					Производство <br> металлоконструкций
 					<i class="far fa-chevron-right services__icon"></i>
 				</a>

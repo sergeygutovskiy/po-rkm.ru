@@ -206,8 +206,10 @@
 	transition: transform 100ms linear;
 }
 .catalog__block:hover {
-	cursor: pointer;
 	transform: scale(1.05);
+}
+.catalog__block:hover .catalog__title {
+	text-decoration: underline;
 }
 
 .catalog__block-1 { grid-area: b-1; }
@@ -351,6 +353,8 @@
 	display: flex;
 	justify-content: space-between; 
 	flex-wrap: wrap; 
+
+	padding-right: 32px;
 }
 
 .services__item {
@@ -362,19 +366,37 @@
 	transition: font-weight 100ms linear;
 }
 .services__item:hover {
-	cursor: pointer;
 	text-decoration: underline;
+}
+.services__item:hover .services__icon {
+	margin-left: 21px;
+}
+
+.services__link {
+	position: relative;
 }
 
 .services__icon {
-	position: relative;
-	top: 3px;
+	position: absolute;
+	margin-top: 3px;
 	margin-left: 16px;
+
+	transition: margin-left 100ms linear;
 }
 
 @media screen and (max-width: 1200px)
 {
-	.services__item { width: 50%; }
+	.services__item { 
+		width: 50%;
+		padding: 20px 0 0 16px;
+	}
+
+	.services__list {
+		padding-bottom: 20px;
+
+		margin-right: 0;
+	}
+
 }
 
 @media screen and (max-width: 425px)

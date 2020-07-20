@@ -154,6 +154,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	transition: opacity 200ms linear;
+}
+.main-products__image-background span:hover {
+	text-decoration: underline;
 }
 
 .main-products__image-container:hover .main-products__image-background {
@@ -177,8 +182,12 @@
 	margin-top: 16px;
 	margin-bottom: 8px;
 	font-size: 14px;
+	font-weight: 400;
 	letter-spacing: 0.06em;
 	color: #323231;
+}
+.main-products__title:hover {
+	text-decoration: underline;
 }
 
 .main-products__subtitle {
