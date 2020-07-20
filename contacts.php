@@ -47,7 +47,10 @@
 								<span class="scp-ul-gray">Проезд</span>
 								<span class="scp-ul-black">
                                 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-									<button>Связаться с нами</button>
+									<a class="main-btn contacts__link" href="">
+									    Связаться с нами
+										<i class="fal fa-chevron-right"></i>
+									</a>
 								</span>
 							</li>
 						</ul>

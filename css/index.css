@@ -515,21 +515,36 @@
 
 .projects { margin-top: 32px; }
 
-.projects__container { display: flex; margin-top: 32px; }
+.projects__container { 
+	display: flex;
+	margin-top: 32px; 
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
 
 .projects__item {
 	position: relative;
-	width: 33%;
-	margin-right: 16px;
 	display: flex;
 	flex-direction: column;
 } 
-.projects__item:last-child { margin-right: 0; }
+
+.projects__image-container {
+	width: 100%;
+	position: relative;
+}
+
+.projects__image-container::after {
+	content: "";
+	display: block;
+	padding-bottom: 50%;
+}
 
 .projects__image-background {
 	position: absolute;
 	width: 100%;
-	height: 200px;
+	height: 100%;
 	background-color: #323231;
 	opacity: 0.3;
 
@@ -541,8 +556,9 @@
 }
 
 .projects__image {
+	position: absolute;
 	width: 100%;
-	height: 200px;
+	height: 100%;
 	object-fit: cover;
 }
 

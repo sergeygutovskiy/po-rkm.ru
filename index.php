@@ -199,10 +199,10 @@
 			<div class="swiper-button-next gallery__button gallery__button__next"></div>	
 		</div>
 	    <div class="swiper-pagination gallery__pagination"></div>
-		<button class="main-btn gallery__link">
+		<a class="main-btn gallery__link" href="">
 		    Перейти в галерею
 			<i class="fal fa-chevron-right"></i>
-		</button>
+		</a>
 	</div>
 
 	<script type="text/javascript">
@@ -323,37 +323,45 @@
 	<div class="main-container projects">
 		<div class="main-title">Проекты</div>
 		<ul class="projects__container">
+
 			<li class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/3.webp" class="projects__image">
-				<span class="projects__title">
+				<div class="projects__image-container">
+					<img src="img/index-gallery/3.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
 					Изготовление ворот, решеток, ограждений
-				</span>
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</li>
 
 			<li class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/6.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот, решеток
-				</span>
+				<div class="projects__image-container">
+					<img src="img/index-gallery/8.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
+					Изготовление вороn
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</li>
-			
+
 			<li class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/10.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот
-				</span>
+				<div class="projects__image-container">
+					<img src="img/index-gallery/1.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
+					Изготовление решеток				
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</li>
+
 		</ul>
-		<button class="main-btn projects__link">
+		<a class="main-btn projects__link" href="">
 			Перейти в проекты
 			<i class="fal fa-chevron-right"></i>
-		</button>
+		</a>
 	</div>
 
 	<?php require_once "layouts/_footer.php"; ?>

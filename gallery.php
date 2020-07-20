@@ -50,27 +50,35 @@
 		<div class="gallery__container">
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/1.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/2.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/3.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/4.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/5.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/6.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/7.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/8.webp" class="gallery__image">
+				<div class="gallery__image-overlay"></div>
 			</div>
 		</div>
 	</div>

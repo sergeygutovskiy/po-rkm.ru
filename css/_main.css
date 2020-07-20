@@ -72,11 +72,14 @@
 	margin: auto;
 	width: 220px;
 	padding: 16px 0;
+
 	border: 1px solid #F3F4F6;
 	border-radius: 2px;
+	background-color: #F3F4F6;
 
 	font-size: 14px;
 	font-weight: 400;
+	text-align: center;
 
 	transition: transform 100ms linear;
 }

@@ -43,6 +43,7 @@
 	object-fit: cover;
 
 	opacity: 0;
+	transition: opacity 350ms linear;
 }
 .product__image--active {
 	opacity: 1;
@@ -167,6 +168,13 @@
 	margin-top: 32px;
 	padding: 16px 0;
 	width: 200px;
+
+	transition: transform 100ms linear;
+}
+
+.product__button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
 .product__text {

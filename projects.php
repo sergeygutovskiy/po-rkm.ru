@@ -21,54 +21,62 @@
 		<div class="main-title">Проекты</div>
 
 		<div class="projects">
+			
 			<div class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/3.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот, решеток, ограждений
-				</span>
+				<div class="projects__image-container">
+					<img src="img/index-gallery/1.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
+					Изготовление решеток				
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</div>
+
 			<div class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/3.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот
-				</span>
+				<div class="projects__image-container">
+					<img src="img/index-gallery/4.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
+					Изготовление решеток				
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</div>
+
 			<div class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/3.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот, решеток, ограждений
-				</span>
+				<div class="projects__image-container">
+					<img src="img/index-gallery/7.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
+					Изготовление решеток				
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</div>
+
 			<div class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/3.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот, решеток, ограждений
-				</span>
+				<div class="projects__image-container">
+					<img src="img/index-gallery/2.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
+					Изготовление решеток решеток решеток решеток			
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</div>
+
 			<div class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/3.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот, решеток, ограждений
-				</span>
+				<div class="projects__image-container">
+					<img src="img/index-gallery/2.webp" class="projects__image">
+					<a class="projects__image-background" href=""></a>
+				</div>
+				<a class="projects__title" href="">
+					Изготовление решеток				
+				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</div>
-			<div class="projects__item">
-				<div class="projects__image-background"></div>
-				<img src="img/index-gallery/3.webp" class="projects__image">
-				<span class="projects__title">
-					Изготовление ворот, решеток, ограждений
-				</span>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</div>
+
 		</div>
 	</div>
 
