@@ -65,7 +65,7 @@
 .header__border {
     position: absolute;
     top: -1px;
-    left: 0;
+    left: -1px;
     width: 100%;
     height: 101%;
     background-image: url(../img/gates-header-border.png);
@@ -90,14 +90,71 @@
     line-height: 18px;
 }
 
+@media screen and (max-width: 1130px)
+{
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+    	padding-left: 0;
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 910px)
+{
+	.main-products__container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.header__border {
+		left: 0;
+		background-size: cover;
+	}
+} 
+
+@media screen and (max-width: 750px)
+{
+	.header__border {
+		background-image: none;
+		background-color: #F2F3F5;
+		padding-bottom: 21px;
+		padding-right: 32px;
+
+		position: relative;
+		width: 100%;
+		height: 100%;		
+	}
+
+	.header__background {
+		display: none;
+	}
+
+	.header {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	.main-products__container {
+		grid-template-columns: 1fr 1fr;
+	}	
+} 
+
 @media screen and (max-width: 425px) 
 {
-    .header { height: 280px; margin-top: 16px; }    
-    
-    .header__background { background-size: cover; }
+	.flex-container { 
+		margin-top: 16px;
+	}
 
-    .header__border {
-        background-size: cover;
-        background-position-x: -40px;
-    }
+	.header__border { 
+		padding: 16px;
+	}
+
+	.main-products__container {
+		grid-template-columns: 1fr;
+		margin-top: 12px;
+	}
 }
