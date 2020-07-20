@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Index</title>
+	<title>Товар</title>
 	<?php require_once "layouts/_header.php"; ?>
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -219,68 +219,66 @@
 		<div class="other-products">
 			<div class="main-title">Похожие товары</div>
 			
-			<div class="other-products__container">
+			<div class="main-products__container">
 				
-				<div class="other-products__item">
-					<div class="other-products__image-container">
-						<img class="other-products__image" src="img\image26.png">
-						<div class="other-products__image-background"><div>Подробнее</div></div>
+				<div class="main-products__item">
+					<div class="main-products__image-container">
+						<img class="main-products__image" src="img/index-gallery/1.webp">
+						<div class="main-products__image-background"><div>Подробнее</div></div>
 					</div>
-					<span class="other-products__title">
-						Название название название название название
+					<span class="main-products__title">
+						Название название
 					</span>
-					<span class="other-products__subtitle">название</span>
-					<span class="other-products__price">от 1500 ₽</span>
+					<span class="main-products__subtitle">название</span>
+					<span class="main-products__price">от 1500 ₽</span>
 				</div>
 
-				<div class="other-products__item">
-					<div class="other-products__image-container">
-						<img class="other-products__image" src="img/index-gallery/3.webp">
-						<div class="other-products__image-background"><div>Подробнее</div></div>
+				<div class="main-products__item">
+					<div class="main-products__image-container">
+						<img class="main-products__image" src="img/index-gallery/2.webp">
+						<div class="main-products__image-background"><div>Подробнее</div></div>
 					</div>
-					<span class="other-products__title">Название название название</span>
-					<span class="other-products__subtitle">название</span>
-					<span class="other-products__price">от 1500 ₽</span>
-				</div>
-	
-				<div class="other-products__item">
-					<div class="other-products__image-container">
-						<img class="other-products__image" src="img/index-gallery/6.webp">
-						<div class="other-products__image-background"><div>Подробнее</div></div>
-					</div>
-					<span class="other-products__title">Название название название</span>
-					<span class="other-products__subtitle">название</span>
-					<span class="other-products__price">от 1500 ₽</span>
+					<span class="main-products__title">
+						Название название название название
+					</span>
+					<span class="main-products__subtitle">название</span>
+					<span class="main-products__price">от 1500 ₽</span>
 				</div>
 
-				<div class="other-products__item">
-					<div class="other-products__image-container">
-						<img class="other-products__image" src="img/index-gallery/10.webp">
-						<div class="other-products__image-background"><div>Подробнее</div></div>
+				<div class="main-products__item">
+					<div class="main-products__image-container">
+						<img class="main-products__image" src="img/index-gallery/10.webp">
+						<div class="main-products__image-background"><div>Подробнее</div></div>
 					</div>
-					<span class="other-products__title">Название название название</span>
-					<span class="other-products__subtitle">название</span>
-					<span class="other-products__price">от 1500 ₽</span>
-				</div>
-	
-				<div class="other-products__item">
-					<div class="other-products__image-container">
-						<img class="other-products__image" src="img\image26.png">
-						<div class="other-products__image-background"><div>Подробнее</div></div>
-					</div>
-					<span class="other-products__title">Название название название</span>
-					<span class="other-products__subtitle">название</span>
-					<span class="other-products__price">от 1500 ₽</span>
+					<span class="main-products__title">
+						Название название
+					</span>
+					<span class="main-products__subtitle">название</span>
+					<span class="main-products__price">от 1500 ₽</span>
 				</div>
 
-				<div class="other-products__item">
-					<div class="other-products__image-container">
-						<img class="other-products__image" src="img\image26.png">
-						<div class="other-products__image-background"><div>Подробнее</div></div>
+				<div class="main-products__item">
+					<div class="main-products__image-container">
+						<img class="main-products__image" src="img/index-gallery/6.webp">
+						<div class="main-products__image-background"><div>Подробнее</div></div>
 					</div>
-					<span class="other-products__title">Название название название</span>
-					<span class="other-products__subtitle">название</span>
-					<span class="other-products__price">от 1500 ₽</span>
+					<span class="main-products__title">
+						Название название
+					</span>
+					<span class="main-products__subtitle">название</span>
+					<span class="main-products__price">от 1500 ₽</span>
+				</div>
+
+				<div class="main-products__item">
+					<div class="main-products__image-container">
+						<img class="main-products__image" src="img/index-gallery/8.webp">
+						<div class="main-products__image-background"><div>Подробнее</div></div>
+					</div>
+					<span class="main-products__title">
+						Название название
+					</span>
+					<span class="main-products__subtitle">название</span>
+					<span class="main-products__price">от 1500 ₽</span>
 				</div>
 
 			</div>

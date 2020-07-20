@@ -164,42 +164,34 @@
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/1.webp" class="gallery__image">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/2.webp" class="gallery__image">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/3.webp" class="gallery__image">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/4.webp" class="gallery__image">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/5.webp" class="gallery__image">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/6.webp" class="gallery__image ">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/9.webp" class="gallery__image ">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 					<div class="swiper-slide gallery__slide">
 						<img src="img/index-gallery/8.webp" class="gallery__image">
 						<div class="gallery__image-overlay"></div>
-						<!-- <div class="swiper-lazy-preloader"></div> -->
 					</div>
 			    </div>
 			</div>	
@@ -230,9 +222,9 @@
 
 			breakpoints: {
 				0: { slidesPerView: 1 },
-				740: { slidesPerView: 2 },
-				1025: {slidesPerView: 3 },
-				1329: { slidesPerView: 4 }
+				600: { slidesPerView: 2 },
+				750: {slidesPerView: 3 },
+				1000: { slidesPerView: 4 }
 			}
 		})
 	</script>

@@ -189,7 +189,7 @@ svg:not(:root) { overflow: hidden; }
 		width: 100%;
 		padding-left: 64px;
 		padding-right: 64px;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 }
 
@@ -208,7 +208,11 @@ svg:not(:root) { overflow: hidden; }
 
 @media screen and (max-width: 900px) 
 {
-	.navigation__content { padding: 5px 0; flex-wrap: wrap; }
+	.navigation__content { 
+		padding: 5px 0; 
+		flex-wrap: wrap; 
+		overflow: hidden;
+	}
 	
 	.navigation__logo { margin-left: 64px; }
 

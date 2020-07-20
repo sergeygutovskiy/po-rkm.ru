@@ -122,7 +122,7 @@
 	});
 
 	$(".navigation__item").click(function() {
-		if ($(window).width() <= 980)
+		if ($(window).width() <= 900)
 		{
 			let arrow = $(this).children(".navigation__link").children(".far");
 
