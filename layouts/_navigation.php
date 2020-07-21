@@ -41,19 +41,19 @@
 							<a class="navigation-dropdown__link" href="gates.php">Ворота</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Ограждения</a>
+							<a class="navigation-dropdown__link" href="fences.php">Ограждения</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Козырьки</a>
+							<a class="navigation-dropdown__link" href="aprons.php">Козырьки</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Лестницы</a>
+							<a class="navigation-dropdown__link" href="stairs.php">Лестницы</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Декор</a>
+							<a class="navigation-dropdown__link" href="decoration.php">Декор</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Интерьер</a>
+							<a class="navigation-dropdown__link" href="interior.php">Интерьер</a>
 						</li>
 					</ul>
 				</div>

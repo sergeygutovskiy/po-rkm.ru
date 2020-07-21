@@ -17,9 +17,26 @@
 		display: block;
 	}
 
-	.feedback-form {
+	.feedback-form__container {
 		position: fixed;
-		left: calc(50% - 300px);
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 110;
+
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+	.feedback-form__container--active {
+		display: flex;
+	}
+
+	.feedback-form {
+		/*position: fixed;*/
+		/*left: calc(50% - 300px);*/
+		position: relative;
 		z-index: 100;
 
 		width: 600px;
@@ -28,11 +45,11 @@
 		background-color: white;
 		border-radius: 5px;
 	
-		display: none;
+		/*display: none;*/
 	}
-	.feedback-form--active {
+/*	.feedback-form--active {
 		display: block;
-	}
+	}*/
 
 	.feedback-form__title {
 		text-align: center;
@@ -153,7 +170,7 @@
 	{
 		.feedback-form {
 			width: calc(100% - 64px * 2);
-			left: calc(50% - (100% - 64px * 2) / 2);
+			/*left: calc(50% - (100% - 64px * 2) / 2);*/
 		}		
 	}
 
@@ -162,7 +179,7 @@
 
 		.feedback-form {
 			width: calc(100% - 12px * 2);
-			left: calc(50% - (100% - 12px * 2) / 2);
+			/*left: calc(50% - (100% - 12px * 2) / 2);*/
 		
 			padding-left: 32px;
 			padding-right: 32px;
@@ -187,48 +204,47 @@
 
 	@media screen and (max-width: 320px)
 	{
-
-		.feedback-form__close {
-		    right: 8px;
-		    top: 8px;
-		}
-
+		.feedback-form__close { right: 8px; top: 8px; }
 	}
 
 </style>
 
 <div class="feedback-form__background"></div>
 
-<form class="feedback-form">
-	<button class="feedback-form__close" onclick="close_feedback_form()">
-		<i class="fal fa-times"></i>
-	</button>
-	<div class="feedback-form__title">Оформить заказ</div>
-	<div class="feedback-form__content">
-		<div class="feedback-form__left">
-			<input type="text" class="feedback-form__input" placeholder="Имя">
-			<input type="text" class="feedback-form__input" placeholder="Почта">
-			<input type="text" class="feedback-form__input" placeholder="Телефон">
+<div class="feedback-form__container">
+	
+	<form class="feedback-form">
+		<button class="feedback-form__close" onclick="close_feedback_form()">
+			<i class="fal fa-times"></i>
+		</button>
+		<div class="feedback-form__title">Оформить заказ</div>
+		<div class="feedback-form__content">
+			<div class="feedback-form__left">
+				<input type="text" class="feedback-form__input" placeholder="Имя">
+				<input type="text" class="feedback-form__input" placeholder="Почта">
+				<input type="text" class="feedback-form__input" placeholder="Телефон">
+			</div>
+			<div class="feedback-form__right">
+				<textarea class="feedback-form__textarea" placeholder="Комментарий"></textarea>
+			</div>
 		</div>
-		<div class="feedback-form__right">
-			<textarea class="feedback-form__textarea" placeholder="Комментарий"></textarea>
-		</div>
-	</div>
-	<button type="button" class="feedback-form__button">Отправить</button>
-	<div class="feedback-form__bottom">РКМ | 2020</div>
-</form>
+		<button type="button" class="feedback-form__button">Отправить</button>
+		<div class="feedback-form__bottom">РКМ | 2020</div>
+	</form>
+
+</div>
 
 <script type="text/javascript">
 	
 	function open_feedback_form() {
-		$(".feedback-form").addClass("feedback-form--active");
+		$(".feedback-form__container").addClass("feedback-form__container--active");
 		$(".feedback-form__background").addClass("feedback-form__background--active");
 	}
 
 	function close_feedback_form() {
 		event.preventDefault()
 
-		$(".feedback-form").removeClass("feedback-form--active");
+		$(".feedback-form__container").removeClass("feedback-form__container--active");
 		$(".feedback-form__background").removeClass("feedback-form__background--active");
 	}
 

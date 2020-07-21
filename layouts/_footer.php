@@ -25,19 +25,19 @@
 						<a href="gates.php" class="footer__link">Ворота</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Ограждения</a>
+						<a href="fences.php" class="footer__link">Ограждения</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Козырьки</a>
+						<a href="aprons.php" class="footer__link">Козырьки</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Лестницы</a>
+						<a href="stairs.php" class="footer__link">Лестницы</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Декор</a>
+						<a href="decoration.php" class="footer__link">Декор</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Интерьер</a>
+						<a href="interior.php" class="footer__link">Интерьер</a>
 					</li>
 				</ul>
 			</li>

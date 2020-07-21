@@ -68,7 +68,7 @@
 	<!-- catalog -->
 	<div class="main-container">
 		<div class="catalog">
-			<a class="catalog__block catalog__block-1" href="">
+			<a class="catalog__block catalog__block-1" href="gates.php">
 				<div class="catalog__title">Ворота</div>
 				<img src="img/index-catalog/block-1.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -76,7 +76,7 @@
 					<li>Откатные</li>
 				</ul>
 			</a>
-			<a class="catalog__block catalog__block-2" href="">
+			<a class="catalog__block catalog__block-2" href="fences.php">
 				<div class="catalog__title">Ограждения</div>
 				<img src="img/index-catalog/block-2.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -85,7 +85,7 @@
 					<li>Балконные</li>
 				</ul>
 			</a>
-			<a class="catalog__block catalog__block-3" href="">
+			<a class="catalog__block catalog__block-3" href="aprons.php">
 				<div class="catalog__title">Козырьки</div>
 				<img src="img/index-catalog/block-3.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -93,7 +93,7 @@
 					<li>Двускатные</li>
 				</ul>
 			</a>
-			<a class="catalog__block catalog__block-4" href="">
+			<a class="catalog__block catalog__block-4" href="stairs.php">
 				<div class="catalog__title">Лестницы</div>
 				<img src="img/index-catalog/block-4.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -102,7 +102,7 @@
 					<li>Каркасы</li>
 				</ul>
 			</a> 
-			<a class="catalog__block catalog__block-5" href="">
+			<a class="catalog__block catalog__block-5" href="decoration.php">
 				<div class="catalog__title">Декор</div>
 				<img src="img/index-catalog/block-5.png" class="catalog__image">
 				<ul class="catalog__list">
@@ -111,12 +111,14 @@
 					<li>Вензеля</li>
 				</ul>
 			</a>
-			<a class="catalog__block catalog__block-6" href="">
+			<a class="catalog__block catalog__block-6" href="interior.php">
 				<div class="catalog__title">Интерьерный <br>декор</div>
 				<img src="img/index-catalog/block-6.png" class="catalog__image">
 			</a>
-			<a class="catalog__block catalog__block-7" href="">
-				<span class="catalog__link">Перейти <br> в каталог</span>
+			<a class="catalog__block catalog__block-7" href="gates.php">
+				<span class="catalog__link">
+					Перейти <br> в каталог
+				</span>
 				<i class="far fa-chevron-right catalog__icon"></i>
 			</a>		
 		</div>
@@ -199,7 +201,7 @@
 			<div class="swiper-button-next gallery__button gallery__button__next"></div>	
 		</div>
 	    <div class="swiper-pagination gallery__pagination"></div>
-		<a class="main-btn gallery__link" href="">
+		<a class="main-btn gallery__link" href="gallery.php">
 		    Перейти в галерею
 			<i class="fal fa-chevron-right"></i>
 		</a>
@@ -232,7 +234,17 @@
 	<!-- gallery: image full screen viewer -->
 	<div class="gallery-image-viewer">
 		<div class="gallery-image-viewer__background"></div>
-		<img class="gallery-image-viewer__image" src="">
+		<!-- <img class="gallery-image-viewer__image" src=""> -->
+		<div class="gallery-image-viewer__container">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/1.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/2.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/3.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/4.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/5.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/6.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/9.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/8.webp">
+		</div>
 
 		<button class="gallery-image-viewer__button gallery-image-viewer__button--left" 
 		onclick="showPrevImage()">
@@ -245,7 +257,7 @@
 		<div class="gallery-image-viewer__counter">1 / 8</div>
 	</div>
 
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript">
 		
 		var prevImage = null;
 		var nextImage = null;
@@ -317,6 +329,111 @@
 			$(".gallery-image-viewer__image").attr("src", currentImage.children("img").attr("src"));
 		}
 
+	</script> -->
+
+	<script type="text/javascript">
+		
+		var imagesCount = $(".gallery__slide").length;
+		var elem = null;
+		var elemIndex = 0;
+
+		function resetFullScreenContainer() {
+			imagesCount = $(".gallery__slide").length;
+			elem = null;
+			elemIndex = 0;			
+		}
+
+		$(".gallery__slide").on("click", function() {
+
+			elem = $(this);
+			elemIndex = $(".gallery__slide").index(elem);
+
+			$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
+			$("body").addClass("main-page-noscroll");
+
+			$(".gallery-image-viewer__button--left").show();
+			$(".gallery-image-viewer__button--right").show();
+
+			if (elemIndex == 0) $(".gallery-image-viewer__button--left").hide();
+			else if (elemIndex == imagesCount - 1) $(".gallery-image-viewer__button--right").hide();
+
+			$(".gallery-image-viewer__counter").text(
+				elemIndex + 1 + " / " + imagesCount
+			);
+
+			var fullScreenImage = $(".gallery-image-viewer__image").eq(elemIndex);
+
+			fullScreenImage
+				.addClass("gallery-image-viewer__image--active");			
+			fullScreenImage
+				.css("left", "calc(50% - " + fullScreenImage.css("width") + " / 2)");
+			fullScreenImage
+				.css("top", "calc(50% - " + fullScreenImage.css("height") + " / 2)");
+		});
+
+		function showPrevImage() {
+			$(".gallery-image-viewer__image").eq(elemIndex)
+				.removeClass("gallery-image-viewer__image--active");	
+
+			$(".gallery-image-viewer__button--right").show();
+
+			elemIndex--;
+			if (elemIndex == 0) $(".gallery-image-viewer__button--left").hide();
+
+			$(".gallery-image-viewer__counter").text(
+				elemIndex + 1 + " / " + imagesCount
+			);
+
+			var fullScreenImage = $(".gallery-image-viewer__image").eq(elemIndex);
+
+			fullScreenImage
+				.addClass("gallery-image-viewer__image--active");			
+			fullScreenImage
+				.css("left", "calc(50% - " + fullScreenImage.css("width") + " / 2)");
+			fullScreenImage
+				.css("top", "calc(50% - " + fullScreenImage.css("height") + " / 2)");
+		}
+
+		function showNextImage() {
+			$(".gallery-image-viewer__image").eq(elemIndex)
+				.removeClass("gallery-image-viewer__image--active");	
+
+			$(".gallery-image-viewer__button--left").show();
+
+			elemIndex++;
+			if (elemIndex == imagesCount - 1) $(".gallery-image-viewer__button--right").hide();
+
+			$(".gallery-image-viewer__counter").text(
+				elemIndex + 1 + " / " + imagesCount
+			);
+
+			var fullScreenImage = $(".gallery-image-viewer__image").eq(elemIndex);
+
+			fullScreenImage
+				.addClass("gallery-image-viewer__image--active");			
+			fullScreenImage
+				.css("left", "calc(50% - " + fullScreenImage.css("width") + " / 2)");
+			fullScreenImage
+				.css("top", "calc(50% - " + fullScreenImage.css("height") + " / 2)");
+		}
+
+		$(".gallery-image-viewer__background").on("click", function() {
+			$(".gallery-image-viewer")
+				.removeClass("gallery-image-viewer--active");
+			$(".gallery-image-viewer__image").eq(elemIndex)
+				.removeClass("gallery-image-viewer__image--active");	
+			$("body").removeClass("main-page-noscroll");
+		});
+
+		window.onresize = function() {
+			var fullScreenImage = $(".gallery-image-viewer__image--active");
+	
+			fullScreenImage
+				.css("left", "calc(50% - " + fullScreenImage.css("width") + " / 2)");
+			fullScreenImage
+				.css("top", "calc(50% - " + fullScreenImage.css("height") + " / 2)");
+		};
+
 	</script>
 
 	<!-- projects -->
@@ -327,9 +444,9 @@
 			<li class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/3.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление ворот, решеток, ограждений
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
@@ -338,9 +455,9 @@
 			<li class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/8.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление вороn
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
@@ -349,16 +466,16 @@
 			<li class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/1.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
 			</li>
 
 		</ul>
-		<a class="main-btn projects__link" href="">
+		<a class="main-btn projects__link" href="projects.php">
 			Перейти в проекты
 			<i class="fal fa-chevron-right"></i>
 		</a>
