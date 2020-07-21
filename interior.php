@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ворота</title>
+	<title>Интерьер</title>
 	
 	<?php require_once "layouts/_header.php"; ?>
 
@@ -16,7 +16,7 @@
 		<div class="left-container">
 			<ul class="menu">
 				<li class="menu__item">
-					<a class="menu__link menu__link--active" href="gates.php">Ворота</a>
+					<a class="menu__link" href="gates.php">Ворота</a>
 				</li>
 				<li class="menu__item">
 					<a class="menu__link" href="fences.php">Ограждения</a>
@@ -31,7 +31,7 @@
 					<a class="menu__link" href="decoration.php">Декор</a>
 				</li>
 				<li class="menu__item">
-					<a class="menu__link" href="interior.php">Интерьер</a>
+					<a class="menu__link menu__link--active" href="interior.php">Интерьер</a>
 				</li>
 			</ul>
 		</div>
@@ -40,18 +40,15 @@
 			<div class="header">
 				<div class="header__background"></div>
 				<div class="header__border">
-					<span class="header__title">Ворота</span>
+					<span class="header__title">Интерьер</span>
 					
 					<div class="header__text">
-						Производство кованых ворот и ворот с кованым декором. Типовые решения и <br>изготовление на заказ. Полный цикл производства: изготовление и монтаж.
+						Изготовление интерьерного декора. Кованые предметы интерьера: <br>
+						кованые часы, зеркала, вешалки, панно, подставки. Изготовление кованых <br>
+						предметов интерьера на заказ. Художественная интерьерная ковка в стиле лофт, <br>
+						модерн, ар-деко. 
 						<p></p>
-						<ul>
-							<li>- Распашные ворота </li>
-							<li>- Откатные ворота </li>
-							<li>- Автоматические ворота</li>
-						</ul>
-						<br>
-						Выберите готовое решение из каталога или закажите индивидуальный проект.
+						Выберите в каталоге готовое изделие на ваш вкус.
 					</div>
 				</div>
 			</div>

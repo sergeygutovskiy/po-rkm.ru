@@ -17,7 +17,9 @@
 
 <nav class="navigation">
 	<div class="navigation__content">
-		<img src="img/navigation-logo.png" alt="логотип" class="navigation__logo">
+		<a href="index.php" class="navigation__main-page-link">
+			<img src="img/navigation-logo.png" alt="логотип" class="navigation__logo">
+		</a>
 	
 		<div class="navigation__hamburger">
 			<svg viewBox="0 0 800 600">
@@ -147,6 +149,42 @@
 			arrow.removeClass("navigation__arrow--active");
 		}
 	});
+
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+	var prevScrollpos = window.pageYOffset;
+	
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+
+		if (prevScrollpos > currentScrollPos) 
+		{
+			if (currentScrollPos <= 44)
+			{
+				$(".navigation").removeClass("navigation--fixed");
+				$(".navigation").css("top", 44 - currentScrollPos + "px");
+			}
+			else
+			{
+				$(".navigation").addClass("navigation--fixed");
+				$(".navigation").css("top", "0");
+			}
+		} 
+		else 
+		{
+			if (currentScrollPos <= 44)
+			{
+				$(".navigation").removeClass("navigation--fixed");
+				$(".navigation").css("top", 44 - currentScrollPos + "px");
+			}
+			else
+			{
+				$(".navigation").addClass("navigation--fixed");
+				$(".navigation").css("top", "-52px");
+			}
+		}
+
+		prevScrollpos = currentScrollPos;
+	}
 
 </script>
 

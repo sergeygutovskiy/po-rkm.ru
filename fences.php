@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ворота</title>
+	<title>Ограждения</title>
 	
 	<?php require_once "layouts/_header.php"; ?>
 
@@ -16,10 +16,10 @@
 		<div class="left-container">
 			<ul class="menu">
 				<li class="menu__item">
-					<a class="menu__link menu__link--active" href="gates.php">Ворота</a>
+					<a class="menu__link" href="gates.php">Ворота</a>
 				</li>
 				<li class="menu__item">
-					<a class="menu__link" href="fences.php">Ограждения</a>
+					<a class="menu__link menu__link--active" href="fences.php">Ограждения</a>
 				</li>
 				<li class="menu__item">
 					<a class="menu__link" href="aprons.php">Козырьки</a>
@@ -40,18 +40,18 @@
 			<div class="header">
 				<div class="header__background"></div>
 				<div class="header__border">
-					<span class="header__title">Ворота</span>
+					<span class="header__title">Ограждения</span>
 					
 					<div class="header__text">
-						Производство кованых ворот и ворот с кованым декором. Типовые решения и <br>изготовление на заказ. Полный цикл производства: изготовление и монтаж.
-						<p></p>
-						<ul>
-							<li>- Распашные ворота </li>
-							<li>- Откатные ворота </li>
-							<li>- Автоматические ворота</li>
-						</ul>
+						Производство кованых и чугунных ограждений, ограждений с кованым и 
 						<br>
-						Выберите готовое решение из каталога или закажите индивидуальный проект.
+						литым чугунным декором. Изготовление ограждения по вашим эскизам и чертежам. 
+						<br>
+						Полный цикл производства, включая монтаж. 
+						<p></p>
+						Уличные , газонные, декоративные интерьерные и балконные ограждения.
+						<p></p>
+						Выберете готовое решение из каталога или закажите индивидуальный проект.
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ворота</title>
+	<title>Козырьки</title>
 	
 	<?php require_once "layouts/_header.php"; ?>
 
@@ -16,13 +16,13 @@
 		<div class="left-container">
 			<ul class="menu">
 				<li class="menu__item">
-					<a class="menu__link menu__link--active" href="gates.php">Ворота</a>
+					<a class="menu__link" href="gates.php">Ворота</a>
 				</li>
 				<li class="menu__item">
 					<a class="menu__link" href="fences.php">Ограждения</a>
 				</li>
 				<li class="menu__item">
-					<a class="menu__link" href="aprons.php">Козырьки</a>
+					<a class="menu__link menu__link--active" href="aprons.php">Козырьки</a>
 				</li>
 				<li class="menu__item">
 					<a class="menu__link" href="stairs.php">Лестницы</a>
@@ -40,17 +40,15 @@
 			<div class="header">
 				<div class="header__background"></div>
 				<div class="header__border">
-					<span class="header__title">Ворота</span>
+					<span class="header__title">Козырьки</span>
 					
 					<div class="header__text">
-						Производство кованых ворот и ворот с кованым декором. Типовые решения и <br>изготовление на заказ. Полный цикл производства: изготовление и монтаж.
+						Производство козырьков и навесов различного типа для частных и <br> общественных зданий. Производство каркасных козырьков, производство <br>кованых козырьков и козырьков с коваными элементами декора. Типовые <br> решения или изготовление по проекту заказчика.
 						<p></p>
-						<ul>
-							<li>- Распашные ворота </li>
-							<li>- Откатные ворота </li>
-							<li>- Автоматические ворота</li>
-						</ul>
-						<br>
+						Подвесные, консольные, самонесущие козырьки, козырьки на опорах. 
+						<br> 
+						Односкатные, двускатные, многоскатные, арочные козырьки.
+						<p></p>
 						Выберите готовое решение из каталога или закажите индивидуальный проект.
 					</div>
 				</div>
@@ -98,8 +96,8 @@
 					</a>
 					<span class="main-products__subtitle">название</span>
 					<span class="main-products__price">от 1500 ₽</span>
-				</div>
-
+				</div>	
+				
 			</div>
 		</div>
 	</div>
