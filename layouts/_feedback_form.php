@@ -32,7 +32,7 @@
 	.feedback-form__container--active {
 		display: flex;
 	}
-
+	
 	.feedback-form {
 		/*position: fixed;*/
 		/*left: calc(50% - 300px);*/
@@ -45,11 +45,7 @@
 		background-color: white;
 		border-radius: 5px;
 	
-		/*display: none;*/
 	}
-/*	.feedback-form--active {
-		display: block;
-	}*/
 
 	.feedback-form__title {
 		text-align: center;
@@ -247,5 +243,10 @@
 		$(".feedback-form__container").removeClass("feedback-form__container--active");
 		$(".feedback-form__background").removeClass("feedback-form__background--active");
 	}
+
+	$(".feedback-form__container").on("click", () => { 
+		close_feedback_form(); 
+		console.log(1);
+	});
 
 </script>

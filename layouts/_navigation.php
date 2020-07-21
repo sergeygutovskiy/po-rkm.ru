@@ -117,74 +117,78 @@
 
 <script type="text/javascript">
 	
-	$('.navigation__hamburger').on('click', function(e) {
-		e.preventDefault();
-	    $(".navigation__list").toggleClass("navigation__list--active");
-		$('.navigation__hamburger').toggleClass("navigation__hamburger--active");
-	});
+	$(() => {
 
-	$(".navigation__item").click(function() {
-		if ($(window).width() <= 900)
-		{
-			let arrow = $(this).children(".navigation__link").children(".far");
+		$('.navigation__hamburger').on('click', function(e) {
+			e.preventDefault();
+		    $(".navigation__list").toggleClass("navigation__list--active");
+			$('.navigation__hamburger').toggleClass("navigation__hamburger--active");
+		});
 
-			if (!arrow.hasClass("navigation__arrow--active"))
+		$(".navigation__item").click(function() {
+			if ($(window).width() <= 900)
 			{
-				$(this).children(".navigation-dropdown").addClass("navigation-dropdown--active");
-				arrow.addClass("navigation__arrow--active");
+				let arrow = $(this).children(".navigation__link").children(".far");
+
+				if (!arrow.hasClass("navigation__arrow--active"))
+				{
+					$(this).children(".navigation-dropdown").addClass("navigation-dropdown--active");
+					arrow.addClass("navigation__arrow--active");
+				}
+				else
+				{
+					arrow.removeClass("navigation__arrow--active");
+					$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
+				}
 			}
-			else
+		});
+
+		$(".navigation__item").mouseleave(function() {
+			if ($(window).width() <= 980)
 			{
-				arrow.removeClass("navigation__arrow--active");
 				$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
+				let arrow = $(this).children(".navigation__link").children(".far");
+				arrow.removeClass("navigation__arrow--active");
 			}
+		});
+
+		/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+		var prevScrollpos = window.pageYOffset;
+		
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+
+			if (prevScrollpos > currentScrollPos) 
+			{
+				if (currentScrollPos <= 44)
+				{
+					$(".navigation").removeClass("navigation--fixed");
+					$(".navigation").css("top", 44 - currentScrollPos + "px");
+				}
+				else
+				{
+					$(".navigation").addClass("navigation--fixed");
+					$(".navigation").css("top", "0");
+				}
+			} 
+			else 
+			{
+				if (currentScrollPos <= 44)
+				{
+					$(".navigation").removeClass("navigation--fixed");
+					$(".navigation").css("top", 44 - currentScrollPos + "px");
+				}
+				else
+				{
+					$(".navigation").addClass("navigation--fixed");
+					$(".navigation").css("top", "-52px");
+				}
+			}
+
+			prevScrollpos = currentScrollPos;
 		}
+
 	});
-
-	$(".navigation__item").mouseleave(function() {
-		if ($(window).width() <= 980)
-		{
-			$(this).children(".navigation-dropdown").removeClass("navigation-dropdown--active");
-			let arrow = $(this).children(".navigation__link").children(".far");
-			arrow.removeClass("navigation__arrow--active");
-		}
-	});
-
-	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-	var prevScrollpos = window.pageYOffset;
-	
-	window.onscroll = function() {
-		var currentScrollPos = window.pageYOffset;
-
-		if (prevScrollpos > currentScrollPos) 
-		{
-			if (currentScrollPos <= 44)
-			{
-				$(".navigation").removeClass("navigation--fixed");
-				$(".navigation").css("top", 44 - currentScrollPos + "px");
-			}
-			else
-			{
-				$(".navigation").addClass("navigation--fixed");
-				$(".navigation").css("top", "0");
-			}
-		} 
-		else 
-		{
-			if (currentScrollPos <= 44)
-			{
-				$(".navigation").removeClass("navigation--fixed");
-				$(".navigation").css("top", 44 - currentScrollPos + "px");
-			}
-			else
-			{
-				$(".navigation").addClass("navigation--fixed");
-				$(".navigation").css("top", "-52px");
-			}
-		}
-
-		prevScrollpos = currentScrollPos;
-	}
 
 </script>
 
