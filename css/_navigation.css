@@ -3,7 +3,6 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	/*height: 37px;*/
 	height: 44px;
 
 	z-index: 10;
@@ -44,18 +43,15 @@
 
 .navigation {
 	position: fixed;
-	/*top: 37px;*/
 	top: 44px;
 	left: 0;
 	width: 100%;
-	/*background-color: #141413;*/
 	background-color: #1E1E1D;
-	box-shadow: 0 9px 10px -4px rgba(0,0,0,0.2);
+	box-shadow: 0 9px 10px -4px rgba(0, 0, 0, 0.2);
 
 	z-index: 10;
-	/*transition: top 300ms linear;*/
 }
-.navigation--fixed { transition: top 200ms linear; }
+.navigation--fixed { transition: top .2s linear; }
 
 .navigation__content {
 	display: flex;
@@ -69,7 +65,7 @@
 
 .navigation__main-page-link { display: flex; width: 120px; }
 
-.navigation__logo {  width: 100%; height: 100%; }
+.navigation__logo { width: 100%; height: 100%; }
 
 .navigation__item { position: relative; margin-right: 36px; }
 .navigation__item:last-child { margin-right: 0; }
@@ -78,7 +74,6 @@
 
 .navigation__link {
 	font-size: 18px;
-	/*font-weight: 500;*/
 	font-weight: 400;
 	color: white;
 
@@ -91,7 +86,7 @@
 	position: relative;
 	left: 4px;
 	top: 2px;
-	transition: transform 300ms linear;
+	transition: transform .3s linear;
 }
 .navigation__arrow--active { transform: rotate(-180deg); }
 
@@ -126,7 +121,6 @@
 
 .navigation__button {
     font-size: 18px;
-    /*font-weight: 500;*/
     font-weight: 400;
     color: white;
     padding: 5.5px 18px; 
@@ -137,7 +131,7 @@
     background-color: inherit;
 	border-radius: 20px;
 
-	transition: all 150ms linear;
+	transition: all .15s linear;
 }
 .navigation__button:hover { color: #323231; background-color: white; }
 
@@ -165,8 +159,8 @@ svg:not(:root) { overflow: hidden; }
     stroke-dashoffset: 0; 
     stroke-linecap: round; 
     stroke-width: 40px;
-    transition: stroke-dashoffset 400ms cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, 
-    	stroke-dasharray 400ms cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+    transition: stroke-dashoffset .4s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, 
+    	stroke-dasharray .4s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
 }
 
 .navigation__hamburger path.middle { stroke-dasharray: 240px, 240px; }
@@ -189,9 +183,8 @@ svg:not(:root) { overflow: hidden; }
 {
 	.navigation__content {
 		width: 100%;
-		/*padding-left: 64px;*/
-		/*padding-right: 64px;*/
-		/*overflow: hidden;*/
+		padding-left: 64px;
+		padding-right: 64px;
 	}
 }
 
@@ -218,17 +211,15 @@ svg:not(:root) { overflow: hidden; }
 	
 	.navigation__main-page-link { margin-left: 64px; }
 
-	/*.navigation__logo { margin-left: 64px; }*/
-
 	.navigation__list {
 		width: 100%;
 		max-height: 0;
 		flex-direction: column;
 		overflow: hidden;
 
-		transition: max-height 450ms linear;
+		transition: max-height .45s linear;
 	}
-	.navigation__list--active { max-height: 1000px; }
+	.navigation__list--active { max-height: 600px; }
 
 	.navigation__hamburger { 
 		display: flex; 
@@ -249,7 +240,7 @@ svg:not(:root) { overflow: hidden; }
 		left: 0;
 		padding: 0;
 	
-		transition: max-height 300ms linear;
+		transition: max-height .3s linear;
 	}
 	.navigation-dropdown--active { max-height: 500px; }
 
@@ -294,5 +285,4 @@ svg:not(:root) { overflow: hidden; }
 		font-size: 14px;
 		font-weight: 300;
 	}	
-
 }
