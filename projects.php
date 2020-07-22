@@ -25,9 +25,9 @@
 			<div class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/1.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
@@ -36,9 +36,9 @@
 			<div class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/4.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
@@ -47,9 +47,9 @@
 			<div class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/7.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
@@ -58,9 +58,9 @@
 			<div class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/2.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление решеток решеток решеток решеток			
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
@@ -69,9 +69,9 @@
 			<div class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/2.webp" class="projects__image">
-					<a class="projects__image-background" href=""></a>
+					<a class="projects__image-background" href="project.php"></a>
 				</div>
-				<a class="projects__title" href="">
+				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
 				<span class="projects__date">6 июня, 2020 г.</span>
