@@ -15,7 +15,7 @@
 	</div>
 </div>
 
-<nav class="navigation">
+<div class="navigation">
 	<div class="navigation__content">
 		<a href="index.php" class="navigation__main-page-link">
 			<img src="img/navigation-logo.png" alt="логотип" class="navigation__logo">
@@ -113,7 +113,7 @@
 			Оставить заявку
 		</button>
 	</div>
-</nav>
+</div>
 
 <script type="text/javascript">
 	
