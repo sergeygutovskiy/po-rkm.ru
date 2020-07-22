@@ -352,11 +352,11 @@
 				<div class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
-						<a class="main-products__image-background" href="">
+						<a class="main-products__image-background" href="product.php">
 							<span>Подробнее</span>
 						</a>
 					</div>
-					<a class="main-products__title" href="">
+					<a class="main-products__title" href="product.php">
 						Название название
 					</a>
 					<span class="main-products__subtitle">название</span>
@@ -366,11 +366,11 @@
 				<div class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
-						<a class="main-products__image-background" href="">
+						<a class="main-products__image-background" href="product.php">
 							<span>Подробнее</span>
 						</a>
 					</div>
-					<a class="main-products__title" href="">
+					<a class="main-products__title" href="product.php">
 						Название название
 					</a>
 					<span class="main-products__subtitle">название</span>
@@ -380,11 +380,11 @@
 				<div class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
-						<a class="main-products__image-background" href="">
+						<a class="main-products__image-background" href="product.php">
 							<span>Подробнее</span>
 						</a>
 					</div>
-					<a class="main-products__title" href="">
+					<a class="main-products__title" href="product.php">
 						Название название
 					</a>
 					<span class="main-products__subtitle">название</span>
@@ -394,11 +394,11 @@
 				<div class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
-						<a class="main-products__image-background" href="">
+						<a class="main-products__image-background" href="product.php">
 							<span>Подробнее</span>
 						</a>
 					</div>
-					<a class="main-products__title" href="">
+					<a class="main-products__title" href="product.php">
 						Название название
 					</a>
 					<span class="main-products__subtitle">название</span>
@@ -408,11 +408,11 @@
 				<div class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
-						<a class="main-products__image-background" href="">
+						<a class="main-products__image-background" href="product.php">
 							<span>Подробнее</span>
 						</a>
 					</div>
-					<a class="main-products__title" href="">
+					<a class="main-products__title" href="product.php">
 						Название название
 					</a>
 					<span class="main-products__subtitle">название</span>

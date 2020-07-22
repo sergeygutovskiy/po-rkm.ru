@@ -7,7 +7,7 @@
 
 		<span class="navigation-contacts__phone">
 			<i class="fas fa-phone-alt"></i>
-			<a href="">8 (921) 993-98-92</a>
+			<a href="tel:+89219939892">8 (921) 993-98-92</a>
 		</span>
 		<button class="navigation-contacts__button" onclick="open_feedback_form()">
 			Оставить заявку

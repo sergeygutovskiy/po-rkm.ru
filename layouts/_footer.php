@@ -91,11 +91,11 @@
 			</p>
 			<p>
 				<i class="fas fa-phone-alt footer__icon"></i>
-				<span>8 (921) 993-98-92</span>				
+				<a href="tel:+89219939892">8 (921) 993-98-92</a>				
 			</p>
 			<p>
 				<i class="fas fa-envelope footer__icon"></i>
-				<span>e-mail</span>
+				<span>9939892@mail.ru</span>
 			</p>
 		</div>
 	</div>

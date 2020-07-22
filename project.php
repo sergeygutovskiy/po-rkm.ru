@@ -40,7 +40,9 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
 
-			<a class="project__back-link" href="">
+			<a class="project__back-link" 
+				href="" 
+				onclick="event.preventDefault(); window.history.back();">
 				<i class="far fa-long-arrow-alt-left"></i>
 				Вернуться назад
 			</a>
@@ -53,27 +55,27 @@
 				</span>
 				<ul class="recent-projects__list">
 					<li class="recent-projects__item">
-						<a class="recent-projects__link" href="">
+						<a class="recent-projects__link" href="project.php">
 							Изготовление ворот, решеток, ограждений
 						</a>
 					</li>
 					<li class="recent-projects__item">
-						<a class="recent-projects__link" href="">
+						<a class="recent-projects__link" href="project.php">
 							Изготовление ворот
 						</a>
 					</li>
 					<li class="recent-projects__item">
-						<a class="recent-projects__link" href="">
+						<a class="recent-projects__link" href="project.php">
 							Изготовление гамбургеров
 						</a>
 					</li>
 					<li class="recent-projects__item">
-						<a class="recent-projects__link" href="">
+						<a class="recent-projects__link" href="project.php">
 							Изготовление тортов
 						</a>
 					</li>
 					<li class="recent-projects__item">
-						<a class="recent-projects__link" href="">
+						<a class="recent-projects__link" href="project.php">
 							Проведение мероприятий
 						</a>
 					</li>
