@@ -4,13 +4,19 @@ html {
 
 body {
 	margin: 0;
-	padding-top: 96px;
+	margin-top: 96px;
+	padding-top: 32px;
 	
 	font-size: 16px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 425px)
+{
+	body { padding-top: 16px; }
 }
 
 :root {
@@ -73,7 +79,12 @@ ul {
 	font-weight: 800;
 }
 
-button   			  { font-family: "Montserrat", sans-serif; }
-input    			  { font-family: "Montserrat", sans-serif; }
-input::placeholder    { font-family: "Montserrat", sans-serif; }
-textarea 			  { font-family: "Montserrat", sans-serif; }
+button, 
+input, input::placeholder, 
+textarea {
+	font-family: "Montserrat", sans-serif;
+}		
+
+button {
+	outline: none;
+}	  

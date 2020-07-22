@@ -1,5 +1,5 @@
 .projects-container {
-	margin-top: 38px;
+	/*margin-top: 38px;*/
 }
 
 .projects {
@@ -16,10 +16,7 @@
 	flex-direction: column;
 } 
 
-.projects__image-container {
-	width: 100%;
-	position: relative;
-}
+.projects__image-container { width: 100%; position: relative; }
 
 .projects__image-container::after {
 	content: "";
@@ -36,10 +33,7 @@
 
 	transition: opacity 150ms linear;
 }
-.projects__image-background:hover {
-	cursor: pointer;
-	opacity: 0;
-}
+.projects__image-background:hover { cursor: pointer; opacity: 0; }
 
 .projects__image {
 	position: absolute;
@@ -55,10 +49,7 @@
 	margin-top: 8px;
 	color: #323231;
 }
-.projects__title:hover {
-	cursor: pointer;
-	text-decoration: underline;
-}
+.projects__title:hover { cursor: pointer; text-decoration: underline; }
 
 .projects__date {
 	font-size: 14px;

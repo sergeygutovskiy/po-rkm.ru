@@ -73,7 +73,7 @@
 @media screen and (max-width: 425px) 
 {
 
-	.footer { padding: 20px 0; }
+	.footer { padding: 16px 0; }
 	.footer__info { margin-bottom: 20px; }	
 	.footer__mobile-info { margin-top: 36px; }
 	/*.footer__icon { font-size: 18px; }*/

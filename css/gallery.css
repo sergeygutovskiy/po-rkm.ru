@@ -1,4 +1,4 @@
-.gallery { margin-top: 38px; }
+/*.gallery { margin-top: 38px; }*/
 
 .gallery__categories-container {
 	width: 1200px;
@@ -16,8 +16,6 @@
 	color: #9A9A99;
 	font-size: 16px;
 	font-weight: 500;
-
-	outline: none;
 
 	padding: 8px 26px;
 	border: solid 1px #9A9A99;
@@ -221,7 +219,6 @@
 
 	height: 100%;
 	width: 72px;
-	outline: none;
 
 	background: inherit;
 	transition: background 100ms linear;

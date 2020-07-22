@@ -423,4 +423,6 @@
 		</div>
 	</div>
 
+	<?php require_once "layouts/_footer.php"; ?>
+
 </body>
