@@ -119,6 +119,12 @@
 	
 	$(() => {
 
+		console.log(window.pageYOffset);
+		if (window.pageYOffset > 44)
+		{
+			$(".navigation").css("top", "-52px");
+		}
+
 		$('.navigation__hamburger').on('click', function(e) {
 			e.preventDefault();
 		    $(".navigation__list").toggleClass("navigation__list--active");

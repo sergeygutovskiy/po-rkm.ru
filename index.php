@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Index</title>
+	<title>Главная</title>
 	<?php require_once "layouts/_header.php"; ?>
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -161,7 +161,7 @@
 		<div class="main-title">Галерея</div>
 
 		<div class="gallery__slider">
-			<div class="gallery__container swiper-container">
+			<div class="gallery__container swiper-container" id="gallery">
 			    <div class="swiper-wrapper">
 					<div class="swiper-slide swiper-slide gallery__slide">
 						<img src="img/index-gallery/1.webp" class="gallery__image">
@@ -208,9 +208,9 @@
 	</div>
 
 	<script type="text/javascript">
-		var mySwiper = new Swiper('.swiper-container', {			
+		var mySwiper = new Swiper('#gallery', {			
 			pagination: {
-				el: '.swiper-pagination',
+				el: '.gallery__pagination',
 				clickable: true
 			},
 
@@ -218,8 +218,8 @@
 			spaceBetween: 16,
 
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: '.gallery__button__next',
+				prevEl: '.gallery__button__prev',
 			},
 
 			breakpoints: {
@@ -480,6 +480,67 @@
 			<i class="fal fa-chevron-right"></i>
 		</a>
 	</div>
+
+	<!-- clients -->
+	<div class="main-container clients">
+		<div class="clients-carousel">
+			
+			<div class="clients__container swiper-container" id="clients">
+			    <div class="swiper-wrapper">
+				
+					<div class="swiper-slide clients__slide">
+						<img src="img/index-clients/logo-1.png" class="clients__logo">
+					</div>
+					<div class="swiper-slide clients__slide">
+						<img src="img/index-clients/logo-2.png" class="clients__logo">
+					</div>
+					<div class="swiper-slide clients__slide">
+						<img src="img/index-clients/logo-3.png" class="clients__logo">
+					</div>
+					<div class="swiper-slide clients__slide">
+						<img src="img/index-clients/logo-4.png" class="clients__logo">
+					</div>
+					<div class="swiper-slide clients__slide">
+						<img src="img/index-clients/logo-5.png" class="clients__logo">
+					</div>
+					<div class="swiper-slide clients__slide">
+						<img src="img/index-clients/logo-6.png" class="clients__logo">
+					</div>
+					<div class="swiper-slide clients__slide">
+						<img src="img/index-clients/logo-7.png" class="clients__logo">
+					</div>
+
+				</div>
+			</div>	
+
+			<div class="swiper-button-prev clients__button clients__button__prev"></div>
+			<div class="swiper-button-next clients__button clients__button__next"></div>	
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		var mySwiper = new Swiper('#clients', {			
+			slidesPerView: 6,
+			spaceBetween: 16,
+
+			navigation: {
+				nextEl: '.clients__button__next',
+				prevEl: '.clients__button__prev',
+			},
+
+			breakpoints: {
+				0: { slidesPerView: 1 },
+				426: { slidesPerView: 2 },
+				501: { slidesPerView: 3 },
+				701: { slidesPerView: 4 },
+				801: { slidesPerView: 5 },
+				1001: {slidesPerView: 6 },
+			}
+		})
+
+	</script>
 
 	<?php require_once "layouts/_footer.php"; ?>
 

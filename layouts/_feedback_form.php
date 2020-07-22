@@ -1,6 +1,6 @@
 <style type="text/css">
 	
-	.feedback-form__background {
+	/*.feedback-form__background {
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -12,10 +12,10 @@
 		opacity: 0.8;
 
 		display: none;
-	}
-	.feedback-form__background--active {
+	}*/
+	/*.feedback-form__background--active {
 		display: block;
-	}
+	}*/
 
 	.feedback-form__container {
 		position: fixed;
@@ -23,11 +23,21 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
-		z-index: 110;
+		z-index: 100;
 
 		display: none;
 		justify-content: center;
 		align-items: center;
+	}
+	.feedback-form__container::before {
+		content: '';
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #323231;
+		opacity: 0.8;		
 	}
 	.feedback-form__container--active {
 		display: flex;
@@ -164,10 +174,7 @@
 
 	@media screen and (max-width: 728px)
 	{
-		.feedback-form {
-			width: calc(100% - 64px * 2);
-			/*left: calc(50% - (100% - 64px * 2) / 2);*/
-		}		
+		.feedback-form { width: calc(100% - 64px * 2); }		
 	}
 
 	@media screen and (max-width: 425px)
@@ -175,15 +182,12 @@
 
 		.feedback-form {
 			width: calc(100% - 12px * 2);
-			/*left: calc(50% - (100% - 12px * 2) / 2);*/
 		
 			padding-left: 32px;
 			padding-right: 32px;
 		}			
 
-		.feedback-form__content {
-			flex-direction: column;
-		}
+		.feedback-form__content { flex-direction: column; }
 
 		.feedback-form__left,
 		.feedback-form__right {
@@ -205,7 +209,7 @@
 
 </style>
 
-<div class="feedback-form__background"></div>
+<!-- <div class="feedback-form__background"></div> -->
 
 <div class="feedback-form__container">
 	
@@ -234,19 +238,13 @@
 	
 	function open_feedback_form() {
 		$(".feedback-form__container").addClass("feedback-form__container--active");
-		$(".feedback-form__background").addClass("feedback-form__background--active");
-	}
+		$("body").addClass("main-page-noscroll");	}
 
 	function close_feedback_form() {
 		event.preventDefault()
 
 		$(".feedback-form__container").removeClass("feedback-form__container--active");
-		$(".feedback-form__background").removeClass("feedback-form__background--active");
+		$("body").removeClass("main-page-noscroll");
 	}
-
-	$(".feedback-form__container").on("click", () => { 
-		close_feedback_form(); 
-		console.log(1);
-	});
 
 </script>

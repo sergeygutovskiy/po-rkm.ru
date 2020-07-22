@@ -128,11 +128,11 @@
 			$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
 			$("body").addClass("main-page-noscroll");
 
-			if (elemIndex == 0) $(".gallery-image-viewer__button--left").hide();
-			else if (elemIndex == imagesCount - 1) $(".gallery-image-viewer__button--right").hide();
-
 			$(".gallery-image-viewer__button--left").show();
 			$(".gallery-image-viewer__button--right").show();
+
+			if (elemIndex == 0) $(".gallery-image-viewer__button--left").hide();
+			else if (elemIndex == imagesCount - 1) $(".gallery-image-viewer__button--right").hide();
 
 			$(".gallery-image-viewer__counter").text(
 				elemIndex + 1 + " / " + imagesCount
