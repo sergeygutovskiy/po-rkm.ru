@@ -123,12 +123,10 @@
     font-size: 18px;
     font-weight: 400;
     color: white;
-    /*padding: 5.5px 18px; */
-    padding: 6px 18px; 
+    padding: 5.5px 18px; 
 
     min-width: 160px;
-	/*border: solid 1.5px white;*/
-	border: solid 2px white;
+	border: solid 1.5px white;
 	cursor: pointer;
     background-color: inherit;
 	border-radius: 20px;
@@ -255,7 +253,7 @@ svg:not(:root) { overflow: hidden; }
 	.navigation-dropdown__link { padding-left: calc(20px + 100px); }
 }
 
-@media screen and (max-width: 650px)
+/*@media screen and (max-width: 650px)
 {
 	.navigation-contacts__location, 
 	.navigation-contacts__phone span {
@@ -287,4 +285,4 @@ svg:not(:root) { overflow: hidden; }
 		font-size: 14px;
 		font-weight: 300;
 	}	
-}
+}*/
