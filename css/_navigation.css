@@ -123,10 +123,12 @@
     font-size: 18px;
     font-weight: 400;
     color: white;
-    padding: 5.5px 18px; 
+    /*padding: 5.5px 18px; */
+    padding: 6px 18px; 
 
     min-width: 160px;
-	border: solid 1.5px white;
+	/*border: solid 1.5px white;*/
+	border: solid 2px white;
 	cursor: pointer;
     background-color: inherit;
 	border-radius: 20px;
