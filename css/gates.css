@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 425px) 
 {
-	.flex-container { margin-top: 16px; }
+	/*.flex-container { margin-top: 16px; }*/
 
 	.header__border {  padding: 16px; }
 

@@ -5,10 +5,10 @@
 			Санкт-Петербург, ул. Калинина 13
 		</span>
 
-		<span class="navigation-contacts__phone">
+		<a class="navigation-contacts__phone" href="tel:+89219939892">
 			<i class="fas fa-phone-alt"></i>
-			<a href="tel:+89219939892">8 (921) 993-98-92</a>
-		</span>
+			<span>8 (921) 993-98-92</span>
+		</a>
 		<button class="navigation-contacts__button" onclick="open_feedback_form()">
 			Оставить заявку
 		</button>	

@@ -265,7 +265,7 @@ svg:not(:root) { overflow: hidden; }
 @media screen and (max-width: 650px)
 {
 	.navigation-contacts__location, 
-	.navigation-contacts__phone a {
+	.navigation-contacts__phone span {
 		display: none;
 	}
 
