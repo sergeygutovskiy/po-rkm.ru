@@ -220,12 +220,12 @@
 		<div class="feedback-form__title">Оформить заказ</div>
 		<div class="feedback-form__content">
 			<div class="feedback-form__left">
-				<input type="text" class="feedback-form__input" placeholder="Имя">
-				<input type="text" class="feedback-form__input" placeholder="Почта">
-				<input type="text" class="feedback-form__input" placeholder="Телефон">
+				<input type="text" class="feedback-form__input" placeholder="Имя*">
+				<input type="text" class="feedback-form__input" placeholder="Почта*">
+				<input type="text" class="feedback-form__input" placeholder="Телефон*">
 			</div>
 			<div class="feedback-form__right">
-				<textarea class="feedback-form__textarea" placeholder="Комментарий"></textarea>
+				<textarea class="feedback-form__textarea" placeholder="Комментарий*"></textarea>
 			</div>
 		</div>
 		<button type="button" class="feedback-form__button">Отправить</button>
