@@ -94,7 +94,7 @@
 				<div class="navigation-dropdown">
 					<ul class="navigation-dropdown__content">
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">О нас</a>
+							<a class="navigation-dropdown__link" href="about.php">О нас</a>
 						</li>
 						<li class="navigation-dropdown__item">
 							<a class="navigation-dropdown__link" href="projects.php">Проекты</a>

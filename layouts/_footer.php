@@ -66,7 +66,7 @@
 						<span class="footer__link">О компании</span>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">О нас</a>
+						<a href="about.php" class="footer__link">О нас</a>
 					</li>
 					<li class="footer__item">
 						<a href="projects.php" class="footer__link">Проекты</a>
