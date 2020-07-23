@@ -745,8 +745,15 @@
 	width: 100%;
 	height: 100%;
 	object-fit: scale-down;
+	
+	filter: brightness(0.3) grayscale(0.2);
+	transition: filter .15s linear;
 }
-/*.swiper-slide:hover { cursor: pointer; }*/
+
+.swiper-slide:hover .clients__logo {
+	cursor: pointer;
+	filter: brightness(1) grayscale(0);
+}
 
 @media screen and (max-width: 1200px)
 {

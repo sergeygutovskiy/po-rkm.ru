@@ -18,7 +18,7 @@
 	<?php require_once "layouts/_navigation.php"; ?>
 
 	<!-- header -->
-	<div class="main-container">
+	<header class="main-container">
 		<header class="header">
 			<div class="header__background"></div>
 			<div class="header__border">
@@ -39,7 +39,7 @@
 				</ul>				
 			</div>
 		</header>
-	</div>
+	</header>
 
 	<!-- stats -->
 	<section class="main-container">
@@ -409,29 +409,33 @@
 		<div class="clients-carousel">			
 			<div class="clients__container swiper-container" id="clients">
 			    <div class="swiper-wrapper">
-				
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-1.png" class="clients__logo">
 					</div>
+				
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-2.png" class="clients__logo">
 					</div>
+				
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-3.png" class="clients__logo">
 					</div>
+				
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-4.png" class="clients__logo">
 					</div>
+				
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-5.png" class="clients__logo">
 					</div>
+					
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-6.png" class="clients__logo">
 					</div>
+					
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-7.png" class="clients__logo">
 					</div>
-				
 				</div>
 			</div>	
 
@@ -439,7 +443,7 @@
 			<div class="swiper-button-next clients__button clients__button__next"></div>	
 		</div>
 	</section>
-
+	
 	<script>
 		var mySwiper = new Swiper('#clients', {			
 			slidesPerView: 6,

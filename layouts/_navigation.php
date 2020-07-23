@@ -1,5 +1,5 @@
 <header class="navigation-contacts">
-	<div class="navigation-contacts__content main-container">		
+	<section class="navigation-contacts__content main-container">		
 		<span class="navigation-contacts__location">
 			<i class="fas fa-map-marker-alt"></i>
 			Санкт-Петербург, ул. Калинина 13
@@ -12,11 +12,11 @@
 		<button class="navigation-contacts__button" onclick="open_feedback_form()">
 			Оставить заявку
 		</button>	
-	</div>
+	</section>
 </header>
 
 <nav class="navigation">
-	<div class="navigation__content">
+	<section class="navigation__content">
 		<a href="index.php" class="navigation__main-page-link">
 			<img src="img/navigation-logo.png" alt="логотип" class="navigation__logo">
 		</a>
@@ -106,13 +106,12 @@
 			<li class="navigation__item">
 				<a href="contacts.php" class="navigation__link">Контакты</a>
 			</li>
-
 		</ul>
 
 		<button class="navigation__button" onclick="open_feedback_form()">
 			Оставить заявку
 		</button>
-	</div>
+	</section>
 </nav>
 
 <script>

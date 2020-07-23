@@ -1,22 +1,4 @@
 <style type="text/css">
-	
-	/*.feedback-form__background {
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: 100;
-		width: 100%;
-		height: 100%;
-
-		background-color: #323231;
-		opacity: 0.8;
-
-		display: none;
-	}*/
-	/*.feedback-form__background--active {
-		display: block;
-	}*/
-
 	.feedback-form__container {
 		position: fixed;
 		left: 0;
@@ -39,13 +21,9 @@
 		background-color: #323231;
 		opacity: 0.8;		
 	}
-	.feedback-form__container--active {
-		display: flex;
-	}
+	.feedback-form__container--active { display: flex; }
 	
 	.feedback-form {
-		/*position: fixed;*/
-		/*left: calc(50% - 300px);*/
 		position: relative;
 		z-index: 100;
 
@@ -69,19 +47,14 @@
 		background-color: #323231;
 	}
 
-	.feedback-form__content {
-		margin-top: 52px;
-		display: flex;
-	}
+	.feedback-form__content { margin-top: 52px; display: flex; }
 
 	.feedback-form__left,
 	.feedback-form__right {
 		width: 50%;
 	}
 
-	.feedback-form__right {
-		padding-left: 8px;
-	}
+	.feedback-form__right { padding-left: 8px; }
 
 	.feedback-form__input {
 		width: 100%;
@@ -96,9 +69,7 @@
 		outline: none;
 		padding: 10px 8px;
 	}
-	.feedback-form__input:not(:last-child) {
-		margin-bottom: 8px;
-	}
+	.feedback-form__input:not(:last-child) { margin-bottom: 8px; }
 
 	.feedback-form__input::placeholder {
 		font-size: 16px;
@@ -168,9 +139,7 @@
 	    outline: none;
 	    background-color: inherit;
 	}
-	.feedback-form__close:hover {
-		cursor: pointer;
-	}
+	.feedback-form__close:hover { cursor: pointer; }
 
 	@media screen and (max-width: 728px)
 	{
@@ -179,7 +148,6 @@
 
 	@media screen and (max-width: 425px)
 	{
-
 		.feedback-form {
 			width: calc(100% - 12px * 2);
 		
@@ -199,20 +167,15 @@
 			padding-top: 8px;
 			height: 100px;
 		}
-
 	}
 
 	@media screen and (max-width: 320px)
 	{
 		.feedback-form__close { right: 8px; top: 8px; }
 	}
-
 </style>
 
-<!-- <div class="feedback-form__background"></div> -->
-
-<div class="feedback-form__container">
-	
+<section class="feedback-form__container">
 	<form class="feedback-form">
 		<button class="feedback-form__close" onclick="close_feedback_form()">
 			<i class="fal fa-times"></i>
@@ -231,11 +194,9 @@
 		<button type="button" class="feedback-form__button">Отправить</button>
 		<div class="feedback-form__bottom">РКМ | 2020</div>
 	</form>
-
-</div>
+</section>
 
 <script type="text/javascript">
-	
 	function open_feedback_form() {
 		$(".feedback-form__container").addClass("feedback-form__container--active");
 		$("body").addClass("main-page-noscroll");	}
@@ -246,5 +207,4 @@
 		$(".feedback-form__container").removeClass("feedback-form__container--active");
 		$("body").removeClass("main-page-noscroll");
 	}
-
 </script>

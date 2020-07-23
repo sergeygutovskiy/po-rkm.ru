@@ -1,6 +1,6 @@
 <footer class="footer">
-	<div class="footer__content main-container">
-		<div class="footer__info">
+	<section class="footer__content main-container">
+		<section class="footer__info">
 			<img src="img/navigation-logo.png" alt="логотип" class="footer__image">
 			<p>
 				<i class="fas fa-map-marker-alt footer__icon"></i>
@@ -14,7 +14,8 @@
 				<i class="fas fa-envelope footer__icon"></i>
 				<span>e-mail</span>
 			</p>
-		</div>
+		</section>
+
 		<ul class="footer__links">
 			<li class="footer__col">
 				<ul class="footer__list">
@@ -84,7 +85,8 @@
 				</ul>
 			</li>
 		</ul>
-		<div class="footer__mobile-info">
+
+		<section class="footer__mobile-info">
 			<p>
 				<i class="fas fa-map-marker-alt footer__icon"></i>
 				<span>Санкт-Петербург, ул. Калинина 13</span>
@@ -97,6 +99,6 @@
 				<i class="fas fa-envelope footer__icon"></i>
 				<span>9939892@mail.ru</span>
 			</p>
-		</div>
-	</div>
+		</section>
+	</section>
 </footer>
