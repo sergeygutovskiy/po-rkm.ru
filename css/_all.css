@@ -1,6 +1,3 @@
-html {
-	height: 100%;
-}
 
 body {
 	margin: 0;
@@ -27,15 +24,9 @@ body {
 	--main-black-hover-color: #292927;
 }
 
-* {
-	box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-a {
-	text-decoration: none;
-	color: inherit;
-	text-decoration: none;
-}
+a { text-decoration: none; color: inherit; }
 
 ul {
 	margin: 0;
@@ -85,6 +76,4 @@ textarea {
 	font-family: "Montserrat", sans-serif;
 }		
 
-*, *:focus {
-	outline: none;
-}	  
+*, *:focus { outline: none; }

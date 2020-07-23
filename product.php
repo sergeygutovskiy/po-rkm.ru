@@ -17,10 +17,9 @@
 
 	<?php require_once "layouts/_navigation.php"; ?>
 
-	<div class="main-container product">
-		<div class="product__container">
-			
-			<div class="product__left-container">
+	<main class="main-container product">
+		<section class="product__container">			
+			<section class="product__left-container">
 				<div class="product__image-container">
 					<img src="img/index-gallery/1.webp" class="product__image product__image--active">
 					<img src="img/index-gallery/12.webp" class="product__image">
@@ -325,10 +324,9 @@
 					// }
 
 				</script>
+			</section>
 
-			</div>
-
-			<div class="product__right-container">
+			<header class="product__right-container">
 				<span class="product__title">Название название</span>
 				<span class="product__subtitle">название</span>
 				<span class="product__price">от 1500 ₽</span>
@@ -341,15 +339,14 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
-			</div>
-
-		</div>
-		<div class="other-products">
+			</header>
+		</section>
+		
+		<section class="other-products">
 			<div class="main-title">Похожие товары</div>
 			
 			<div class="main-products__container">
-				
-				<div class="main-products__item">
+				<article class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
 						<a class="main-products__image-background" href="product.php">
@@ -361,9 +358,9 @@
 					</a>
 					<span class="main-products__subtitle">название</span>
 					<span class="main-products__price">от 1500 ₽</span>
-				</div>		
+				</article>	
 
-				<div class="main-products__item">
+				<article class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
 						<a class="main-products__image-background" href="product.php">
@@ -375,9 +372,9 @@
 					</a>
 					<span class="main-products__subtitle">название</span>
 					<span class="main-products__price">от 1500 ₽</span>
-				</div>	
+				</article>	
 
-				<div class="main-products__item">
+				<article class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
 						<a class="main-products__image-background" href="product.php">
@@ -389,39 +386,10 @@
 					</a>
 					<span class="main-products__subtitle">название</span>
 					<span class="main-products__price">от 1500 ₽</span>
-				</div>	
-
-				<div class="main-products__item">
-					<div class="main-products__image-container">
-						<img class="main-products__image" src="img/index-gallery/1.webp">
-						<a class="main-products__image-background" href="product.php">
-							<span>Подробнее</span>
-						</a>
-					</div>
-					<a class="main-products__title" href="product.php">
-						Название название
-					</a>
-					<span class="main-products__subtitle">название</span>
-					<span class="main-products__price">от 1500 ₽</span>
-				</div>	
-
-				<div class="main-products__item">
-					<div class="main-products__image-container">
-						<img class="main-products__image" src="img/index-gallery/1.webp">
-						<a class="main-products__image-background" href="product.php">
-							<span>Подробнее</span>
-						</a>
-					</div>
-					<a class="main-products__title" href="product.php">
-						Название название
-					</a>
-					<span class="main-products__subtitle">название</span>
-					<span class="main-products__price">от 1500 ₽</span>
-				</div>	
-
+				</article>	
 			</div>
-		</div>
-	</div>
+		</section>
+	</main>
 
 	<?php require_once "layouts/_footer.php"; ?>
 

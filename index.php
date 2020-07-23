@@ -19,7 +19,7 @@
 
 	<!-- header -->
 	<div class="main-container">
-		<div class="header">
+		<header class="header">
 			<div class="header__background"></div>
 			<div class="header__border">
 				<img class="header__logo" src="img/index-logo.png">
@@ -38,11 +38,11 @@
 					</li>	
 				</ul>				
 			</div>
-		</div>
+		</header>
 	</div>
 
 	<!-- stats -->
-	<div class="main-container">
+	<section class="main-container">
 		<ul class="stats">
 			<li class="stats__item">
 				<div class="stats__icon-background">
@@ -63,10 +63,10 @@
 				Гарантия качества
 			</li>
 		</ul>
-	</div>
+	</section>
 
 	<!-- catalog -->
-	<div class="main-container">
+	<section class="main-container">
 		<div class="catalog">
 			<a class="catalog__block catalog__block-1" href="gates.php">
 				<div class="catalog__title">Ворота</div>
@@ -122,10 +122,10 @@
 				<i class="far fa-chevron-right catalog__icon"></i>
 			</a>		
 		</div>
-	</div>
+	</section>
 
 	<!-- services -->
-	<div class="main-container services">
+	<section class="main-container services">
 		<div class="main-title">Услуги</div>
 	
 		<ul class="services__list">
@@ -154,10 +154,10 @@
 				</a>
 			</li>
 		</ul>
-	</div>
+	</section>
 
 	<!-- gallery -->
-	<div class="main-container gallery">
+	<section class="main-container gallery">
 		<div class="main-title">Галерея</div>
 
 		<div class="gallery__slider">
@@ -205,9 +205,9 @@
 		    Перейти в галерею
 			<i class="fal fa-chevron-right"></i>
 		</a>
-	</div>
+	</section>
 
-	<script type="text/javascript">
+	<script>
 		var mySwiper = new Swiper('#gallery', {			
 			pagination: {
 				el: '.gallery__pagination',
@@ -232,9 +232,8 @@
 	</script>
 
 	<!-- gallery: image full screen viewer -->
-	<div class="gallery-image-viewer">
+	<section class="gallery-image-viewer">
 		<div class="gallery-image-viewer__background"></div>
-		<!-- <img class="gallery-image-viewer__image" src=""> -->
 		<div class="gallery-image-viewer__container">
 			<img class="gallery-image-viewer__image" src="img/index-gallery/1.webp">
 			<img class="gallery-image-viewer__image" src="img/index-gallery/2.webp">
@@ -255,84 +254,9 @@
 			<i class="fal fa-chevron-right"></i>
 		</button>
 		<div class="gallery-image-viewer__counter">1 / 8</div>
-	</div>
+	</section>
 
-<!-- 	<script type="text/javascript">
-		
-		var prevImage = null;
-		var nextImage = null;
-		var currentImage = null;
-		var imagesCount = $(".swiper-slide").length;
-
-		$(".swiper-slide").on("click", function() {
-
-			currentImage = $(this);
-			prevImage = $(this).prev();
-			nextImage = $(this).next();
-
-			// console.log($(".swiper-slide").index(nextImage));
-
-			$(".gallery-image-viewer__counter").text(
-				($(".swiper-slide").index(currentImage) + 1) + " / " + imagesCount
-			);
-
-			$(".gallery-image-viewer__button--left").show();
-			$(".gallery-image-viewer__button--right").show();
-
-			if (prevImage.length == 0) $(".gallery-image-viewer__button--left").hide();
-			else if (nextImage.length == 0) $(".gallery-image-viewer__button--right").hide();
-
-			$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
-			$(".gallery-image-viewer__image").attr("src", $(this).children("img").attr("src"));
-
-			$("body").addClass("main-page-noscroll");
-		});
-		
-		$(".gallery-image-viewer__background").on("click", function() {
-			$(".gallery-image-viewer").removeClass("gallery-image-viewer--active");
-			$("body").removeClass("main-page-noscroll");
-		});
-
-		function showPrevImage() {
-
-			$(".gallery-image-viewer__button--right").show();
-
-			nextImage = currentImage;
-			currentImage = prevImage;
-			prevImage = currentImage.prev();
-
-			$(".gallery-image-viewer__counter").text(
-				($(".swiper-slide").index(currentImage) + 1) + " / " + imagesCount
-			);
-
-			if (prevImage.length == 0) $(".gallery-image-viewer__button--left").hide();
-			else $(".gallery-image-viewer__button--left").show();
-
-			$(".gallery-image-viewer__image").attr("src", currentImage.children("img").attr("src"));
-		}
-
-		function showNextImage() {
-			
-			$(".gallery-image-viewer__button--left").show();
-
-			prevImage = currentImage;
-			currentImage = nextImage;
-			nextImage = currentImage.next();
-
-			$(".gallery-image-viewer__counter").text(
-				($(".swiper-slide").index(currentImage) + 1) + " / " + imagesCount
-			);
-
-			if (nextImage.length == 0) $(".gallery-image-viewer__button--right").hide();
-			else $(".gallery-image-viewer__button--right").show();
-
-			$(".gallery-image-viewer__image").attr("src", currentImage.children("img").attr("src"));
-		}
-
-	</script> -->
-
-	<script type="text/javascript">
-		
+	<script>	
 		var imagesCount = $(".gallery__slide").length;
 		var elem = null;
 		var elemIndex = 0;
@@ -433,15 +357,14 @@
 			fullScreenImage
 				.css("top", "calc(50% - " + fullScreenImage.css("height") + " / 2)");
 		};
-
 	</script>
 
 	<!-- projects -->
-	<div class="main-container projects">
+	<section class="main-container projects">
 		<div class="main-title">Проекты</div>
-		<ul class="projects__container">
-
-			<li class="projects__item">
+	
+		<div class="projects__container">
+			<article class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/3.webp" class="projects__image">
 					<a class="projects__image-background" href="project.php"></a>
@@ -449,10 +372,10 @@
 				<a class="projects__title" href="project.php">
 					Изготовление ворот, решеток, ограждений
 				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</li>
+				<time class="projects__date">6 июня, 2020 г.</time>
+			</article>
 
-			<li class="projects__item">
+			<article class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/8.webp" class="projects__image">
 					<a class="projects__image-background" href="project.php"></a>
@@ -460,10 +383,10 @@
 				<a class="projects__title" href="project.php">
 					Изготовление вороn
 				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</li>
+				<time class="projects__date">6 июня, 2020 г.</time>
+			</article>
 
-			<li class="projects__item">
+			<article class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/1.webp" class="projects__image">
 					<a class="projects__image-background" href="project.php"></a>
@@ -471,20 +394,19 @@
 				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</li>
+				<time class="projects__date">6 июня, 2020 г.</time>
+			</article>
+		</div>
 
-		</ul>
 		<a class="main-btn projects__link" href="projects.php">
 			Перейти в проекты
 			<i class="fal fa-chevron-right"></i>
 		</a>
-	</div>
+	</section>
 
 	<!-- clients -->
-	<div class="main-container clients">
-		<div class="clients-carousel">
-			
+	<section class="main-container clients">
+		<div class="clients-carousel">			
 			<div class="clients__container swiper-container" id="clients">
 			    <div class="swiper-wrapper">
 				
@@ -509,18 +431,16 @@
 					<div class="swiper-slide clients__slide">
 						<img src="img/index-clients/logo-7.png" class="clients__logo">
 					</div>
-
+				
 				</div>
 			</div>	
 
 			<div class="swiper-button-prev clients__button clients__button__prev"></div>
 			<div class="swiper-button-next clients__button clients__button__next"></div>	
-
 		</div>
-	</div>
+	</section>
 
-	<script type="text/javascript">
-
+	<script>
 		var mySwiper = new Swiper('#clients', {			
 			slidesPerView: 6,
 			spaceBetween: 16,
@@ -539,7 +459,6 @@
 				1001: {slidesPerView: 6 },
 			}
 		})
-
 	</script>
 
 	<?php require_once "layouts/_footer.php"; ?>

@@ -17,10 +17,11 @@
 
 	<?php require_once "layouts/_navigation.php"; ?>
 
-	<div class="gallery main-container">
+	<section class="gallery main-container">
 		<div class="main-title">Галерея</div>
-	</div>
-	<div class="gallery__categories-container">
+	</section>
+
+	<section class="gallery__categories-container">
 		<ul class="gallery__categories">
 			<li class="gallery__item">
 				<button class="gallery__category gallery__category--active">Все</button>
@@ -44,9 +45,9 @@
 				<button class="gallery__category">Интерьер</button>
 			</li>
 		</ul>
-	</div>
+	</section>
 	
-	<div class="gallery__outside-container">
+	<section class="gallery__outside-container">
 		<div class="gallery__container">
 			<div class="gallery__image-block">
 				<img src="img/index-gallery/1.webp" class="gallery__image">
@@ -81,9 +82,9 @@
 				<div class="gallery__image-overlay"></div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="gallery-image-viewer">
+	<section class="gallery-image-viewer">
 		<div class="gallery-image-viewer__background"></div>
 		<div class="gallery-image-viewer__container">
 			<img class="gallery-image-viewer__image" src="img/index-gallery/1.webp">
@@ -106,10 +107,9 @@
 			<i class="fal fa-chevron-right"></i>
 		</button>
 		<div class="gallery-image-viewer__counter">1 / 8</div>
-	</div>
+	</section>
 
-	<script type="text/javascript">
-		
+	<script>
 		var imagesCount = $(".gallery__image").length;
 		var elem = null;
 		var elemIndex = 0;
@@ -210,7 +210,6 @@
 			fullScreenImage
 				.css("top", "calc(50% - " + fullScreenImage.css("height") + " / 2)");
 		};
-
 	</script>
 
 	<?php require_once "layouts/_footer.php"; ?>

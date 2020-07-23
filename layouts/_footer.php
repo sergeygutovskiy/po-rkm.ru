@@ -1,4 +1,4 @@
-<div class="footer">
+<footer class="footer">
 	<div class="footer__content main-container">
 		<div class="footer__info">
 			<img src="img/navigation-logo.png" alt="логотип" class="footer__image">
@@ -99,4 +99,4 @@
 			</p>
 		</div>
 	</div>
-</div>
+</footer>

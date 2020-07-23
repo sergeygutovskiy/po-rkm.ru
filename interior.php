@@ -12,8 +12,8 @@
 
 	<?php require_once "layouts/_navigation.php"; ?>
 
-	<div class="main-container flex-container">
-		<div class="left-container">
+	<main class="main-container flex-container">
+		<aside class="left-container">
 			<ul class="menu">
 				<li class="menu__item">
 					<a class="menu__link" href="gates.php">Ворота</a>
@@ -34,10 +34,10 @@
 					<a class="menu__link menu__link--active" href="interior.php">Интерьер</a>
 				</li>
 			</ul>
-		</div>
+		</aside>
 
-		<div class="right-container">
-			<div class="header">
+		<section class="right-container">
+			<header class="header">
 				<div class="header__background"></div>
 				<div class="header__border">
 					<span class="header__title">Интерьер</span>
@@ -51,11 +51,10 @@
 						Выберите в каталоге готовое изделие на ваш вкус.
 					</div>
 				</div>
-			</div>
+			</header>
 
 			<div class="main-products__container">
-				
-				<div class="main-products__item">
+				<article class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
 						<a class="main-products__image-background" href="product.php">
@@ -67,9 +66,9 @@
 					</a>
 					<span class="main-products__subtitle">название</span>
 					<span class="main-products__price">от 1500 ₽</span>
-				</div>		
+				</article>	
 
-				<div class="main-products__item">
+				<article class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
 						<a class="main-products__image-background" href="product.php">
@@ -81,9 +80,9 @@
 					</a>
 					<span class="main-products__subtitle">название</span>
 					<span class="main-products__price">от 1500 ₽</span>
-				</div>	
+				</article>	
 
-				<div class="main-products__item">
+				<article class="main-products__item">
 					<div class="main-products__image-container">
 						<img class="main-products__image" src="img/index-gallery/1.webp">
 						<a class="main-products__image-background" href="product.php">
@@ -95,11 +94,10 @@
 					</a>
 					<span class="main-products__subtitle">название</span>
 					<span class="main-products__price">от 1500 ₽</span>
-				</div>
-
+				</article>	
 			</div>
-		</div>
-	</div>
+		</section>
+	</main>
 
 
 	<?php require_once "layouts/_footer.php"; ?>

@@ -17,12 +17,11 @@
 
 	<?php require_once "layouts/_navigation.php"; ?>
 
-	<div class="main-container projects-container">
+	<main class="main-container projects-container">
 		<div class="main-title">Проекты</div>
 
-		<div class="projects">
-			
-			<div class="projects__item">
+		<section class="projects">		
+			<article class="projects__item">
 				<div class="projects__image-container">
 					<img src="img/index-gallery/1.webp" class="projects__image">
 					<a class="projects__image-background" href="project.php"></a>
@@ -30,55 +29,43 @@
 				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</div>
+				<time class="projects__date">6 июня, 2020 г.</time>
+			</article>
 
-			<div class="projects__item">
+			<article class="projects__item">
 				<div class="projects__image-container">
-					<img src="img/index-gallery/4.webp" class="projects__image">
+					<img src="img/index-gallery/1.webp" class="projects__image">
 					<a class="projects__image-background" href="project.php"></a>
 				</div>
 				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</div>
+				<time class="projects__date">6 июня, 2020 г.</time>
+			</article>
 
-			<div class="projects__item">
+			<article class="projects__item">
 				<div class="projects__image-container">
-					<img src="img/index-gallery/7.webp" class="projects__image">
+					<img src="img/index-gallery/1.webp" class="projects__image">
 					<a class="projects__image-background" href="project.php"></a>
 				</div>
 				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</div>
+				<time class="projects__date">6 июня, 2020 г.</time>
+			</article>
 
-			<div class="projects__item">
+			<article class="projects__item">
 				<div class="projects__image-container">
-					<img src="img/index-gallery/2.webp" class="projects__image">
-					<a class="projects__image-background" href="project.php"></a>
-				</div>
-				<a class="projects__title" href="project.php">
-					Изготовление решеток решеток решеток решеток			
-				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</div>
-
-			<div class="projects__item">
-				<div class="projects__image-container">
-					<img src="img/index-gallery/2.webp" class="projects__image">
+					<img src="img/index-gallery/1.webp" class="projects__image">
 					<a class="projects__image-background" href="project.php"></a>
 				</div>
 				<a class="projects__title" href="project.php">
 					Изготовление решеток				
 				</a>
-				<span class="projects__date">6 июня, 2020 г.</span>
-			</div>
-
-		</div>
-	</div>
+				<time class="projects__date">6 июня, 2020 г.</time>
+			</article>
+		</section>
+	</main>
 
 	<?php require_once "layouts/_footer.php"; ?>
 

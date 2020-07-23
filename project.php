@@ -12,18 +12,14 @@
 
 	<?php require_once "layouts/_navigation.php"; ?>
 
-	<div class="main-container project__container">
-		
-		<div class="left-container">
+	<main class="main-container project__container">
+		<section class="left-container">
 			<div class="project__image-container">
 				<img src="img/index-gallery/1.webp" class="project__image">
 			</div>
-			<span class="project__title">
-				Изготовление ворот, решеток, ограждений
-			</span>
-			<span class="project__date">
-				6 июня, 2020 г.
-			</span>
+			<span class="project__title">Изготовление ворот, решеток, ограждений</span>
+			<time class="project__date">6 июня, 2020 г.</time>
+			
 			<div class="project__body">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -46,10 +42,10 @@
 				<i class="far fa-long-arrow-alt-left"></i>
 				Вернуться назад
 			</a>
-		</div>
+		</section>
 
-		<div class="right-container">
-			<div class="recent-projects">
+		<aside class="right-container">
+			<section class="recent-projects">
 				<span class="recent-projects__title">
 					Последние проекты:
 				</span>
@@ -80,10 +76,9 @@
 						</a>
 					</li>
 				</ul>
-			</div>
-		</div>
-
-	</div>
+			</section>
+		</aside>
+	</main>
 
 	<?php require_once "layouts/_footer.php"; ?>
 

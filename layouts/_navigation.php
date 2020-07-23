@@ -1,4 +1,4 @@
-<div class="navigation-contacts">
+<header class="navigation-contacts">
 	<div class="navigation-contacts__content main-container">		
 		<span class="navigation-contacts__location">
 			<i class="fas fa-map-marker-alt"></i>
@@ -13,9 +13,9 @@
 			Оставить заявку
 		</button>	
 	</div>
-</div>
+</header>
 
-<div class="navigation">
+<nav class="navigation">
 	<div class="navigation__content">
 		<a href="index.php" class="navigation__main-page-link">
 			<img src="img/navigation-logo.png" alt="логотип" class="navigation__logo">
@@ -113,13 +113,10 @@
 			Оставить заявку
 		</button>
 	</div>
-</div>
+</nav>
 
-<script type="text/javascript">
-	
+<script>
 	$(() => {
-
-		console.log(window.pageYOffset);
 		if (window.pageYOffset > 44)
 		{
 			$(".navigation").css("top", "-52px");
@@ -195,7 +192,6 @@
 		}
 
 	});
-
 </script>
 
 <?php require_once "layouts/_feedback_form.php"; ?>
