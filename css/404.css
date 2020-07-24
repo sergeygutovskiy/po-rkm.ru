@@ -1,0 +1,26 @@
+.main-container .main-block{
+    text-align: center;
+}
+.main-block .main__title{
+    font-size: calc(7em + 14vw);
+    background: linear-gradient(180deg, #F3F4F6 17.08%, rgba(243, 244, 246, 0) 100.01%);
+    font-weight: 700;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+.main-block .main__text{
+    margin-top: calc(110px - 14vw);
+    padding-bottom: 110px;
+}
+.main-block .main__backbutton button{
+   
+        font-size: 16px;
+        color: #323231;
+        background-color: #F3F4F6;
+        border: none;
+        margin-top: 32px;
+        padding: 16px 0;
+        width: 200px;
+        transition: transform 100ms linear;
+}
+.main-block .main__backbutton button:hover{ cursor: pointer;transform: scale(1.1);}
