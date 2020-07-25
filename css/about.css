@@ -3,7 +3,7 @@
 	line-height: 24px;
 
 	width: 780px;
-	margin-top: 40px;
+	margin-top: 16px;
 }
 
 .partners {
@@ -97,7 +97,9 @@
 	.partners__logo-2 { background-position-x: 50px; }
 }
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 425px)
 {
 	.partners__logo-2 { background-position-x: 36px; }
+
+	.about__text { margin-top: 8px; }
 }
