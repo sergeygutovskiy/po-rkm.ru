@@ -21,7 +21,7 @@
         <div class="main__text">
             <h2>СТРАНИЦА НЕ НАЙДЕНА</h2>
             <div class="main__backbutton">
-                <button onclick="event.preventDefault(); window.history.back();">Вернуться назад</button>
+                <a href="index.php"><button>Вернуться на главную</button></a>
             </div>
         </div>
     </div>

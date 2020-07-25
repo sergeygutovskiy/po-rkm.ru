@@ -26,8 +26,8 @@ color: #323231;
         background-color: #F3F4F6;
         border: none;
         margin-top: 32px;
-        padding: 16px 0;
-        width: 200px;
+        padding: 16px 32px;
+        
         transition: transform 100ms linear;
 }
 .main-block .main__backbutton button:hover{ cursor: pointer;transform: scale(1.1);}
