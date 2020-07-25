@@ -7,10 +7,17 @@
     font-weight: 700;
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
+    user-select: none;
 }
 .main-block .main__text{
     margin-top: calc(110px - 14vw);
     padding-bottom: 110px;
+}
+.main-block .main__text h2{
+    letter-spacing: 0.08em;
+font-size: 18px;
+color: #323231;
+
 }
 .main-block .main__backbutton button{
    
