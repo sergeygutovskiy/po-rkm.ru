@@ -70,13 +70,15 @@
 							<a class="navigation-dropdown__link" href="restoration.php">Реставрация</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Ковка</a>
+							<a class="navigation-dropdown__link" href="forging.php">Ковка</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Литье</a>
+							<a class="navigation-dropdown__link" href="founding.php">Литье</a>
 						</li>
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Металлоконструкции</a>
+							<a class="navigation-dropdown__link" href="metal_structures.php">
+								Металлоконструкции
+							</a>
 						</li>
 					</ul>
 				</div>

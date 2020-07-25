@@ -51,13 +51,13 @@
 						<a href="restoration.php" class="footer__link">Реставрация</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Ковка</a>
+						<a href="forging.php" class="footer__link">Ковка</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Литье</a>
+						<a href="founding.php" class="footer__link">Литье</a>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Металлоконструкции</a>
+						<a href="metal_structures.php" class="footer__link">Металлоконструкции</a>
 					</li>
 				</ul>
 			</li>
