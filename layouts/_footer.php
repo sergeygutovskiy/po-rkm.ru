@@ -48,7 +48,7 @@
 						<span class="footer__link">Услуги</span>
 					</li>
 					<li class="footer__item">
-						<a href="" class="footer__link">Реставрация</a>
+						<a href="restoration.php" class="footer__link">Реставрация</a>
 					</li>
 					<li class="footer__item">
 						<a href="" class="footer__link">Ковка</a>
