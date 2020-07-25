@@ -67,7 +67,7 @@
 				<div class="navigation-dropdown">
 					<ul class="navigation-dropdown__content">
 						<li class="navigation-dropdown__item">
-							<a class="navigation-dropdown__link" href="">Реставрация</a>
+							<a class="navigation-dropdown__link" href="restoration.php">Реставрация</a>
 						</li>
 						<li class="navigation-dropdown__item">
 							<a class="navigation-dropdown__link" href="">Ковка</a>

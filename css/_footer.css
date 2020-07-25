@@ -39,7 +39,7 @@
 
 
 
-@media screen and (max-width: 1328px) 
+@media screen and (max-width: 1200px) 
 {
 
 	.footer__content { flex-direction: column; }
