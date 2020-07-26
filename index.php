@@ -261,11 +261,10 @@
 		var elem = null;
 		var elemIndex = 0;
 
-		function resetFullScreenContainer() {
-			imagesCount = $(".gallery__slide").length;
-			elem = null;
-			elemIndex = 0;			
-		}
+		var leftButton = $(".gallery-image-viewer__button--left");
+		var rightButton = $(".gallery-image-viewer__button--right");
+
+		var fullScreenImages = $(".gallery-image-viewer__image");
 
 		$(".gallery__slide").on("click", function() {
 
@@ -275,11 +274,11 @@
 			$(".gallery-image-viewer").addClass("gallery-image-viewer--active");
 			$("body").addClass("main-page-noscroll");
 
-			$(".gallery-image-viewer__button--left").show();
-			$(".gallery-image-viewer__button--right").show();
+			leftButton.show();
+			rightButton.show();
 
-			if (elemIndex == 0) $(".gallery-image-viewer__button--left").hide();
-			else if (elemIndex == imagesCount - 1) $(".gallery-image-viewer__button--right").hide();
+			if (elemIndex == 0) leftButton.hide();
+			else if (elemIndex == imagesCount - 1) rightButton.hide();
 
 			$(".gallery-image-viewer__counter").text(
 				elemIndex + 1 + " / " + imagesCount
@@ -299,10 +298,10 @@
 			$(".gallery-image-viewer__image").eq(elemIndex)
 				.removeClass("gallery-image-viewer__image--active");	
 
-			$(".gallery-image-viewer__button--right").show();
+			rightButton.show();
 
 			elemIndex--;
-			if (elemIndex == 0) $(".gallery-image-viewer__button--left").hide();
+			if (elemIndex == 0) leftButton.hide();
 
 			$(".gallery-image-viewer__counter").text(
 				elemIndex + 1 + " / " + imagesCount
@@ -322,10 +321,10 @@
 			$(".gallery-image-viewer__image").eq(elemIndex)
 				.removeClass("gallery-image-viewer__image--active");	
 
-			$(".gallery-image-viewer__button--left").show();
+			leftButton.show();
 
 			elemIndex++;
-			if (elemIndex == imagesCount - 1) $(".gallery-image-viewer__button--right").hide();
+			if (elemIndex == imagesCount - 1) rightButton.hide();
 
 			$(".gallery-image-viewer__counter").text(
 				elemIndex + 1 + " / " + imagesCount
@@ -344,8 +343,10 @@
 		$(".gallery-image-viewer__background").on("click", function() {
 			$(".gallery-image-viewer")
 				.removeClass("gallery-image-viewer--active");
+		
 			$(".gallery-image-viewer__image").eq(elemIndex)
 				.removeClass("gallery-image-viewer__image--active");	
+		
 			$("body").removeClass("main-page-noscroll");
 		});
 

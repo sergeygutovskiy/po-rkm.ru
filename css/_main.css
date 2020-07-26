@@ -109,18 +109,14 @@
 
 
 
-.main-page-noscroll {
-	overflow: hidden;
-}
+.main-page-noscroll { overflow: hidden; }
 
 
 
 
 
 
-.other-products {
-	margin-top: 64px;
-}
+.other-products { margin-top: 64px; }
 
 .main-products__container {
 	display: grid;
@@ -151,7 +147,6 @@
     opacity: 0;
     font-size: 18px;
     font-weight: 500;
-    /*background: white;*/
     background: rgb(0, 0, 0, 0.0);
 
 	display: flex;
@@ -160,9 +155,7 @@
 
 	transition: opacity 200ms linear;
 }
-.main-products__image-background span:hover {
-	text-decoration: underline;
-}
+.main-products__image-background span:hover { text-decoration: underline; }
 
 .main-products__image-container:hover .main-products__image-background {
     cursor: pointer;

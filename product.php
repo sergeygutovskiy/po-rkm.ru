@@ -4,14 +4,7 @@
 	<title>Товар</title>
 	<?php require_once "layouts/_header.php"; ?>
 
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="css/product.css">
-
 </head>
 <body>
 
@@ -278,51 +271,6 @@
 								.addClass("product__other-images__button--disable");
 						}
 					});
-
-					// function nextImage() {
-
-					// 	otherImages.eq(activeImage)
-					// 		.removeClass("product__other-images__item--active");
-					// 	otherImages.eq(++activeImage)
-					// 		.addClass("product__other-images__item--active");
-
-					// 	mainImageContainer.empty();
-					// 	var clonable = otherImages.eq(activeImage).children("img").cloneNode();
-					// 	mainImageContainer
-					// 		.append(clonable);
-
-					// }
-
-					// function nextImage() {
-					// 	if (activeImage < otherImagesCount - 1)
-					// 	{
-					// 		otherImages.eq(activeImage)
-					// 			.removeClass("product__other-images__item--active");
-					// 		otherImages.eq(++activeImage)
-					// 			.addClass("product__other-images__item--active");
-
-					// 		mainImage.attr(
-					// 			"src", 
-					// 			otherImages.eq(activeImage).children("img").attr("src")
-					// 		);
-					// 	}
-					// }
-
-					// function prevImage() {
-					// 	if (activeImage > 0)
-					// 	{
-					// 		otherImages.eq(activeImage)
-					// 			.removeClass("product__other-images__item--active");
-					// 		otherImages.eq(--activeImage)
-					// 			.addClass("product__other-images__item--active");
-
-					// 		mainImage.attr(
-					// 			"src", 
-					// 			otherImages.eq(activeImage).children("img").attr("src")
-					// 		);
-					// 	}
-					// }
-
 				</script>
 			</section>
 
