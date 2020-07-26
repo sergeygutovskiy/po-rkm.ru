@@ -725,7 +725,11 @@
 
 .clients__slider { margin-top: 32px; position: relative; }
 
-.clients__container { width: calc(100% - 60px * 2); }
+.clients__container { 
+	width: calc(100% - 60px * 2); 
+	height: 180px; 
+	padding: 32px 0;
+}
 
 .clients__button { color: #323231; }
 .clients__button::after {
@@ -767,6 +771,11 @@
 	.clients__logo { object-fit: contain; padding: 16px; }
 
 	.clients__container { width: calc(100% - 40px * 2); }
+
+	.clients__container { 
+		width: calc(100% - 40px * 2);
+		padding: 0;
+	}
 
 	.clients__button::after { font-size: 32px; }	
 
