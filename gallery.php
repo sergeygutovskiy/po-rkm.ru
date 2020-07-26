@@ -24,60 +24,94 @@
 	<section class="gallery__categories-container">
 		<ul class="gallery__categories">
 			<li class="gallery__item">
-				<button class="gallery__category gallery__category--active">Все</button>
+				<button 
+					class="gallery__category gallery__category--active"
+					onclick="showAllImages(this)">
+					Все
+				</button>
 			</li>
 			<li class="gallery__item">
-				<button class="gallery__category">Ворота</button>
+				<button 
+					class="gallery__category" 
+					onclick="changeCategory(this, this.getAttribute('data-category'))"
+					data-category="0">
+					Ворота
+				</button>
 			</li>
 			<li class="gallery__item">
-				<button class="gallery__category">Ограждения</button>
+				<button 
+					class="gallery__category"
+					onclick="changeCategory(this, this.getAttribute('data-category'))"
+					data-category="1">
+					Ограждения
+				</button>
 			</li>
 			<li class="gallery__item">
-				<button class="gallery__category">Козырьки</button>
+				<button 
+					class="gallery__category" 
+					onclick="changeCategory(this, this.getAttribute('data-category'))"
+					data-category="2">
+					Козырьки
+				</button>
 			</li>
 			<li class="gallery__item">
-				<button class="gallery__category">Лестницы</button>
+				<button 
+					class="gallery__category" 
+					onclick="changeCategory(this, this.getAttribute('data-category'))"
+					data-category="3">
+					Лестницы
+				</button>
 			</li>
 			<li class="gallery__item">
-				<button class="gallery__category">Декор</button>
+				<button 
+					class="gallery__category" 
+					onclick="changeCategory(this, this.getAttribute('data-category'))"
+					data-category="4">
+					Декор
+				</bu]tton>
 			</li>
 			<li class="gallery__item">
-				<button class="gallery__category">Интерьер</button>
+				<button 
+					class="gallery__category"
+					onclick="changeCategory(this, this.getAttribute('data-category'))"
+					data-category="5">
+					Интерьер
+				</button>
 			</li>
 		</ul>
 	</section>
 	
 	<section class="gallery__outside-container">
 		<div class="gallery__container">
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="0">
 				<img src="img/index-gallery/1.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="1">
 				<img src="img/index-gallery/2.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="2">
 				<img src="img/index-gallery/3.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="3">
 				<img src="img/index-gallery/4.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="4">
 				<img src="img/index-gallery/5.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="5">
 				<img src="img/index-gallery/6.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="0">
 				<img src="img/index-gallery/7.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
-			<div class="gallery__image-block">
+			<div class="gallery__image-block" data-category="1">
 				<img src="img/index-gallery/8.webp" class="gallery__image">
 				<div class="gallery__image-overlay"></div>
 			</div>
@@ -87,14 +121,14 @@
 	<section class="gallery-image-viewer">
 		<div class="gallery-image-viewer__background"></div>
 		<div class="gallery-image-viewer__container">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/1.webp">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/2.webp">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/3.webp">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/4.webp">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/5.webp">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/6.webp">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/7.webp">
-			<img class="gallery-image-viewer__image" src="img/index-gallery/8.webp">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/1.webp" data-category="0">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/2.webp" data-category="1">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/3.webp" data-category="2">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/4.webp" data-category="3">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/5.webp" data-category="4">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/6.webp" data-category="5">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/7.webp" data-category="0">
+			<img class="gallery-image-viewer__image" src="img/index-gallery/8.webp" data-category="1">
 		</div>
 
 
@@ -109,10 +143,15 @@
 		<div class="gallery-image-viewer__counter">1 / 8</div>
 	</section>
 
+	<?php require_once "layouts/_footer.php"; ?>
+
 	<script>
 		var imagesCount = $(".gallery__image").length;
+		console.log(imagesCount);
 		var elem = null;
+
 		var elemIndex = 0;
+		var currentCategory = null;
 
 		var leftButton = $(".gallery-image-viewer__button--left");
 		var rightButton = $(".gallery-image-viewer__button--right");
@@ -136,12 +175,26 @@
 			leftButton.show();
 			rightButton.show();
 
-			if (elemIndex == 0) leftButton.hide();
-			else if (elemIndex == imagesCount - 1) rightButton.hide();
+			if (currentCategory != null)
+			{
+				var newIndex = fullScreenImages.eq(elemIndex).attr("data-index");
 
-			$(".gallery-image-viewer__counter").text(
-				elemIndex + 1 + " / " + imagesCount
-			);
+				if (newIndex == 1) leftButton.hide();
+				if (newIndex == imagesCount) rightButton.hide();
+				
+				$(".gallery-image-viewer__counter").text(
+					fullScreenImages.eq(elemIndex).attr("data-index") + " / " + imagesCount
+				);
+			}
+			else
+			{
+				if (elemIndex == 0) leftButton.hide();
+				if (elemIndex == imagesCount - 1) rightButton.hide();
+
+				$(".gallery-image-viewer__counter").text(
+					elemIndex + 1 + " / " + imagesCount
+				);
+			}
 
 			var fullScreenImage = fullScreenImages.eq(elemIndex);
 
@@ -162,9 +215,25 @@
 			elemIndex--;
 			if (elemIndex == 0) leftButton.hide();
 
-			$(".gallery-image-viewer__counter").text(
-				elemIndex + 1 + " / " + imagesCount
-			);
+			if (currentCategory != null 
+				&& currentCategory != fullScreenImages.eq(elemIndex).attr("data-category"))
+			{
+				showPrevImage();
+				return;
+			}
+
+			if (currentCategory != null)
+			{
+				$(".gallery-image-viewer__counter").text(
+					fullScreenImages.eq(elemIndex).attr("data-index") + " / " + imagesCount
+				);
+			}
+			else
+			{
+				$(".gallery-image-viewer__counter").text(
+					elemIndex + 1 + " / " + imagesCount
+				);
+			}
 
 			var fullScreenImage = fullScreenImages.eq(elemIndex);
 
@@ -185,9 +254,25 @@
 			elemIndex++;
 			if (elemIndex == imagesCount - 1) rightButton.hide();
 
-			$(".gallery-image-viewer__counter").text(
-				elemIndex + 1 + " / " + imagesCount
-			);
+			if (currentCategory != null 
+				&& currentCategory != fullScreenImages.eq(elemIndex).attr("data-category"))
+			{
+				showNextImage();
+				return;
+			}
+
+			if (currentCategory != null)
+			{
+				$(".gallery-image-viewer__counter").text(
+					fullScreenImages.eq(elemIndex).attr("data-index") + " / " + imagesCount
+				);
+			}
+			else
+			{
+				$(".gallery-image-viewer__counter").text(
+					elemIndex + 1 + " / " + imagesCount
+				);
+			}
 
 			var fullScreenImage = fullScreenImages.eq(elemIndex);
 
@@ -219,7 +304,55 @@
 		};
 	</script>
 
-	<?php require_once "layouts/_footer.php"; ?>
+	<script>
+		function changeCategory(button, category)
+		{
+			$(".gallery__category--active").removeClass("gallery__category--active");
+			$(button).addClass("gallery__category--active");
+
+			currentCategory = category;
+			imagesCount =  $(".gallery__image").length;
+
+			$(".gallery__image-block").each(function() {
+				if ($(this).attr("data-category") != category)
+				{
+					$(this).hide();
+					imagesCount--;
+				}
+				else
+				{
+					$(this).show();
+				}
+			});
+
+			var newIndex = 1; 
+
+			$(".gallery-image-viewer__image").each(function() {
+				if ($(this).attr("data-category") != category)
+				{
+					$(this).hide();
+				}
+				else
+				{
+					$(this).show();
+					$(this).attr("data-index", newIndex);
+					newIndex++;
+				}
+			});
+		}
+
+		function showAllImages(button)
+		{
+			$(".gallery__category--active").removeClass("gallery__category--active");
+			$(button).addClass("gallery__category--active");
+
+			imagesCount =  $(".gallery__image").length;
+			currentCategory = null;
+
+			$(".gallery__image-block").show();
+			$(".gallery-image-viewer__image").show();
+		}
+	</script>
 
 </body>
 </html>
