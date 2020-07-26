@@ -1,3 +1,4 @@
+<script type="text/javascript" src="js/jquery.maskedinput-master/dist/jquery.maskedinput.min.js"></script>
 <section class="feedback-form__container">
 	<form class="feedback-form">
 		<button class="feedback-form__close" onclick="close_feedback_form()">
@@ -8,7 +9,7 @@
 			<div class="feedback-form__left">
 				<input type="text" class="feedback-form__input" placeholder="Имя*" autofocus>
 				<input type="text" class="feedback-form__input" placeholder="Почта*">
-				<input type="text" class="feedback-form__input" placeholder="Телефон*">
+				<input type="text" class="feedback-form__input feedback-form__phone" placeholder="Телефон*">
 			</div>
 			<div class="feedback-form__right">
 				<textarea class="feedback-form__textarea" placeholder="Комментарий*"></textarea>
@@ -19,6 +20,9 @@
 	</form>
 </section>
 
+<script>
+$('.feedback-form__phone').mask('+7 (999) 999-99-99');
+</script>
 <script type="text/javascript">
 	function open_feedback_form() {
 		$(".feedback-form__container").addClass("feedback-form__container--active");
