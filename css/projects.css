@@ -67,3 +67,13 @@
 {
 	.projects { grid-template-columns: 1fr; }
 }
+
+
+@media screen and (max-width: 425px)
+{
+	.projects {
+		margin-top: 16px;
+		grid-gap: 16px;
+	}
+
+}

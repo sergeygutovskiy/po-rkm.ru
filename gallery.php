@@ -158,12 +158,6 @@
 
 		var fullScreenImages = $(".gallery-image-viewer__image");
 
-		function resetFullScreenContainer() {
-			imagesCount = $(".gallery__image").length;
-			elem = null;
-			elemIndex = 0;			
-		}
-
 		$(".gallery__image-block").on("click", function() {
 
 			elem = $(this);

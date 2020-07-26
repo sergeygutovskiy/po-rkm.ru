@@ -125,3 +125,13 @@
 	.recent-projects { width: 100%; }
 } 
 
+@media screen and (max-width: 425px)
+{
+	.project__title {
+		margin-top: 16px;
+	}
+
+	.project__body {
+		margin-top: 16px;
+	}
+}
