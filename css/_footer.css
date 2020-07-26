@@ -36,7 +36,9 @@
 	margin-bottom: 20px;
 	letter-spacing: 0.08em;
 }
-
+.footer__image{
+	width: 115px;
+}
 
 
 @media screen and (max-width: 1200px) 
